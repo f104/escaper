@@ -7,6 +7,7 @@
     <link href="css/libs/slick.css" rel="stylesheet" type="text/css">
     <link href="css/libs/jquery.fancybox.css" rel="stylesheet" type="text/css">
     <link href="css/libs/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <link href="css/libs/nouislider.css" rel="stylesheet" type="text/css">
     <link href="css/common.css" rel="stylesheet" type="text/css">
 </head>
     <body>
@@ -54,6 +55,26 @@
     
 </header>
         <main>
+            
+            <div class="container">
+    <div class="promo-slider">
+        <div class="slide">
+            <a href="#">
+                <img src="img/promo-slide-1.svg" alt="Promo">
+            </a>
+        </div>
+        <div class="slide">
+            <a href="#">
+                Promo #2
+            </a>
+        </div>
+        <div class="slide">
+            <a href="#">
+                Promo #3
+            </a>                    
+        </div>
+    </div>
+</div>
             
             <div class="product-heading">
                 <div class="container">
@@ -867,6 +888,47 @@
                                     <li><label><input type="checkbox"> <span class="yellow"></span> Желтый</label></li>
                                 </ul>
                             </div>
+                            <div class="product-filter-wrapper">
+                                <div class="product-filter-title">Цена</div>
+                                <div class="product-filter-content range">
+                                    <div id="product-filter-range"></div>
+                                    <div class="left">
+                                        <label for="product-filter-range-from">от</label>
+                                        <input id="product-filter-range-from" value="1000">
+                                    </div>
+                                    <div class="right">
+                                        <label for="product-filter-range-to">до</label>
+                                        <input id="product-filter-range-to" value="99999">
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                            </div>
+                            <div class="product-filter-wrapper closed">
+                                <div class="product-filter-title">Возраст</div>
+                                <ul class="product-filter-content">
+                                    <li><label><input type="checkbox"> Детский</label></li>
+                                    <li><label><input type="checkbox" checked> Юношеский</label></li>
+                                    <li><label><input type="checkbox"> Взрослый</label></li>
+                                </ul>
+                            </div>
+                            <div class="product-filter-wrapper closed">
+                                <div class="product-filter-title">Квалификация</div>
+                                <ul class="product-filter-content">
+                                    <li><label><input type="checkbox"> Детский</label></li>
+                                    <li><label><input type="checkbox" checked> Юношеский</label></li>
+                                    <li><label><input type="checkbox"> Взрослый</label></li>
+                                </ul>
+                            </div>
+                            <div class="product-filter-wrapper closed">
+                                <div class="product-filter-title">Тип спортсмена</div>
+                                <ul class="product-filter-content">
+                                    <li><label><input type="checkbox"> Детский</label></li>
+                                    <li><label><input type="checkbox" checked> Юношеский</label></li>
+                                    <li><label><input type="checkbox"> Взрослый</label></li>
+                                </ul>
+                            </div>
+                            <p class="product-filter-reset"><a href="#">Отменить все фильтры</a></p>
+                            <button class="btn product-filter-submit">Фильтровать</button>
                         </div>
                     </div>
                 </div>
@@ -1384,6 +1446,7 @@
 <script src="js/libs/jquery.fancybox.min.js" type="text/javascript"></script>
 <script src="js/libs/slick.min.js" type="text/javascript"></script>
 <script src="js/libs/jquery.formstyler.js" type="text/javascript"></script>
+<script src="js/libs/nouislider.min.js" type="text/javascript"></script>
 <script src="js/common.js" type="text/javascript"></script>
         
     </body>
