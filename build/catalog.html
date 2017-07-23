@@ -8,6 +8,7 @@
     <link href="css/libs/jquery.fancybox.css" rel="stylesheet" type="text/css">
     <link href="css/libs/jquery.formstyler.css" rel="stylesheet" type="text/css">
     <link href="css/libs/nouislider.css" rel="stylesheet" type="text/css">
+    <link href="css/libs/perfect-scrollbar.css" rel="stylesheet" type="text/css"/>
     <link href="css/common.css" rel="stylesheet" type="text/css">
 </head>
     <body>
@@ -16,7 +17,7 @@
     <div class="container">
         <div class="header-region">
             Ваш регион: <span class="header-region-name">Нижний Новгород</span>
-            <a href="#" class="header-region-select">Пункты выдачи</a>
+            <a href="#" class="header-region-select" data-fancybox="" data-src="#region-select-popup">Пункты выдачи</a>
         </div>
         <div class="header-phone">
             Бесплатный звонок: <a href="tel:88007004589">8-800-700-45-89</a>
@@ -1658,11 +1659,261 @@
 <span id="back-top" title="В начало страницы"></span>
 <div class="hide">
     <button id="js-region-confirm-link" data-fancybox="" data-src="#region-confirm-popup"></button>
+    <div id="region-select-popup" class="popup region-select-popup">
+    <div class="region-select-wrapper-two-columns">
+        <div class="region-select-wrapper">
+        <ul class="region-select region-select_pinned">
+            <li>
+                <span>Москва и Московская область</span>
+                <ul class="region-select_city">
+                    <li><a href="#"><strong>Москва</strong></a></li>
+                    <li><a href="#">Балашиха</a></li>
+                    <li><a href="#">Видное</a></li>
+                    <li><a href="#">Волоколамск</a></li>
+                    <li><a href="#">Воскресенск</a></li>
+                    <li><a href="#">Дмитров</a></li>
+                    <li><a href="#">Домодедово</a></li>
+                    <li><a href="#">Егорьевск</a></li>
+                    <li><a href="#">Железнодорожный</a></li>
+                    <li><a href="#">Жуковский</a></li>
+                    <li><a href="#"><strong>Зеленоград</strong></a></li>
+                    <li><a href="#">Клин</a></li>
+                    <li><a href="#">Коломна</a></li>
+                    <li><a href="#">Красногорск</a></li>
+                    <li><a href="#">Лобня</a></li>
+                    <li><a href="#">Луховицы</a></li>
+                    <li><a href="#">Люберцы</a></li>
+                    <li><a href="#">Мытищи</a></li>
+                    <li><a href="#">Наро-Фоминск</a></li>
+                    <li><a href="#">Нахабино</a></li>
+                    <li><a href="#">Одинцово</a></li>
+                    <li><a href="#">Орехово-Зуево</a></li>
+                    <li><a href="#">Подольск</a></li>
+                    <li><a href="#">Пушкино</a></li>
+                    <li><a href="#">Раменское</a></li>
+                    <li><a href="#">Реутов</a></li>
+                    <li><a href="#">Рязань</a></li>
+                    <li><a href="#">Сергиев Посад</a></li>
+                    <li><a href="#">Серпухов</a></li>
+                    <li><a href="#">Смоленск</a></li>
+                    <li><a href="#">Тверь</a></li>
+                    <li><a href="#">Химки</a></li>
+                    <li><a href="#">Чехов</a></li>
+                    <li><a href="#">Щёлково</a></li>
+                    <li><a href="#">Электросталь</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Санкт-Петербург и Лен. область</span>
+                <ul class="region-select_city">
+                    <li><a href="#"><strong>Санкт-Петербург</strong></a></li>
+                    <li><a href="#">Великий Новгород</a></li>
+                    <li><a href="#">Всеволожск</a></li>
+                    <li><a href="#">Выборг</a></li>
+                    <li><a href="#">Гатчина</a></li>
+                    <li><a href="#">Кириши</a></li>
+                    <li><a href="#">Колпино</a></li>
+                    <li><a href="#">Петергоф</a></li>
+                    <li><a href="#">Псков</a></li>
+                    <li><a href="#">Пушкин</a></li>
+                    <li><a href="#">Сертолово</a></li>
+                    <li><a href="#">Сосновый Бор</a></li>
+                    <li><a href="#">Тосно</a></li>
+                </ul>
+            </li>
+            <li class="active">
+                <span>Нижний Новгород и Ниж. область</span>
+                <ul class="region-select_city">
+                    <li><a href="#"><strong>Нижний Новгород</strong></a></li>
+                    <li><a href="#">Арзамас</a></li>
+                    <li><a href="#">Балахна</a></li>
+                    <li><a href="#">Богородск</a></li>
+                    <li><a href="#">Бор</a></li>
+                    <li><a href="#">Воротынец</a></li>
+                    <li><a href="#">Ворсма</a></li>
+                    <li><a href="#">Выкса</a></li>
+                    <li><a href="#">Вязники</a></li>
+                    <li><a href="#">Городец</a></li>
+                    <li><a href="#">Гороховец</a></li>
+                    <li><a href="#">Дзержинск</a></li>
+                    <li><a href="#">Заволжье</a></li>
+                    <li><a href="#">Ковров</a></li>
+                    <li><a href="#">Кстово</a></li>
+                    <li><a href="#">Кулебаки</a></li>
+                    <li><a href="#">Лысково</a></li>
+                    <li><a href="#">Муром</a></li>
+                    <li><a href="#">Навашино</a></li>
+                    <li><a href="#">Павлово</a></li>
+                    <li><a href="#">Саров</a></li>
+                    <li><a href="#">Чкаловск</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="region-select">
+            <li>
+                <span>Алтайский край</span>
+                <ul class="region-select_city">
+                    <li><a href="#">Алейск</a></li>
+                    <li><a href="#">Алтайское</a></li>
+                    <li><a href="#"><strong>Барнаул</strong></a></li>
+                    <li><a href="#">Белокуриха</a></li>
+                    <li><a href="#">Бийск</a></li>
+                    <li><a href="#">Благовещенка</a></li>
+                    <li><a href="#">Волчиха</a></li>
+                    <li><a href="#">Горняк</a></li>
+                    <li><a href="#">Заринск</a></li>
+                    <li><a href="#">Змеиногорск</a></li>
+                    <li><a href="#">Камень-на-Оби</a></li>
+                    <li><a href="#">Кулунда</a></li>
+                    <li><a href="#">Михайловское</a></li>
+                    <li><a href="#">Новоалтайск</a></li>
+                    <li><a href="#">Павловск</a></li>
+                    <li><a href="#">Поспелиха</a></li>
+                    <li><a href="#">Рубцовск</a></li>
+                    <li><a href="#">Сибирский</a></li>
+                    <li><a href="#">Славгород</a></li>
+                    <li><a href="#">Тальменка</a></li>
+                    <li><a href="#">Шипуново</a></li>
+                    <li><a href="#">Южный</a></li>
+                    <li><a href="#">Яровое</a></li>
+                </ul>
+            </li>
+            <li>
+                <span>Амурская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Астраханская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Белгородская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Брянская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Владимирская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Волгоградская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Воронежская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Еврейская автономная область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Забайкальский край</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Ивановская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Иркутская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Кабардино-Балкарская Республика</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Калининградская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Калужская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Камчатский край</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Карачаево-Черкесская Республика</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Кемеровская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Кировская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Костромская область</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>
+            <li>
+                <span>Краснодарский край</span>
+                <ul class="region-select_city">
+                    
+                </ul>
+            </li>            
+        </ul>
+    </div>
+    </div>
+    <div class="region-select-search">
+        <div class="region-select-search_input">
+            <input type="text" placeholder="Поиск города">
+        </div>
+        <div class="region-select-search_help">От выбранного города зависят наличие товара, 
+способы доставки и цена доставки.</div>
+    </div>
+</div>
     <div id="region-confirm-popup" class="popup popup-region-confirm">
     <div class="gold">Ваш регион</div>
     <div class="popup-region-confirm-selected"><strong>Нижний Новгород</strong></div>
     <ul>
-        <li><a href="#" class="js-region-select popup-region-confirm-change">Выбрать другой</a></li>
+        <li><a href="#" class="popup-region-confirm-change" data-fancybox="" data-src="#region-select-popup">Выбрать другой</a></li>
         <li><a href="#" class="popup-region-confirm-submit">Да, все верно</a></li>
     </ul>
     <small>От выбранного города зависят наличие товара, способы доставки и цена доставки.</small>
@@ -1675,6 +1926,7 @@
 <script src="js/libs/jquery.formstyler.js" type="text/javascript"></script>
 <script src="js/libs/nouislider.min.js" type="text/javascript"></script>
 <script src="js/libs/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/libs/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
 <script src="js/common.js" type="text/javascript"></script>
         
     </body>
