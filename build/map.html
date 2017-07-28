@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Обратная связь</title>
+    <title>Пункты выдачи</title>
     <meta charset="UTF-8">
     <link href="css/libs/materialize/materialize.css" rel="stylesheet" type="text/css">
     <link href="css/libs/slick.css" rel="stylesheet" type="text/css">
@@ -277,51 +277,222 @@
                 <div class="container">
                     <ul class="breadcrumb">
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="#">Обратная связь</a></li>
+                        <li><a href="#">Пункты выдачи</a></li>
                     </ul>
                 </div>
             </div>
 
-            <h1 class="page-h1">Обратная связь <i class="icon icon-middle icon-heading-feedback"></i></h1>
-            <div class="container">
-                <section class="feedback">
+            <h1 class="page-h1">Пункты выдачи <i class="icon icon-middle icon-heading-regions"></i></h1>
+            
 
-                    <p class="page-introtext">Интернет-магазин «ЭСКЕЙПЕР» дорожит вашим мнением и учитывает все сообщения наших клиентов. После модерации обращения сотрудник компании ответит на 
-                        него в течение 24 часов (или чуточку позже, если вы написали нам во время выходных или праздничных дней).</p>
-
-                    <form class="feedback-form">
-
-                        <div class="product-heading">Информация о клиенте</div>
-                        <div class="feedback-form_input">
-                            <label for="feedback_form_name">Имя</label>
-                            <input id="feedback_form_name" value="Илья">
+            <section class="map">
+                
+                <p class="page-introtext">
+                    Ваш регион: <span class="bebas">Нижний Новгород</span>
+                    <a class="btn btn-gold btn-lg" data-fancybox="" data-src="#region-select-popup"><span>Выбрать другой регион</span></a>
+                </p>
+                
+                <div class="product-heading">Адреса в вашем регионе</div>
+                
+                <div class="map-wrapper">
+                    <div id="map" class="map-content"></div>
+                    <div class="points js-scrollbar scrollbar-outer">
+                        <div class="points-item" data-lat="56.331201" data-lng="43.943440">
+                            <div class="points-item-title">Россия, Нижний Новгород, Гордеевская улица, 7, оф.117</div>
+                            <div class="points-item-time">Открыто до 20:00
+                                <dl>
+                                    <dt>Понедельник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Вторник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Среда</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Четверг</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Пятница</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Суббота</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Воскресенье</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                </dl>
+                            </div>
+                            <div class="points-item-phone">
+                                <ul>
+                                    <li>+7 (831) 214-08-80</li>
+                                    <li>8 (800) 250-04-05</li>
+                                </ul>
+                            </div>
+                            <div class="points-item-web">
+                                <a href="//www.cdek.ru">www.cdek.ru</a>
+                                <span class="bebas">СДЭК</span>
+                                <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                            </div>
                         </div>
-                        <div class="feedback-form_input">
-                            <label for="feedback_form_second_name">Отчество</label>
-                            <input id="feedback_form_second_name" value="Алексеевич">
+                        <div class="points-item" data-lat="56.329922" data-lng="43.905447">
+                            <div class="points-item-title">Россия, Нижний Новгород, Гордеевская улица, 7, оф.117</div>
+                            <div class="points-item-time">Открыто до 20:00
+                                <dl>
+                                    <dt>Понедельник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Вторник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Среда</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Четверг</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Пятница</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Суббота</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Воскресенье</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                </dl>
+                            </div>
+                            <div class="points-item-phone">
+                                <ul>
+                                    <li>+7 (831) 214-08-80</li>
+                                    <li>8 (800) 250-04-05</li>
+                                </ul>
+                            </div>
+                            <div class="points-item-web">
+                                <a href="//www.cdek.ru">www.cdek.ru</a>
+                                <span class="bebas">СДЭК</span>
+                                <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                            </div>
                         </div>
-                        <div class="feedback-form_input">
-                            <label for="feedback_form_third_name">Фамилия</label>
-                            <input id="feedback_form_third_name" value="Гужин">
+                        <div class="points-item" data-lat="56.310132" data-lng="43.902655">
+                            <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                            <div class="points-item-time">Открыто до 20:00
+                                <dl>
+                                    <dt>Понедельник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Вторник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Среда</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Четверг</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Пятница</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Суббота</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Воскресенье</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                </dl>
+                            </div>
+                            <div class="points-item-phone">
+                                <ul>
+                                    <li>+7 (831) 214-08-80</li>
+                                    <li>8 (800) 250-04-05</li>
+                                </ul>
+                            </div>
+                            <div class="points-item-web">
+                                <a href="//www.cdek.ru">www.cdek.ru</a>
+                                <span class="bebas">FEDEX</span>
+                                <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                            </div>
                         </div>
-                        <div class="feedback-form_input">
-                            <label for="feedback_form_email">e-mail</label>
-                            <input id="feedback_form_email" value="gilya-nn@mail.ru">
+                        <div class="points-item" data-lat="56.314171" data-lng="43.936885">
+                            <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                            <div class="points-item-time">Открыто до 20:00
+                                <dl>
+                                    <dt>Понедельник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Вторник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Среда</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Четверг</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Пятница</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Суббота</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Воскресенье</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                </dl>
+                            </div>
+                            <div class="points-item-phone">
+                                <ul>
+                                    <li>+7 (831) 214-08-80</li>
+                                    <li>8 (800) 250-04-05</li>
+                                </ul>
+                            </div>
+                            <div class="points-item-web">
+                                <a href="//www.cdek.ru">www.cdek.ru</a>
+                                <span class="bebas">FEDEX</span>
+                                <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                            </div>
                         </div>
-                        <div class="feedback-form_input">
-                            <label for="feedback_form_phone">Мобильный телефон</label>
-                            <input id="feedback_form_phone" value="+7 910-895-02-30">
+                        <div class="points-item" data-lat="56.322384" data-lng="43.931059">
+                            <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                            <div class="points-item-time">Открыто до 20:00
+                                <dl>
+                                    <dt>Понедельник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Вторник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Среда</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Четверг</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Пятница</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Суббота</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Воскресенье</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                </dl>
+                            </div>
+                            <div class="points-item-phone">
+                                <ul>
+                                    <li>+7 (831) 214-08-80</li>
+                                    <li>8 (800) 250-04-05</li>
+                                </ul>
+                            </div>
+                            <div class="points-item-web">
+                                <a href="//www.cdek.ru">www.cdek.ru</a>
+                                <span class="bebas">FEDEX</span>
+                                <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                            </div>
                         </div>
+                        <div class="points-item" data-lat="56.306110" data-lng="43.872504">
+                            <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                            <div class="points-item-time">Открыто до 20:00
+                                <dl>
+                                    <dt>Понедельник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Вторник</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Среда</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Четверг</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Пятница</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Суббота</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                    <dt>Воскресенье</dt>
+                                    <dd>10:00 – 20:00</dd>
+                                </dl>
+                            </div>
+                            <div class="points-item-phone">
+                                <ul>
+                                    <li>+7 (831) 214-08-80</li>
+                                    <li>8 (800) 250-04-05</li>
+                                </ul>
+                            </div>
+                            <div class="points-item-web">
+                                <a href="//www.cdek.ru">www.cdek.ru</a>
+                                <span class="bebas">FEDEX</span>
+                                <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                        <div class="product-heading">Текст обращения</div>
-                        <div><textarea class="js-scrollbar scrollbar-outer"></textarea></div>
-
-                        <button type="submit" class="btn btn-lg btn-gold"><span>Отправить</span></button>
-
-                    </form>
-
-                </section>
-            </div>
+            </section>
 
         </main>
 
@@ -694,6 +865,7 @@
     <small>От выбранного города зависят наличие товара, способы доставки и цена доставки.</small>
 </div>
 </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqvju8nmUERH8w1ylBooavXluAApYM-Ag&language=ru&region=RU"></script>
         <script src="js/libs/jquery.min.js" type="text/javascript"></script>
 <script src="js/libs/materialize.js" type="text/javascript"></script>
 <script src="js/libs/jquery.fancybox.min.js" type="text/javascript"></script>
@@ -704,5 +876,6 @@
 <script src="js/libs/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
 <script src="js/libs/jquery.scrollbar.min.js" type="text/javascript"></script>
 <script src="js/common.js" type="text/javascript"></script>
+
     </body>
 </html>
