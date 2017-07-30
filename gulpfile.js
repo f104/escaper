@@ -28,6 +28,7 @@ var path = {
         style: 'src/scss/**/*.*',
         img: 'src/img/**/*.*',
         sprite: 'src/img/sprite/*.*',
+        spriteBig: 'src/img/sprite-big/*.*',
         fonts: 'src/fonts/**/*.*'
     },
     watch: {
@@ -107,6 +108,18 @@ gulp.task('sprite:build', function() {
   spriteData.css.pipe(gulp.dest(path.build.sprite));
 });
 
+gulp.task('sprite-big:build', function() {
+  var spriteData =
+    gulp.src(path.src.spriteBig)
+      .pipe(spritesmith({
+        imgName: 'sprite-big.png',
+        cssName: '_sprite-big.scss',
+        padding: 5
+      }));
+
+  spriteData.img.pipe(gulp.dest(path.build.img));
+  spriteData.css.pipe(gulp.dest(path.build.sprite));
+});
 gulp.task('fonts:build', function() {
     gulp.src(path.src.fonts)
         .pipe(gulp.dest(path.build.fonts))
