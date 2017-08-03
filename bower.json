@@ -14,6 +14,7 @@
   "dependencies": {
     "jquery": "^3.2.1",
     "materialize": "^0.98.2",
-    "slick-carousel": "^1.6.0"
+    "slick-carousel": "^1.6.0",
+    "jquery-validation": "^1.17.0"
   }
 }
