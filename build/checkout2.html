@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Правила торговли</title>
+    <title>Оформление заказа</title>
     <meta charset="UTF-8">
     <link href="css/libs/materialize/materialize.css" rel="stylesheet" type="text/css">
     <link href="css/libs/slick.css" rel="stylesheet" type="text/css">
@@ -277,31 +277,679 @@
                 <div class="container">
                     <ul class="breadcrumb">
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="#">Правила торговли</a></li>
+                        <li><a href="#">Оформление заказа</a></li>
                     </ul>
                 </div>
             </div>
 
-            <section class="content-page">
-                <h1 class="page-h1">Правила торговли</h1>
-                <div class="container content-page-content">
+            <section class="checkout">
+                <h1 class="page-h1 page-h1_primary"><span>Оформление заказа<i class="icon icon-middle icon-heading-checkout"></i></span></h1>
+                <div class="checkout-step">
+    <ul>
+        <li   class="pre-active" >
+            <span class="bebas">Шаг 1</span>
+            Вход в учетную запись
+        </li>
+        <li  class="active"  >
+            <span class="bebas">Шаг 2</span>
+            Способ получения
+        </li>
+        <li  >
+            <span class="bebas">Шаг 3</span>
+            Способ оплаты
+        </li>
+        <li >
+            <span class="bebas">Шаг 4</span>
+            Заказ оформлен!
+        </li>
+    </ul>
+</div>
 
-                    <p>Взаимоотношения магазина и покупателей регулируются Гражданским Кодексом Российской Федерации, законом «О защите прав потребителей» и другими законодательными актами, действующими на момент их возникновения.</p>
-                    <p>Просим вас принять к сведению, что согласно закону о защите прав потребителя (статья 26.1. Дистанционный способ продажи товара), покупатель вправе отказаться от товара в любое время до его передачи, а после передачи товара в течении 7 дней. Возврат товара надлежащего качества в течении 7 дней возможен в случае, если сохранены его товарный вид, потребительские свойства, а также документ, подтверждающий факт и условия покупки указанного товара. При отказе потребителя от товара продавец должен возвратить ему денежную сумму, уплаченную потребителем по чеку, за исключением расходов продавца на доставку от потребителя возвращенного товара, не позднее чем через 10 дней со дня предъявления соответствующего требования. В случае если в приобретенном покупателем изделии не выявилось каких-либо дефектов в течение первых 7 дней, которые даются для проверки качества товара, с момента покупки изделия, все дальнейшее обслуживание идет только в сертифицированных сервисных центрах производителя изделия согласно условиям, указанным в гарантийном талоне производителя, который выдавался вам при покупке.</p>
-                    <p>Количество заводского брака в продаваемой нами технике минимально, так как мы работаем с официальными поставщиками продукции, но, к сожалению, и у самых известных производителей бывает брак, который как раз и проявляется в первые недели после покупки. Закон о Защите Прав Потребителей регулирует этот момент и технически сложные изделия покупатель может бесплатно отремонтировать или по акту — направлению из сервисного центра, обменять. Однако, требуется время для юридической фиксации момента наличия брака, т.е. нужно выяснить, имеет ли место неисправность и по чьей вине она произошла. В соответствии с п. 5 ст. 18 Закона «О защите прав потребителей» интернет-магазин «ЭСКЕЙПЕР» вправе, вне зависимости от вашего желания, провести проверку качества и экспертизу товара в сервисном центре. Если неисправность все же зафиксирована, то необходимо время для проведения экспертизы, чтобы определить причины поломки и только после этого производится ремонт, замена или возврат.</p>
-                    <h3 class="content-page_h3">Сфера ответственности интернет-магазина ЭСКЕЙПЕР</h3>
-                    <p>интернет-магазин «ЭСКЕЙПЕР» не несет ответственности за:</p>
-                    <ul>
-                        <li>абсолютную точность информации, касающуюся товаров или услуг, которую предоставляют ей другие компании;</li>
-                        <li>проблемы, которые могут возникнуть вследствие неверного использования информации, находящейся на сайте escaper.ru;</li>
-                        <li>последствия, возникшие в результате невозможности применения информации, находящейся на сайте escaper.ru.</li>
-                    </ul>
-                    <p>Характеристики товаров, которые представлены в нашем магазине, подвергаются постоянным изменениям, поэтому описание конкретного товара на сайте может не совпадать с реальными параметрами изделия, находящегося в продаже.</p>
-                    <p>Во избежание спорных ситуаций, требуйте дополнительной информации во время размещения заказа.</p>
-                    <p>Сайт escaper.ru допускает наличие ошибочной либо неточной информации, находящейся на сайте. Чтобы избежать недоразумений, получайте информацию о интересующем вас товаре на сайте производителя.</p>
-                    <p>Интернет-магазин «ЭСКЕЙПЕР» вправе корректировать, удалять, изменять и добавлять информацию, опираясь на заинтересованность партнеров и корпоративные интересы.</p>
-
+                <div class="checkout-introtext">
+                    <p class="checkout-introtext-title">Укажите способ получения товара</p>
                 </div>
+
+                <div id="tabs">
+                    <ul class="content-page-icons content-page-icons_tabs">
+                        <li>
+                            <a href="#delivery1">
+                                <span class="icon-wrapper"><i class="icon icon-delivery-step1"></i></span>
+                                Самовывоз из пункта выдачи
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#delivery2">
+                                <span class="icon-wrapper"><i class="icon icon-delivery-step2"></i></span>
+                                Курьерской службой
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#delivery3">
+                                <span class="icon-wrapper"><i class="icon icon-delivery-step3"></i></span>
+                                Почтой России
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#delivery4">
+                                <span class="icon-wrapper"><i class="icon icon-delivery-step4"></i></span>
+                                Транспортной компанией
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="checkout-selected-delivery">
+                        <span class="bebas"><strong>Самовывоз:</strong></span>
+                        <a href="#">Нижний Новгород (пункт выдачи)</a> 16 мая,
+                        <span class="bebas green"><strong>Бесплатно</strong></span>
+                    </p>
+
+                    <div id="delivery1">
+                        <div class="page-h1">Самовывоз из пункта выдачи</div>
+                        <div class="container content-page">
+                            <div class="content-page-content">
+                                <p>Компания ЭСКЕЙПЕР предлагает Вам выгодную услугу — самовывоз товара из пункта выдачи товаров. Просто выберите удобное время и сами заберите свою покупку.
+                                    Выгодно, удобно и просто!</p>
+                                <ul>
+                                    <li>Вы приезжаете за товаром в удобную для Вас точку самовывоза;</li>
+                                    <li>Вы экономите деньги на стоимости курьерской доставки;</li>
+                                    <li>Вы не ждете доставки заказа, а забираете его в любое подходящее для Вас время.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="map">
+    
+        <p class="page-introtext">
+            Ваш регион: <span class="bebas"><strong>Нижний Новгород</strong></span>
+            <a class="btn btn-gold btn-lg" data-fancybox="" data-src="#region-select-popup"><span>Выбрать другой регион</span></a>
+        </p>
+    
+
+    <div class="product-heading">Адреса Пунктов самовывоза в вашем регионе</div>
+
+    <div class="map-wrapper">
+        <div id="map" class="map-content"></div>
+        <div class="points js-scrollbar scrollbar-outer">
+            <div class="points-item" data-lat="56.331201" data-lng="43.943440">
+                <div class="points-item-title">Россия, Нижний Новгород, Гордеевская улица, 7, оф.117</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">СДЭК</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.329922" data-lng="43.905447">
+                <div class="points-item-title">Россия, Нижний Новгород, Гордеевская улица, 7, оф.117</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">СДЭК</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.310132" data-lng="43.902655">
+                <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">FEDEX</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.314171" data-lng="43.936885">
+                <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">FEDEX</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.322384" data-lng="43.931059">
+                <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">FEDEX</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.306110" data-lng="43.872504">
+                <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">FEDEX</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg"><span>Продолжить</span></button>
+                        </div>
+                    </div>
+                    <div id="delivery2">
+                        <div class="page-h1">Доставка курьерской службой</div>
+                        <div class="container content-page">
+                            <div class="content-page-content">
+                                <p>Доставка в удобное для вас место и время. Осмотреть товар и принять решение можно до оплаты. Если товар не подошел, платить не нужно.<br>
+                                    Оплата наличными или банковской картой прямо на месте.<br>
+                                    <strong>Важно! Доставка заказов на сумму свыше 120 тысяч рублей производится только после полной предоплаты.</strong></p>
+                                <div class="checkout-delivery-form">
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-city">Населенный пункт <small>(город, поселок)</small></label>
+                                        <input id="df1-city" type="text" value="Нижний Новгород" class="checkout-delivery-form_city">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-street">Улица</label>
+                                        <input id="df1-street" type="text" class="checkout-delivery-form_street">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-building">Дом, корпус</label>
+                                        <input id="df1-building" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-room">Квартира</label>
+                                        <input id="df1-room" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-zip">Индекс</label>
+                                        <input id="df1-zip" type="text" disabled>
+                                    </div>
+                                </div>
+                                <p>Курьерские службы осуществляют доставку непосредственно по адресу, указанному во время оформления покупки. Предварительно представитель компании свяжется с вами, 
+                                    чтобы уточнить время и место получения.</p>
+                                <p>При оформлении заказа вы можете выбрать одного из наших партнеров, осуществляющих доставку до адреса получателя:</p>
+                                <div class="checkout-delivery-list">
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery4.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio" checked>
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery5.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio">
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery6.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio">
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery7.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio">
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery8.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg"><span>Продолжить</span></button>
+                        </div>
+                    </div>
+                    <div id="delivery3">
+                        <div class="page-h1">Доставка почтой россии</div>
+                        <div class="container content-page">
+                            <div class="content-page-content">
+                                <p class="center-align">Укажите адрес для определения условий доставки.</p>
+                                <div class="checkout-delivery-form">
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-city">Населенный пункт <small>(город, поселок)</small></label>
+                                        <input id="df3-city" type="text" value="Нижний Новгород" class="checkout-delivery-form_city">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-street">Улица</label>
+                                        <input id="df3-street" type="text" class="checkout-delivery-form_street">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-building">Дом, корпус</label>
+                                        <input id="df3-building" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-room">Квартира</label>
+                                        <input id="df3-room" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-zip">Индекс</label>
+                                        <input id="df3-zip" type="text" disabled>
+                                    </div>
+                                </div>
+                                <p><strong>Важные условия</strong></p>
+                                <p><strong class="underline">Ограничения</strong></p>
+                                <ul>
+                                    <li>Доставка Почтой России работает в тестовом режиме, только при заказе и 100% предоплате через сайт;</li>
+                                    <li>Для юридических лиц доставка Почтой России недоступна;</li>
+                                    <li>Доставляются заказы весом до 20 кг;</li>
+                                    <li>По габаритам сумма трех измерений (длина, ширина, высота) не должна превышать 3 м;</li>
+                                    <li>Жидкости не доставляются.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg"><span>Продолжить</span></button>
+                        </div>
+                    </div>
+                    <div id="delivery4">
+                        <div class="page-h1">Доставка транспортной компанией</div>
+                        <div class="container content-page">
+                            <div class="content-page-content">
+                                <p class="center-align">Укажите адрес для определения условий доставки.</p>
+                                <div class="checkout-delivery-form">
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-city">Населенный пункт <small>(город, поселок)</small></label>
+                                        <input id="df4-city" type="text" value="Нижний Новгород" class="checkout-delivery-form_city">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-street">Улица</label>
+                                        <input id="df4-street" type="text" class="checkout-delivery-form_street">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-building">Дом, корпус</label>
+                                        <input id="df4-building" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-room">Квартира</label>
+                                        <input id="df4-room" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-zip">Индекс</label>
+                                        <input id="df4-zip" type="text" disabled>
+                                    </div>
+                                </div>
+                                <p>Курьерские службы осуществляют доставку непосредственно по адресу, указанному во время оформления покупки. Предварительно представитель компании свяжется с вами, 
+                                    чтобы уточнить время и место получения.</p>
+                                <p>При оформлении заказа вы можете выбрать одного из наших партнеров, осуществляющих доставку до адреса получателя:</p>
+                                <div class="checkout-delivery-list">
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery1.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df4-radio" checked>
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery2.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df4-radio">
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery3.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df4-radio">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg"><span>Продолжить</span></button>
+                        </div>
+                        <div class="map">
+    
+
+    <div class="product-heading">Адреса Терминалов транспортной компании в вашем регионе</div>
+
+    <div class="map-wrapper">
+        <div id="map1" class="map-content"></div>
+        <div class="points js-scrollbar scrollbar-outer">
+            <div class="points-item" data-lat="56.331201" data-lng="43.943440">
+                <div class="points-item-title">Россия, Нижний Новгород, Гордеевская улица, 7, оф.117</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">СДЭК</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.329922" data-lng="43.905447">
+                <div class="points-item-title">Россия, Нижний Новгород, Гордеевская улица, 7, оф.117</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">СДЭК</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.310132" data-lng="43.902655">
+                <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">FEDEX</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.314171" data-lng="43.936885">
+                <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">FEDEX</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.322384" data-lng="43.931059">
+                <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">FEDEX</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+            <div class="points-item" data-lat="56.306110" data-lng="43.872504">
+                <div class="points-item-title">Россия, Нижний Новгород, Ковалихинская, д. 8</div>
+                <div class="points-item-time">Открыто до 20:00
+                    <dl>
+                        <dt>Понедельник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Вторник</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Среда</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Четверг</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Пятница</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Суббота</dt>
+                        <dd>10:00 – 20:00</dd>
+                        <dt>Воскресенье</dt>
+                        <dd>10:00 – 20:00</dd>
+                    </dl>
+                </div>
+                <div class="points-item-phone">
+                    <ul>
+                        <li>+7 (831) 214-08-80</li>
+                        <li>8 (800) 250-04-05</li>
+                    </ul>
+                </div>
+                <div class="points-item-web">
+                    <a href="//www.cdek.ru">www.cdek.ru</a>
+                    <span class="bebas">FEDEX</span>
+                    <span class="narrow">Курьерские услуги, автомобильные грузоперевозки</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+                    </div>
+                </div>
+
             </section>
 
         </main>
@@ -675,6 +1323,7 @@
     <small>От выбранного города зависят наличие товара, способы доставки и цена доставки.</small>
 </div>
 </div>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqvju8nmUERH8w1ylBooavXluAApYM-Ag&language=ru&region=RU"></script>
         <script src="js/libs/jquery.min.js" type="text/javascript"></script>
 <script src="js/libs/materialize.js" type="text/javascript"></script>
 <script src="js/libs/jquery.fancybox.min.js" type="text/javascript"></script>
