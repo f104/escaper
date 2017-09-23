@@ -293,6 +293,9 @@
                     margin-right: 5px;
                     cursor: pointer;
                 }
+                &.about-short-list-muted {
+                    opacity: 1;
+                }
             }
         }
     }
