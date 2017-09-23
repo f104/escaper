@@ -1,0 +1,624 @@
+@charset "UTF-8";
+
+// Default Variables
+
+// Slick icon entity codes outputs the following
+// "\2190" outputs ascii character "←"
+// "\2192" outputs ascii character "→"
+// "\2022" outputs ascii character "•"
+
+$slick-loader-path: "../../img/" !default;
+$slick-arrow-color: white !default;
+$slick-arrow-size: 80px;
+$slick-dot-color: white !default;
+$slick-dot-color-active: $primary-color !default;
+$slick-dot-size: 10px !default;
+
+@function slick-image-url($url) {
+    @if function-exists(image-url) {
+        @return image-url($url);
+    }
+    @else {
+        @return url($slick-loader-path + $url);
+    }
+}
+
+/* Slider */
+
+.slick-list {
+    .slick-loading & {
+        background: #fff slick-image-url("ajax-loader.gif") center center no-repeat;
+    }
+}
+
+/* Arrows */
+
+.slick-prev,
+.slick-next {
+    position: absolute;
+    display: block;
+    height: $slick-arrow-size;
+    width: $slick-arrow-size;
+    line-height: 0px;
+    font-size: 0px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.11);
+    border-radius: 50%;
+    color: transparent;
+    top: 50%;
+    margin-top: -$slick-arrow-size/2;
+    padding: 0;
+    border: none;
+    outline: none;
+    &:hover, &:focus {
+        outline: none;
+        background-color: rgba(255,255,255,.11);
+        color: transparent;
+        &:before {
+            /*opacity: $slick-opacity-on-hover;*/
+        }
+    }
+    &.slick-disabled:before {
+
+    }
+    &:before {
+        position: absolute;
+        top: 15px;
+        left: 28px;
+        content: '';
+
+    }
+}
+
+.slick-prev {
+    z-index: 2;
+    left: 50%;
+    transform: translate(-570px, 0);
+    &:before {
+        @include sprite($slider-left);
+        left: 20px;
+    }
+    &:hover {
+        &:before {
+            @include sprite($slider-left-hover);
+        }
+    }
+}
+
+.slick-next {
+    right: 50%;
+    transform: translate(570px, 0);
+    &:before {
+        @include sprite($slider-right);
+    }
+    &:hover {
+        &:before {
+            @include sprite($slider-right-hover);
+        }
+    }
+}
+
+/* Dots */
+
+.slick-dots {
+    position: absolute;
+    bottom: 30px;
+    list-style: none;
+    display: block;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    li {
+        position: relative;
+        display: inline-block;
+        height: 11px;
+        width: 11px;
+        margin: 0 5px;
+        padding: 0;
+        cursor: pointer;
+        button {
+            border: 0;
+            background: transparent;
+            display: block;
+            height: 11px;
+            width: 11px;
+            outline: none;
+            line-height: 0px;
+            font-size: 0px;
+            color: transparent;
+            padding: 5px;
+            cursor: pointer;
+            &:hover, &:focus {
+                outline: none;
+                &:before {
+                    background-color: $slick-dot-color-active;
+                }
+            }
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: '';
+                width: 11px;
+                height: 11px;
+                line-height: 11px;
+                text-align: center;
+                background-color: $slick-dot-color;
+                border-radius: 50%;
+                @include transition(.3s);
+            }
+        }
+        &.slick-active button:before {
+            background-color: $slick-dot-color-active;
+        }
+    }
+}
+
+.slider {
+    margin: $gutter-width 0;
+    overflow: hidden;
+    .slide {
+        outline: none;
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+        &.slide-{
+            &1 {
+                background-color: #0BB2EA;
+            }
+            &2 {
+                background-color: #000;
+            }
+        }
+    }
+}
+.index-slider {
+    margin-bottom: $gutter-width * 1.5;
+    /*overflow: hidden;*/
+    .slide {
+        height: 595px;
+        background-position: center;
+        background-size: cover;
+    }
+}
+.promo-slider {
+    margin-bottom: $gutter-width * 1.5;
+    .slide {
+        text-align: center;
+        img {
+            margin: 0 auto;
+        }
+    }
+    .slick-dots {
+        bottom: -30px;
+        li {
+            height: 7px;
+            width: 7px;
+            margin: 0 5px;
+            button {
+                height: 7px;
+                width: 7px;
+                padding: 5px;
+                cursor: pointer;
+                &:hover, &:focus {
+                    &:before {
+                        background-color: $primary-color;
+                    }
+                }
+                &:before {
+                    width: 7px;
+                    height: 7px;
+                    line-height: 7px;
+                    background-color: $gold-color;
+                }
+            }
+            &.slick-active button:before {
+                background-color: $primary-color;
+            }
+        }
+    }
+}
+.product-slider {
+    margin-bottom: $gutter-width;
+}
+.view-3d {
+    position: absolute;
+    left: 12px;
+    bottom: 9px;
+}
+.product-slider-vert {
+    width: 490px;
+    float: left;
+    margin-top: -13px;
+    .slide {
+        border: 1px solid $gray-color;
+    }
+    .view-3d {
+        left: 8px;
+        bottom: 8px;
+    }
+}
+.product-slider-pc {
+    .view-3d {
+        left: 45px;
+        bottom: 0px;
+    }
+}
+.pagg-slider {
+    padding: 0 50px;
+    .slick-track {
+        margin: 0 auto;
+    }
+    .slide {
+        border: 1px solid $gray-color;
+        border-radius: 3px;
+        padding: 10px 5px;
+        margin: 0 5px;
+        height: 105px;
+        cursor: pointer;
+        outline: none;
+    }
+    .slick-prev,
+    .slick-next {
+        height: 40px;
+        width: 40px;
+        background-color: #ededed;
+        margin-top: -20px;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 6px;
+            left: 10px;
+            @include sprite($pagg-slider-left);
+
+        }
+        &:hover, &:focus {
+            &:before {
+                @include sprite($pagg-slider-left-hover);
+            }
+        }
+        &.slick-disabled, &.slick-disabled:focus, &.slick-disabled:hover {
+            pointer-events: none;
+            &:before {
+                @include sprite($pagg-slider-left);
+                opacity: .5;
+            }
+        }
+    }
+    .slick-prev {
+        z-index: 2;
+        left: 50px;
+        transform: translate(-50px, 0);
+        &:before {
+
+            /*            left: 0px;
+                        top: 0px;*/
+        }
+    }
+
+    .slick-next {
+        right: 50px;
+        transform: translate(50px, 0);
+        &:before {
+            /*@include sprite($pagg-slider-left);*/
+            left: 12px;
+            /*top: 0px;*/
+            transform: rotate(180deg);
+        }
+    }
+}
+.pagg-slider-vert {
+    float: right;
+    width: 110px;
+    .slide {
+        border: 1px solid $gray-color;
+        height: 140px;
+        margin: 3px 0;
+        cursor: pointer;
+        outline: none;
+    }
+    .slick-prev,
+    .slick-next {
+        height: 20px;
+        width: 20px;
+        margin-left: -10px;
+        left: 50%;
+        right: auto;
+        transform: none;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0px;
+            left: 6px;
+            @include sprite($product-list-item-slider);
+
+        }
+        &:hover, &:focus {
+            &:before {
+                @include sprite($product-list-item-slider-hover);
+            }
+        }
+        &.slick-disabled, &.slick-disabled:focus, &.slick-disabled:hover {
+            pointer-events: none;
+            &:before {
+                @include sprite($product-list-item-slider);
+                opacity: .5;
+            }
+        }
+    }
+    .slick-prev {
+        /*z-index: 2;*/
+        top: 23px;
+        bottom: auto;
+        &:before {
+            transform: rotate(-90deg);
+        }
+    }
+    .slick-next {
+        top: auto;
+        bottom: -20px;
+        &:before {
+            transform: rotate(90deg);
+        }
+    }
+}
+.pagg-slider-pc {
+    .slide {
+        border: 1px solid $gray-color;
+        background-color: $white-color;
+        /*height: 140px;*/
+        margin: 0 7px;
+        cursor: pointer;
+        outline: none;
+    }
+    .slick-prev,
+    .slick-next {
+        height: 17px;
+        width: 7px;
+        margin-top: -8.5px;
+        left: -20px;
+        top: 50%;
+        transform: none;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0px;
+            left: 0px;
+            @include sprite($product-list-item-slider);
+
+        }
+        &:hover, &:focus {
+            &:before {
+                @include sprite($product-list-item-slider-hover);
+            }
+        }
+        &.slick-disabled, &.slick-disabled:focus, &.slick-disabled:hover {
+            pointer-events: none;
+            &:before {
+                @include sprite($product-list-item-slider);
+                opacity: .5;
+            }
+        }
+    }
+    .slick-prev {
+        /*z-index: 2;*/
+        &:before {
+            transform: rotate(-180deg);
+        }
+    }
+    .slick-next {
+        left: auto;
+        right: -20px;
+        /*        &:before {
+                    transform: rotate(90deg);
+                }*/
+    }
+}
+.product-slider-related {
+    /*float: right;*/
+    width: 425px;
+    .slide {
+        border: 1px solid $gray-color;
+        height: 566px;
+        outline: none;
+    }
+    .slick-prev,
+    .slick-next {
+        height: 70px;
+        width: 70px;
+        background-color: #e6e8e8;
+        border-radius: 50%;
+        margin-top: -35px;
+        top: 50%;
+        bottom: auto;
+        transform: none;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 15px;
+            left: 25px;
+            @include sprite($related-slider);
+
+        }
+        &:hover, &:focus {
+            &:before {
+                @include sprite($related-slider-hover);
+            }
+        }
+        &.slick-disabled, &.slick-disabled:focus, &.slick-disabled:hover {
+            pointer-events: none;
+            &:before {
+                @include sprite($related-slider);
+                opacity: .5;
+            }
+        }
+    }
+    .slick-prev {
+        /*z-index: 2;*/
+        left: -80px;
+        right: auto;
+        &:before {
+            left: 18px;
+            transform: rotate(180deg);
+        }
+    }
+    .slick-next {
+        left: auto;
+        right: -80px;
+    }
+}
+.menu-slider {
+    .slick-list {
+        height: 129px !important;
+    }
+    .slick-prev,
+    .slick-next {
+        height: 20px;
+        width: 20px;
+        margin-left: -10px;
+        left: 50%;
+        right: auto;
+        transform: none;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0px;
+            left: 6px;
+            @include sprite($product-list-item-slider);
+
+        }
+        &:hover, &:focus {
+            &:before {
+                @include sprite($product-list-item-slider-hover);
+            }
+        }
+        &.slick-disabled, &.slick-disabled:focus, &.slick-disabled:hover {
+            &:before {
+                display: none;
+            }
+        }
+    }
+    .slick-prev {
+        /*z-index: 2;*/
+        top: 23px;
+        bottom: auto;
+        &:before {
+            transform: rotate(-90deg);
+        }
+    }
+    .slick-next {
+        top: auto;
+        bottom: -20px;
+        &:before {
+            transform: rotate(90deg);
+        }
+    }
+}
+.list-item-slider {
+    padding: 0 40px;
+    .slide {
+        border: 1px solid $gray-color;
+        border-radius: 3px;
+        padding: 0;
+        margin: 0 2px 0 0;
+        height: 70px;
+        cursor: pointer;
+        outline: none;
+        img {
+            margin: 5px auto;
+        }
+    }
+    .slick-prev,
+    .slick-next {
+        height: 17px;
+        width: 7px;
+        background-color: transparent;
+        margin-top: -8px;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 0px;
+            left: 0px;
+            @include sprite($product-list-item-slider);
+
+        }
+        &:hover, &:focus {
+            &:before {
+                @include sprite($product-list-item-slider-hover);
+            }
+        }
+        &.slick-disabled, &.slick-disabled:focus, &.slick-disabled:hover {
+            pointer-events: none;
+            &:before {
+                @include sprite($product-list-item-slider);
+                opacity: .5;
+            }
+        }
+    }
+    .slick-prev {
+        z-index: 2;
+        left: 18px;
+        transform: none;
+        &:before {
+            transform: rotate(180deg);
+        }
+    }
+
+    .slick-next {
+        right: 20px;
+        left: auto;
+        transform: none;
+    }
+}
+.catalog-slider {
+    padding: 0 125px;
+    margin-top: $gutter-width;
+    margin-bottom: $gutter-width;
+    .slick-list {
+        padding: 15px 0;
+        margin: -15px 0;
+    }
+    .slick-prev,
+    .slick-next {
+        height: 80px;
+        width: 80px;
+        background-color: #ededed;
+        margin-top: -40px;
+        transform: initial;
+        &:before {
+            position: absolute;
+            content: '';
+            top: 15px;
+            left: 27px;
+            @include sprite($catalog-slider);
+
+        }
+        &:hover, &:focus {
+            &:before {
+                @include sprite($catalog-slider-hover);
+            }
+        }
+        &.slick-disabled, &.slick-disabled:focus, &.slick-disabled:hover {
+            pointer-events: none;
+            &:before {
+                @include sprite($catalog-slider);
+                opacity: .5;
+            }
+        }
+    }
+    .slick-next {
+        right: 15px;
+    }
+    .slick-prev {
+        z-index: 2;
+        left: 15px;
+        &:before {
+            left: 19px;
+            transform: rotate(180deg);
+        }
+    }
+
+}

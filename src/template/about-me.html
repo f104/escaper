@@ -1,0 +1,432 @@
+<div class="login-wrapper about">
+
+    @@if (popup == 1) {
+    <div class="login-heading">Подробнее о себе</div>
+    <div>
+        <a class="btn btn-blue about-later js-popup-close" href="#"><span>Заполню позже</span></a>
+    </div>
+    }
+    
+    @@if (popup == 0) {
+    <div class="about-row">
+        <div class="product-heading">Личные данные</div>
+        <div class="about-wrapper about-personal">
+            <div class="register-left">
+                <div class="input-group required">
+                    <label>e-mail</label>
+                    <input name="email" type="text" required value="gilya-nn@mail.ru" class="input-view">
+                </div>
+                <a class="btn btn-lg btn-gold about-password-button" href="#" data-fancybox data-src="#password-popup"><span>Сменить пароль</span></a>
+                <div class="input-group required">
+                    <label>Мобильный телефон</label>
+                    <input name="phone" type="text" required class="js-mask_phone input-view" value="9271234567">
+                </div>
+            </div>
+            <div class="register-right">
+                <div class="input-group required">
+                    <label>Имя</label>
+                    <input name="i" type="text" required value="Илья" class="input-view">
+                </div>
+                <div class="input-group">
+                    <label>Отчество</label>
+                    <input name="o" type="text" value="Алексеевич" class="input-view">
+                </div>
+                <div class="input-group">
+                    <label>Фамилия</label>
+                    <input name="f" type="text" value="Гужин" class="input-view">
+                </div>
+                <div class="input-group confirm-code">
+                    <label>Подтвердить телефон</label>
+                    <input type="text">
+                </div>
+            </div>
+            <div class="register-footer">
+                <div class="register-footer-left">
+                    <span>Пол:</span>
+                    <ul class="checkbox-inline">
+                        <li><label><input type="radio" name="sex" checked> Мужской</label></li>
+                        <li><label><input type="radio" name="sex"> Женский</label></li>
+                    </ul>
+                </div>
+                <div class="register-footer-right">
+                    <span>День рождения:</span> 
+                    <div class="select-birthday">
+                        <span>День</span>
+                        <select class="select-default s1 select-view">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option selected>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                    </div>
+                    <div class="select-birthday">
+                        <span>Месяц</span>
+                        <select class="select-default s2 select-view">
+                            <option>Январь</option>
+                            <option>Февраль</option>
+                            <option>Март</option>
+                            <option>Апрель</option>
+                            <option>Май</option>
+                            <option>Июнь</option>
+                            <option>Июль</option>
+                            <option>Август</option>
+                            <option selected>Сентябрь</option>
+                            <option>Октябрь</option>
+                            <option>Ноябрь</option>
+                            <option>Декабрь</option>
+                        </select>
+                    </div>
+                    <div class="select-birthday">
+                        <span>Год</span>
+                        <select class="select-default s3 select-view">
+                            <option>1977</option>
+                            <option>1978</option>
+                            <option>1979</option>
+                            <option>1980</option>
+                            <option>1981</option>
+                            <option selected>1982</option>
+                            <option>1983</option>
+                            <option>1984</option>
+                            <option>1985</option>
+                            <option>1986</option>
+                            <option>1987</option>
+                            <option>1988</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+            <button class="btn btn-md btn-gray margin-top js-about-info"><span>Изменить данные</span></button>
+            <button class="btn btn-lg btn-gold margin-top hidden"><span>Сохранить данные</span></button>
+        </div>
+    </div>
+    }
+
+    <div class="about-row">
+        <div class="product-heading">Адреса доставки</div>
+        <div class="about-wrapper">
+            @@if (popup == 0) {
+            <p><strong>Основной адрес</strong></p>
+            <p>
+                <select class="select-default">
+                    <option>603040, г. Нижний Новгород, ул. Свободы, д.63, оф.403</option>
+                    <option>127000, г. Москва, ул. Академика Королева, 12</option>
+                </select>
+            </p>
+            }
+            <div class="about-add">
+                <i class="icon icon-printable-add icon-middle js-about-add"></i>
+                Добавить адрес
+            </div>
+            <div class="about-inner hidden">
+                <div class="input-group">
+                    <label>Индекс</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Страна</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Регион</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Город</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Улица</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Дом</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Корпус</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Квартира</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Офис</label>
+                    <input>
+                </div>
+                @@if (popup == 0) {
+                <div class="about-set-default">
+                    <p>Использовать этот адрес как</p>
+                    <ul class="checkbox-inline">
+                        <li><label><input type="radio" checked name="radio-address"> Основной</label></li>
+                        <li><label><input type="radio" name="radio-address"> Дополнительный</label></li>
+                    </ul>
+                </div>
+                <button class="btn btn-lg btn-gold"><span>Сохранить данные</span></button>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="about-row">
+        <div class="product-heading">Мои организации</div>
+        <div class="about-wrapper">
+            @@if (popup == 0) {
+            <p><strong>Основная организация</strong></p>
+            <p>
+                <select class="select-default">
+                    <option>ООО «ЭСКЕЙПЕР»</option>
+                    <option>ЗАО РФ</option>
+                </select>
+            </p>
+            }
+            <div class="about-add">
+                <i class="icon icon-printable-add icon-middle js-about-add"></i>
+                Добавить организацию
+            </div>
+            <div class="about-inner hidden">
+                <div class="input-group">
+                    <label>Наименование</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>ИНН</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>КПП</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>ОГРН</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Юр. адрес</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Факт. адрес</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>№ расч. счета</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>Банк</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>№ кор. счета</label>
+                    <input>
+                </div>
+                <div class="input-group">
+                    <label>БИК</label>
+                    <input>
+                </div>
+                @@if (popup == 0) {
+                <div class="about-set-default">
+                    <p>Использовать эту организацию как</p>
+                    <ul class="checkbox-inline">
+                        <li><label><input type="radio" checked name="radio-company"> Основную</label></li>
+                        <li><label><input type="radio" name="radio-company"> Дополнительную</label></li>
+                    </ul>
+                </div>
+                <button class="btn btn-lg btn-gold"><span>Сохранить данные</span></button>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="about-row">
+        <div class="product-heading">@@if (popup == 0) { Мои }Оповещения</div>
+        <div class="about-wrapper">
+            <div class="about-inner">
+                <ul class="about-checkbox">
+                    <li><label><input type="checkbox" name="somename1" checked> Предложение оценить сервисы Эскейпер (E-mail)</label></li>
+                    <li><label><input type="checkbox" name="somename2" checked> Специальные предложения от Эскейпер (E-mail и SMS)</label></li>
+                    <li><label><input type="checkbox" name="somename3" checked> Получать уведомления об ответах на вопрос к товару (E-mail)</label></li>
+                    <li><label><input type="checkbox" name="somename4" checked> Напоминание о товарах в корзине (E-mail)</label></li>
+                    <li><label><input type="checkbox" name="somename5" checked> Персональные рекомендации и уведомления (E-mail)</label></li>
+                </ul>
+                @@if (popup == 0) {
+                    <button class="btn btn-lg btn-gold margin-top"><span>Сохранить данные</span></button>
+                }
+            </div>
+        </div>
+    </div>
+
+    <div class="about-row">
+        @@if (popup == 1) { 
+        <div class="product-heading toggler closed"><span class="wrapper">Интересующие вас виды спорта</span></div>
+        <div class="about-wrapper">
+        }
+        @@if (popup == 0) { 
+        <div class="product-heading">Мои виды спорта</div>
+        <div class="about-wrapper">
+            <ul class="about-sport-list about-sport-list-my">
+                <li>Баскетбол</li>
+                <li>Футбол</li>
+                <li>Крокет</li>
+                <li>Американский футбол</li>
+                <li>Баскетбол</li>
+                <li>Футбол</li>
+                <li>Чирлидинг</li>
+            </ul>
+            <button class="btn btn-md btn-gray margin-top js-about-sport"><span>Изменить мои виды спорта</span></button>
+        }
+            <div class="about-inner @@if (popup == 0) { hidden }">
+                <p>Укажите пожалуйста интересующие Вас виды спорта!<br>
+                    Вам будет приходить информация касающаяся выбранных разделов.</p>
+                <ul class="alphabet">
+
+                </ul>
+                <div class="about-sport-h1">Командные</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="Б"><label><input type="checkbox"> Баскетбол</label></li>
+                    <li data-alphabet="М"><label><input type="checkbox"> Мини-футбол</label></li>
+                    <li data-alphabet="Х"><label><input type="checkbox"> Хоккей с мячом (бенди)</label></li>
+                    <li data-alphabet="Л"><label><input type="checkbox"> Лакросс</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Крикет</label></li>
+                    <li data-alphabet="Х"><label><input type="checkbox"> Хоккей</label></li>
+                    <li data-alphabet="А"><label><input type="checkbox"> Американский футбол</label></li>
+                    <li data-alphabet="Г"><label><input type="checkbox"> Гандбол</label></li>
+                    <li data-alphabet="Б"><label><input type="checkbox"> Бейсбол</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Крокет</label></li>
+                    <li data-alphabet="В"><label><input type="checkbox"> Волейбол</label></li>
+                    <li data-alphabet="Р"><label><input type="checkbox"> Регби</label></li>
+                    <li data-alphabet="Ф"><label><input type="checkbox"> Флорбол</label></li>
+                    <li data-alphabet="В"><label><input type="checkbox"> Водное поло</label></li>
+                    <li data-alphabet="Ч"><label><input type="checkbox"> Чирлидинг</label></li>
+                    <li data-alphabet="Ф"><label><input type="checkbox"> Футбол</label></li>
+                    <li data-alphabet="П"><label><input type="checkbox"> Пейнтбол</label></li>
+                    <li data-alphabet="Х"><label><input type="checkbox"> Хоккей на траве</label></li>
+                    <li data-alphabet="С"><label><input type="checkbox"> Софтбол</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Керлинг</label></li>
+                </ul>
+                <div class="about-sport-h1">Индивидуальные</div>
+                <div class="about-sport-h2">На льду</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="Ф"><label><input type="checkbox"> Фигурное катание</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Конькобежный спорт</label></li>
+                </ul>
+                <div class="about-sport-h2">В бассейне</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="П"><label><input type="checkbox"> Плавание</label></li>
+                    <li data-alphabet="П"><label><input type="checkbox"> Прыжки в воду</label></li>
+                    <li data-alphabet="А"><label><input type="checkbox"> Акватлон</label></li>
+                </ul>
+                <div class="about-sport-h2">На снегу</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="Б"><label><input type="checkbox"> Беговые лыжи</label></li>
+                    <li data-alphabet="Г"><label><input type="checkbox"> Горные лыжи</label></li>
+                    <li data-alphabet="С"><label><input type="checkbox"> Сноуборд</label></li>
+                    <li data-alphabet="П"><label><input type="checkbox"> Прыжки с трамплина</label></li>
+                </ul>
+                <div class="about-sport-h2">Единоборства</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="Б"><label><input type="checkbox"> Бокс</label></li>
+                    <li data-alphabet="Д"><label><input type="checkbox"> Дзюдо</label></li>
+                    <li data-alphabet="С"><label><input type="checkbox"> Самбо</label></li>
+                    <li data-alphabet="M"><label><input type="checkbox"> ММА</label></li>
+                    <li data-alphabet="Б"><label><input type="checkbox"> Борьба</label></li>
+                    <li data-alphabet="Х"><label><input type="checkbox"> Хапкидо</label></li>
+                    <li data-alphabet="Т"><label><input type="checkbox"> Тхэквондо</label></li>
+                    <li data-alphabet="А"><label><input type="checkbox"> Айкидо</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Кикбоксинг</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Каратэ</label></li>
+                    <li data-alphabet="Д"><label><input type="checkbox"> Джиу-джитсу</label></li>
+                    <li data-alphabet="Ф"><label><input type="checkbox"> Фехтование</label></li>
+                </ul>
+                <div class="about-sport-h2">На корте</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="Б"><label><input type="checkbox"> Большой теннис</label></li>
+                    <li data-alphabet="Н"><label><input type="checkbox"> Настольный теннис</label></li>
+                    <li data-alphabet="Б"><label><input type="checkbox"> Бадминтон</label></li>
+                </ul>
+                <div class="about-sport-h2">На открытой воде</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="Д"><label><input type="checkbox"> Дайвинг</label></li>
+                    <li data-alphabet="П"><label><input type="checkbox"> Парусный спорт (яхтинг)</label></li>
+                    <li data-alphabet="С"><label><input type="checkbox"> Серфинг</label></li>
+                    <li data-alphabet="Г"><label><input type="checkbox"> Гребля</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Кайтинг</label></li>
+                    <li data-alphabet="Д"><label><input type="checkbox"> Для гидроциклов</label></li>
+                    <li data-alphabet="В"><label><input type="checkbox"> Водные лыжи</label></li>
+                    <li data-alphabet="С"><label><input type="checkbox"> Спортивная рыбалка</label></li>
+                </ul>
+                <div class="about-sport-h2">Наездник</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="В"><label><input type="checkbox"> Велогонки</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Картинг</label></li>
+                    <li data-alphabet="М"><label><input type="checkbox"> Маунтинбайк</label></li>
+                    <li data-alphabet="А"><label><input type="checkbox"> Автоспорт</label></li>
+                    <li data-alphabet="B"><label><input type="checkbox"> BMX</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Конный спорт</label></li>
+                    <li data-alphabet="М"><label><input type="checkbox"> Мотоспорт</label></li>
+                </ul>
+                <div class="about-sport-h2">На легкоатлетическом манеже</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="Г"><label><input type="checkbox"> Гимнастика</label></li>
+                    <li data-alphabet="Х"><label><input type="checkbox"> Художественная гимнастика</label></li>
+                    <li data-alphabet="Б"><label><input type="checkbox"> Бег</label></li>
+                    <li data-alphabet="Л"><label><input type="checkbox"> Легкая атлетика</label></li>
+                </ul>
+                <div class="about-sport-h2">В клубе</div>
+                <ul class="about-sport-list">
+                    <li data-alphabet="Ф"><label><input type="checkbox"> Фитнес</label></li>
+                    <li data-alphabet="Б"><label><input type="checkbox"> Боулинг</label></li>
+                    <li data-alphabet="Ш"><label><input type="checkbox"> Шахматы, шашки</label></li>
+                    <li data-alphabet="А"><label><input type="checkbox"> Армрестлинг</label></li>
+                    <li data-alphabet="Б"><label><input type="checkbox"> Бильярд</label></li>
+                    <li data-alphabet="С"><label><input type="checkbox"> Стрельба</label></li>
+                    <li data-alphabet="Т"><label><input type="checkbox"> Тяжелая атлетика</label></li>
+                    <li data-alphabet="Д"><label><input type="checkbox"> Дартс</label></li>
+                    <li data-alphabet="Т"><label><input type="checkbox"> Танцы</label></li>
+                    <li data-alphabet="Г"><label><input type="checkbox"> Гольф</label></li>
+                    <li data-alphabet="К"><label><input type="checkbox"> Киберспорт</label></li>
+                    <li data-alphabet="С"><label><input type="checkbox"> Скалолазание</label></li>
+                </ul>
+                @@if (popup == 0) {
+                    <button class="btn btn-lg btn-gold margin-top"><span>Сохранить данные</span></button>
+                }
+            </div>
+        </div>
+    </div>
+    
+    @@if (popup == 1) {
+    <div class="about-save">
+        <button class="btn btn-green btn-lg js-popup-close"><span>Сохранить данные</span></button>
+    </div>
+    }
+
+</div>

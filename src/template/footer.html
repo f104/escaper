@@ -1,0 +1,122 @@
+<footer>
+
+    <div class="bg-style-1 footer-to-top">
+        <div class="container">В начало страницы</div>
+    </div>
+
+    <div class="footer-logo">
+        <a href="/"><img src="img/logo.svg" alt="Escaper"></a>
+    </div>
+
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col s9">
+                    <ul class="footer-menu">
+                        <li>О компании
+                            <ul>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Франшиза</a></li>
+                                <li><a href="#">Сотрудничество</a></li>
+                                <li><a href="#">Вакансии</a></li>
+                                <li><a href="#">Сертификаты</a></li>
+                                <li><a href="#">Технологии</a></li>
+                            </ul>
+                        </li>
+                        <li>Интернет-магазин
+                            <ul>
+                                <li><a href="#">Форма на заказ</a></li>
+                                <li><a href="#">Корпоративным командам</a></li>
+                                <li><a href="#">Макеты в общем доступе</a></li>
+                                <li><a href="#">Брэнды</a></li>
+                                <li><a href="#">Личный кабинет</a></li>
+                            </ul>
+                        </li>
+                        <li>Условия работы
+                            <ul>
+                                <li><a href="delivery.html">Доставка</a></li>
+                                <li><a href="payment.html">Оплата</a></li>
+                                <li><a href="warranty.html">Гарантия и возврат</a></li>
+                                <li><a href="#">Акции/Скидки</a></li>
+                            </ul>
+                        </li>
+                        <li>Уголок покупателя
+                            <ul>
+                                <li><a href="confidential.html">Политика конфиденциальности</a></li>
+                                <li><a href="agree.html">Пользовательское соглашение</a></li>
+                                <li><a href="rules.html">Правила торговли</a></li>
+                                <li><a href="#">Публичная оферта</a></li>
+                            </ul>
+                        </li>
+                        <li>Связаться с нами
+                            <ul>
+                                <li><a href="feedback.html">Обратная связь</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col s3">
+                    <div class="footer-social">
+                        <p>Мы в социальных сетях</p>
+                        <ul>
+                            <li><a href="#"><i class="icon icon-vk"></i></a></li>
+                            <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon icon-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-partners">
+                        <p>Партнеры</p>
+                        <ul>
+                            <li><a href="#"><i class="icon icon-alfa-bank"></i></a></li>
+                            <li><a href="#"><i class="icon icon-uralsib"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-payments">
+        Принимаем к оплате
+        <ul>
+            <li><i class="icon icon-mastercard"></i></li>
+            <li><i class="icon icon-visa"></i></li>
+            <li><i class="icon icon-paypal"></i></li>
+        </ul>
+    </div>
+    
+    <div class="footer-credits">
+        <p>© 2017.  escaper.ru</p>
+        <p>Эл.почта: info@escaper.ru<br>
+           Телефон: 8-800-700-49-57</p>
+        <p>Вся информация на сайте – собственность интернет-магазина «Эскейпер»<br>
+           Публикация информации с сайта escaper.ru без разрешения запрещена.<br>
+           Все права защищены.</p>
+    </div>
+    
+    <div class="footer-dev">
+        Разработка дизайна сайта – студия дизайна экипировки «Эскейпер»
+    </div>
+</footer>
+<span id="back-top" title="В начало страницы"></span>
+<div class="hide">
+    <button id="js-region-confirm-link" data-fancybox="" data-src="#region-confirm-popup"></button>
+    @@include('./region-select.html')
+    @@include('./region-confirm.html')
+    <div id="login-popup" class="popup login-popup">
+        <div class="container">
+            @@include('./login-register.html')
+        </div>
+    </div>
+    <div id="about-popup" class="popup about-popup">
+        <div class="container">
+            @@include('./about-me.html', {
+                "popup": 1
+            })
+        </div>
+    </div>
+</div>

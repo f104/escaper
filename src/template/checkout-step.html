@@ -1,0 +1,20 @@
+<div class="checkout-step">
+    <ul>
+        <li @@if (step == 1) { class="active" } @@if (step == 2) { class="pre-active" }>
+            <span class="bebas">Шаг 1</span>
+            Вход в учетную запись
+        </li>
+        <li @@if (step == 2) { class="active" } @@if (step == 3) { class="pre-active" }>
+            <span class="bebas">Шаг 2</span>
+            Способ получения
+        </li>
+        <li @@if (step == 3) { class="active" } @@if (step == 4) { class="pre-active" }>
+            <span class="bebas">Шаг 3</span>
+            Способ оплаты
+        </li>
+        <li @@if (step == 4) { class="active" }>
+            <span class="bebas">Шаг 4</span>
+            Заказ оформлен!
+        </li>
+    </ul>
+</div>

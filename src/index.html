@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+        "name": "Главная"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main class="clearfix">
+            
+            <section class="index-slider">
+                <div class="slide" 
+                     style="background-image: url(img/slide3.svg)">
+                </div>
+                <div class="slide">
+                </div>
+            </section>
+            
+            <section class="promo">
+                <h3 class="promo-header">Ищите товары, помеченные специальными значками</h3>
+                <div class="container">
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <div class="row">
+                                <div class="col s3">
+                                    <a href="#"><img src="img/promo1.svg" alt="promo"></a>
+                                </div>
+                                <div class="col s3">
+                                    <a href="#"><img src="img/promo2.svg" alt="promo"></a>
+                                </div>
+                                <div class="col s3">
+                                    <a href="#"><img src="img/promo3.svg" alt="promo"></a>
+                                </div>
+                                <div class="col s3">
+                                    <a href="#"><img src="img/promo4.svg" alt="promo"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col s10 offset-s1">
+                            <a href="#"><img src="img/promo5.svg" alt="promo"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section>
+                
+                <h3 class="category-header">Повседневный спортивный стиль</h3>
+                <div class="container">
+                    <ul class="row">
+                        <li class="col s4">
+                            @@include('./template/casual-list-item.html', {
+                                "title": "Man",
+                                "text": "Мужчинам",
+                                "file": "casual1.jpg"
+                            })
+                        </li>
+                        <li class="col s4">
+                            @@include('./template/casual-list-item.html', {
+                                "title": "Woman",
+                                "text": "Женщинам",
+                                "file": "casual2.jpg"
+                            })
+                        </li>
+                        <li class="col s4">
+                            @@include('./template/casual-list-item.html', {
+                                "title": "Kids",
+                                "text": "Детям",
+                                "file": "casual3.jpg"
+                            })
+                        </li>
+                    </ul>
+                </div>
+                
+                <h3 class="category-header">Командные виды спорта</h3>
+                <div class="container">
+                    <ul class="row category-list">
+                        <li class="col s3">
+                            @@include('./template/category-list-item.html', {
+                                "class": "big",
+                                "title": "Хоккей",
+                                "file": "hockey.svg"
+                            })
+                        </li>
+                        <li class="col s3">
+                            @@include('./template/category-list-item.html', {
+                                "class": "big",
+                                "title": "Волейбол",
+                                "file": "voleyball.svg"
+                            })
+                        </li>
+                        <li class="col s3">
+                            @@include('./template/category-list-item.html', {
+                                "class": "big",
+                                "title": "Футбол",
+                                "file": "football.svg"
+                            })
+                        </li>
+                        <li class="col s3">
+                            @@include('./template/category-list-item.html', {
+                                "class": "big",
+                                "title": "Баскетбол",
+                                "file": "basketball.svg"
+                            })
+                        </li>
+                    </ul>
+                    <ul class="row category-list">
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Регби",
+                                "file": "ragby.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Американский футбол",
+                                "file": "amfootball.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Флорбол",
+                                "file": "floorball.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Пейнтбол",
+                                "file": "paintball.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Хоккей с мячом",
+                                "file": "bandy.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Чирлидинг",
+                                "file": "cheerleading.svg"
+                            })
+                        </li>
+                    </ul>
+                    <p class="no-margin center-align"><a href="#" class="category-show-more">Показать еще</a></p>
+                </div>
+                
+                <h3 class="category-header">Индивидуальные виды спорта</h3>
+                <div class="container">
+                    <ul class="row category-list">
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Плавание",
+                                "file": "swimming.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Фигурное катание",
+                                "file": "skating.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Велоспорт",
+                                "file": "bicycle.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Большой теннис",
+                                "file": "tennis.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Горные лыжи",
+                                "file": "skiing.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Мотоспорт",
+                                "file": "motorcycle.svg"
+                            })
+                        </li>
+                    </ul>
+                    <p class="no-margin center-align"><a href="#" class="category-show-more">Показать еще</a></p>
+                </div>
+                
+                <h3 class="category-header">Единоборства</h3>
+                <div class="container">
+                    <ul class="row category-list">
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Дайвинг",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Парусный спорт",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Гребля",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Бокс",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "ММА",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Фехтование",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                    </ul>
+                    <p class="no-margin center-align"><a href="#" class="category-show-more">Показать еще</a></p>
+                </div>
+                
+                <h3 class="category-header">В спортивном клубе</h3>
+                <div class="container">
+                    <ul class="row category-list">
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Дайвинг",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Парусный спорт",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Гребля",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Бокс",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "ММА",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Фехтование",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                    </ul>
+                    <p class="no-margin center-align"><a href="#" class="category-show-more">Показать еще</a></p>
+                </div>
+                
+                <h3 class="category-header">Экстримальные виды спорта</h3>
+                <div class="container">
+                    <ul class="row category-list">
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Дайвинг",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Парусный спорт",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Гребля",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Бокс",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "ММА",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                        <li class="col s2">
+                            @@include('./template/category-list-item.html', {
+                                "class": "small",
+                                "title": "Фехтование",
+                                "file": "empty.svg"
+                            })
+                        </li>
+                    </ul>
+                    <p class="no-margin center-align"><a href="#" class="category-show-more">Показать еще</a></p>
+                </div>
+                
+                <p class="category-not-found">
+                    Если Вы не нашли свой вид спорта – <br>
+                    обратитесь к нам любым удобным для вас способом
+                    <span>МЫ ОБЯЗАТЕЛЬНО ПОМОЖЕМ ВАМ СОЗДАТЬ ФОРМУ И ДЛЯ ВАШЕГО СПОРТА!</span>
+                </p>
+            
+            </section>
+        </main>
+        
+        @@include('./template/footer.html')
+        @@include('./template/scripts.html')
+        
+    </body>
+</html>

@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Корзина"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Корзина</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="cart">
+                <h1 class="page-h1 page-h1_primary"><span>Корзина</span></h1>
+                <div class="cart-stratch">
+                    <div class="container">
+                        <p>Заполните общую информацию о заявках и <strong>мы автоматически заполним страницы конкретных товаров под заказ</strong> в соответствии
+                            с параметрами которые Вы указали ранее. Вам <strong>нужно будет только уточнить нюансы</strong> и подробности по желаемому дизайну</p>
+                        <a class="btn btn-gold btn-md"><span>Заполнить информацию о размерах и дизайне</span></a>
+                    </div>
+                </div>
+                <h3 class="cart-h3">Заявки на изготовление под заказ</h3>
+                <div class="container">
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart1.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Свитер хоккейный на заказ
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Модель:</dt>
+                                <dd>Б-12 Анатомический</dd>
+                                <dt>Тип модели:</dt>
+                                <dd>Анатомический</dd>
+                                <dt>Пол:</dt>
+                                <dd>Мужской</dd>
+                                <dt>Возраст:</dt>
+                                <dd>Взрослый</dd>
+                                <dt>Тип нанесений:</dt>
+                                <dd><span class="blue">Полная сублимация</span></dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-count">
+                            <div class="product-heading">Количество</div>
+                            <input type="number" value="10">
+                        </div>
+                        <div class="cart-item-material">
+                            <div class="product-heading">Материалы</div>
+                            <div class="cart-item-label">Основной</div>
+                            <div class="cart-item-input">Интерлок 130 г/м³</div>
+                            <div class="cart-item-label">Дополнительный (вставки или часть вставок)</div>
+                            <div class="cart-item-input">Как основной</div>
+                        </div>
+                        <div class="cart-item-print">
+                            <div class="product-heading">Доп. нанесения</div>
+                            <div class="cart-item-input">Аппликация с вышивкой</div>
+                            <div class="cart-item-input">Шеврон</div>
+                            <div class="cart-item-input">Пленка</div>
+                            <div class="cart-item-input">Пленка</div>
+                        </div>
+                        <div class="cart-item-color">
+                            <div class="product-heading">Цвет</div>
+                            <div class="cart-item-label"><strong>Основной</strong></div>
+                            <div class="cart-item-input-color cart-item-input-color_primary" style="background-color: #7DB037"></div>
+                            <div class="cart-item-label">Дополнит.1</div>
+                            <div class="cart-item-input-color" style="background-color: #FFFFFF"></div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <strong>от</strong> 
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <strong>от</strong> 
+                                <span class="cart-price cart-price_a">278 400</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <div>
+                                <a href="#" class="cart-item-actions-copy">Copy<div class="tooltip">
+                                        Вы можете скопировать данную 
+                                        строку, все параметры останутся 
+                                        прежними, но Вы, допустим, можете 
+                                        поменять информацию о дизайне
+                                    </div></a>
+                                <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                                <a href="#" class="cart-item-actions-option">Уточнить размеры и дизайн</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart2.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Свитер хоккейный на заказ
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Модель:</dt>
+                                <dd>Б-12 Анатомический</dd>
+                                <dt>Тип модели:</dt>
+                                <dd>Анатомический</dd>
+                                <dt>Пол:</dt>
+                                <dd>Мужской</dd>
+                                <dt>Возраст:</dt>
+                                <dd>Взрослый</dd>
+                                <dt>Тип нанесений:</dt>
+                                <dd><span class="blue">Полная сублимация</span></dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-count">
+                            <div class="product-heading">Количество</div>
+                            <input type="number" value="10">
+                        </div>
+                        <div class="cart-item-material">
+                            <div class="product-heading">Материалы</div>
+                            <div class="cart-item-label">Основной</div>
+                            <div class="cart-item-input">Интерлок 130 г/м³</div>
+                            <div class="cart-item-label">Дополнительный (вставки или часть вставок)</div>
+                            <div class="cart-item-input">Как основной</div>
+                        </div>
+                        <div class="cart-item-print">
+                            <div class="product-heading">Доп. нанесения</div>
+                            <div class="cart-item-input">Аппликация с вышивкой</div>
+                            <div class="cart-item-input">Шеврон</div>
+                            <div class="cart-item-input">Пленка</div>
+                            <div class="cart-item-input">Пленка</div>
+                        </div>
+                        <div class="cart-item-color">
+                            <div class="product-heading">Цвет</div>
+                            <div class="cart-item-label"><strong>Основной</strong></div>
+                            <div class="cart-item-input-color cart-item-input-color_primary" style="background-color: #7DB037"></div>
+                            <div class="cart-item-label">Дополнит.1</div>
+                            <div class="cart-item-input-color" style="background-color: #393185"></div>
+                            <div class="cart-item-label">Дополнит.2</div>
+                            <div class="cart-item-input-color" style="background-color: #FFFFFF"></div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <strong>от</strong> 
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <strong>от</strong> 
+                                <span class="cart-price cart-price_a">278 400</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <div>
+                                <a href="#" class="cart-item-actions-copy">Copy<div class="tooltip">
+                                        Вы можете скопировать данную 
+                                        строку, все параметры останутся 
+                                        прежними, но Вы, допустим, можете 
+                                        поменять информацию о дизайне
+                                    </div></a>
+                                <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                                <a href="#" class="cart-item-actions-option">Уточнить размеры и дизайн</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart2.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Свитер хоккейный на заказ
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Модель:</dt>
+                                <dd>Б-12 Анатомический</dd>
+                                <dt>Тип модели:</dt>
+                                <dd>Анатомический</dd>
+                                <dt>Пол:</dt>
+                                <dd>Мужской</dd>
+                                <dt>Возраст:</dt>
+                                <dd>Взрослый</dd>
+                                <dt>Тип нанесений:</dt>
+                                <dd><span class="blue">Полная сублимация</span></dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-count">
+                            <div class="product-heading">Количество</div>
+                            <input type="number" value="10">
+                        </div>
+                        <div class="cart-item-maket">
+                            <div class="product-heading">Макет</div>
+                            <div class="cart-item-maket-wrapper">
+                                <img src="img/product/cart3.jpg" alt="alt text">
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <span class="cart-price">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <span class="cart-price">24 000</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <div>
+                                <a href="#" class="cart-item-actions-copy">Copy<div class="tooltip">
+                                        Вы можете скопировать данную 
+                                        строку, все параметры останутся 
+                                        прежними, но Вы, допустим, можете 
+                                        поменять информацию о дизайне
+                                    </div></a>
+                                <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                                <a href="#" class="cart-item-actions-option">Уточнить размеры</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center-align">
+                        <p class="cart-accent">В вашей корзине находится товар под изготовление на заказ - 
+                            получите отличные скидки на сопутствующие товары</p>
+                        <a href="catalog.html" class="btn btn-gold btn-md"><span><i class="icon icon-middle icon-catalog-btn"></i>Перейти в каталог</span></a>
+                    </div>
+                </div>
+                <div class="cart-stratch">
+                    <div class="container">
+                        <p class="bebas">ИТОГО по товарам под заказ на изготовление:
+                            <span class="cart-price cart-price_a">24 000</span> рублей
+                        </p>
+                        <p class="cart-stratch_small">*Окончательная цена может отличаться в большую или меньшую стоимость, в зависимости от сложности заказа. Окончательная цена согласовывается с менеджером</p>
+                    </div>
+                </div>
+                <h3 class="cart-h3">Готовые товары с нанесением под заказ</h3>
+                <div class="container">
+                    <div class="cart-item style1">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart1.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Коньки хоккейные
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                                <dt>Брэнд:</dt>
+                                <dd>Easton</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-count">
+                            <div class="product-heading">Количество</div>
+                            <input type="number" value="10">
+                        </div>
+                        <div class="cart-item-color">
+                            <div class="product-heading">Цвет</div>
+                            <div class="cart-item-input-color" style="background-color: yellow"></div>
+                        </div>
+                        <div class="cart-item-print">
+                            <div class="product-heading">Нанесения</div>
+                            <div class="cart-item-input">Пленка</div>
+                            <div class="cart-item-input">Шеврон</div>
+                            <div class="cart-item-input">Пленка</div>
+                            <div class="cart-item-input">Пленка</div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <span class="cart-price cart-price_a">24 000</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <div>
+                                <a href="#" class="cart-item-actions-copy">Copy<div class="tooltip">
+                                        Вы можете скопировать данную 
+                                        строку, все параметры останутся 
+                                        прежними, но Вы, допустим, можете 
+                                        поменять информацию о дизайне
+                                    </div></a>
+                                <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-stratch">
+                    <div class="container">
+                        <p class="bebas">ИТОГО по товарам с нанесением под:
+                            <span class="cart-price cart-price_a">24 000</span> рублей
+                        </p>
+                        <p class="cart-stratch_small">**Цена только на товар. Окончательная стоимость нанесений согласовывается с менеджером</p>
+                    </div>
+                </div>
+                <h3 class="cart-h3">Товары</h3>
+                <div class="container">
+                    <div class="cart-item style2">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart4.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Хоккейные коньки Bauer Supreme TotalOne MX3 JR
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-wrapper">
+                            <div class="cart-item-wrapper-top">
+                                @@include('./template/cart-size.html')
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                        </div>
+                    </div>
+                    <div class="cart-item style2">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart5.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Майка для фитнеса
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-wrapper">
+                            <div class="cart-item-wrapper-top">
+                                @@include('./template/cart-size.html')
+                            </div>
+                            <div class="cart-item-wrapper-bottom">
+                                <div class="cart-item-color">
+                                    <div class="product-heading">Цвет</div>
+                                    <div class="cart-item-input-color" style="background-color: yellow"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                        </div>
+                    </div>
+                    <div class="cart-item style2">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart5.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Майка для фитнеса
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-wrapper">
+                            <div class="cart-item-wrapper-top">
+                                @@include('./template/cart-size.html')
+                            </div>
+                            <div class="cart-item-wrapper-bottom">
+                                <div class="cart-item-color">
+                                    <div class="product-heading">Цвет</div>
+                                    <div class="cart-item-input-color" style="background-color: yellow"></div>
+                                </div>
+                                <div class="cart-item-dop">
+                                    <div class="product-heading">Дополнительный параметр</div>
+                                    <input class="cart-item-input" value="X">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                        </div>
+                    </div>
+                    <div class="cart-item style2">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart6.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Горный велосипед Stels Navigator 500 MD 26 
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-wrapper">
+                            <div class="cart-item-wrapper-bottom">
+                                <div class="cart-item-dop">
+                                    <div class="product-heading">Размер рамы</div>
+                                    <input class="cart-item-input" value="21&quot;">
+                                </div>
+                                <div class="cart-item-color">
+                                    <div class="product-heading">Цвет</div>
+                                    <div class="cart-item-input-color" style="background-color: yellow"></div>
+                                </div>
+                                <div class="cart-item-count">
+                                    <div class="product-heading">Количество</div>
+                                    <input type="number" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                        </div>
+                    </div>
+                    <div class="cart-item style2">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart7.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Композитная клюшка Bauer Supreme 1S LE GripTac SR
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-wrapper">
+                            <div class="cart-item-wrapper-bottom">
+                                <div class="cart-item-dop">
+                                    <div class="product-heading">Жесткость</div>
+                                    <input class="cart-item-input" value="102">
+                                </div>
+                                <div class="cart-item-dop">
+                                    <div class="product-heading">Загиб</div>
+                                    <input class="cart-item-input" value="Р92">
+                                </div>
+                                <div class="cart-item-dop">
+                                    <div class="product-heading">Сторона</div>
+                                    <input class="cart-item-input" value="Правая">
+                                </div>
+                                <div class="cart-item-count">
+                                    <div class="product-heading">Количество</div>
+                                    <input type="number" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                        </div>
+                    </div>
+                    <div class="cart-item style2">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart6.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Горный велосипед Stels Navigator 500 MD 26 
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-wrapper">
+                            <div class="cart-item-wrapper-bottom">
+                                <div class="cart-item-dop">
+                                    <div class="product-heading">Размер</div>
+                                    <input class="cart-item-input" value="L">
+                                </div>
+                                <div class="cart-item-count">
+                                    <div class="product-heading">Количество</div>
+                                    <input type="number" value="1">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-item-price">
+                            <div class="product-heading">Цена</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                            <div class="product-heading">Сумма</div>
+                            <div class="cart-item-price-wrapper">
+                                <del>2 400</del>
+                                <span class="cart-price cart-price_a">2 400</span>
+                                рублей
+                            </div>
+                        </div>
+                        <div class="cart-item-actions">
+                            <a href="#" class="cart-item-actions-remove"><i class="fa fa-times"></i><div class="tooltip">Удалить строку</div></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-stratch">
+                    <div class="container">
+                        <p class="bebas">ИТОГО по товарам:
+                            <del>2 400</del>
+                            <span class="cart-price cart-price_a">24 000</span> рублей
+                            <span class="cart-stratch-economy">
+                                <span class="blue">Ваша экономия составила</span>
+                                <span class="gold">4 000</span> рублей
+                            </span>
+                        </p>
+                        <p class="cart-stratch_small">*Цена с учетом покупки товаров под изготовление на заказ</p>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col s6">
+                            <div class="cart-delivery">
+                                <div>
+                                    <div class="cart-delivery-heading">Способ получения</div>
+                                    <label>
+                                        <input type="radio" name="delivery" checked>
+                                        Самовывоз
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="delivery">
+                                        Курьерской службой
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="delivery">
+                                        Почтой России
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="delivery">
+                                        Транспортной компанией
+                                    </label>
+                                </div>
+                                <div>
+                                    <div class="cart-delivery-heading">Способ оплаты</div>
+                                    <label>
+                                        <input type="radio" name="payment" checked>
+                                        Оплата при получении
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment">
+                                        Оплата онлайн банковской картой
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment">
+                                        Оплата онлайн интернет-деньгами
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment">
+                                        Получить счет на оплату (для юридических лиц)
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="payment">
+                                        Банковский или почтовый перевод
+                                    </label>
+                                </div>
+                                <div class="cart-delivery-footer">
+                                    <a href="#" class="btn btn-lg btn-green"><span>Купить в кредит <i class="icon icon-credit"></i></span></a>
+                                    <p>Нажимая на данную ссылку, я подтверждаю, что ознакомлен с <a href="#">правилами 
+                                            продажи товаров на сайте в кредит</a>. Кредит предоставляется «Альфа-Банк» 
+                                        ОГРН: 1027700280937. Генеральная лицензия Банка России на осуществление
+                                        банковских операций № 316 от 15 марта 2012 г. «Альфа-Банк» самостоятельно 
+                                        принимает решение о предоставлении либо отказе в предоставлении кредита.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s6">
+                            <div class="cart-summary">
+                                <ul>
+                                    <li>
+                                        <div class="cart-summary-desc">Итого по товарам под заказ на изготовление:</div>
+                                        <div class="cart-summary-price">
+                                            от <span class="bebas"><span class="primary">26 400</span>*</span> рублей
+                                        </div>
+                                        <div class="cart-summary-a">* Окончательная цена может отличаться в большую или меньшую стоимость, в 
+                                            зависимости от сложности заказа. Окончательная цена согласовывается с менеджером</div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-summary-desc">Итого по товарам с нанесением под заказ:</div>
+                                        <div class="cart-summary-price">
+                                            <span class="bebas"><span class="primary">26 400</span>**</span> рублей
+                                        </div>
+                                        <div class="cart-summary-a">** Окончательная цена может отличаться в большую или меньшую стоимость, в 
+                                            зависимости от сложности заказа. Окончательная цена согласовывается с менеджером</div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-summary-desc">Итого по товарам:</div>
+                                        <div class="cart-summary-price">
+                                            <del>2 400</del>
+                                            <span class="bebas"><span class="primary">26 400</span>***</span> рублей
+                                        </div>
+                                        <div class="cart-summary-a">*** Окончательная цена может отличаться в большую или меньшую стоимость, в 
+                                            зависимости от сложности заказа. Окончательная цена согласовывается с менеджером</div>
+                                    </li>
+                                    <li>
+                                        <div class="cart-summary-desc">
+                                            Скидка по коду:
+                                            <input type="text" placeholder="Введите код для скидки">
+                                        </div>
+                                        <div class="cart-summary-price cart-summary-price-discount">
+                                            - 124 000 рублей
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="cart-summary-total">
+                                    <div class="left">Итого к оплате</div>
+                                    <div class="right">
+                                        <del>148 000</del>
+                                        <span class="primary">124 000</span>* рублей
+                                    </div>
+                                    <div class="cart-summary-total-a">
+                                        <span>*</span>
+                                        Цена указана с учетом всех выше перечисленных пунктов
+                                    </div>
+                                </div>
+                                <div class="cart-summary-economy">
+                                    <span class="blue">Ваша экономия составила</span>
+                                    <span class="gold">4 000</span> рублей
+                                </div>
+                                <div class="cart-summary-footer">
+                                    <a href="#" class="btn btn-lg btn-primary"><span>Оформить заказ</span></a>
+                                    <div class="cart-summary-footer-a">
+                                        *Окончательная цена согласовывается с менеджером
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-continue">
+                        <a class="btn btn-lg btn-gold" href="#"><span>Продолжить покупки</span></a>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <div class="hide">
+        </div>
+        @@include('./template/footer.html')
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

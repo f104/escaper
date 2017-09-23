@@ -1,0 +1,293 @@
+.feedback, .contacts {
+    .product-heading {
+        margin: 40px 0 20px;
+    }
+}
+.feedback-form {
+    text-align: center;
+    label, input, .scroll-textarea {
+        border-radius: 2px;
+        border: 1px solid $gray-color;
+    }
+    label {
+        background-color: $gray-light-color;
+        text-align: center;
+    }
+    .feedback-form_input {
+        margin-bottom: 20px;
+        label, input {
+            display: inline-block;
+            line-height: 31px;
+            margin: 0 5px;
+        }
+        label {
+            width: 176px;            
+        }
+        input {
+            width: 352px;
+            padding: 0 10px;
+        }
+    }
+    .scroll-textarea {
+        width: 992px;
+        height: 347px;
+        margin: 0 auto;
+        resize: none;
+        outline: none;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    .btn {
+        margin-top: 35px;
+    }
+}
+
+.contacts {
+    text-align: center;
+    .contacts-callme {
+        margin-bottom: 30px;
+    }
+    .btn {
+        margin: 10px 0;
+    }
+}
+.contacts-list {
+    width: 755px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 20px;
+    border: 1px solid $gray-color;
+    background-color: $gray-light-color;
+    background-image: 
+        url(#{$img}popup-bg-right.png),
+        url(#{$img}popup-bg-left.png); 
+    background-position: right, left;
+    background-repeat: repeat-y, repeat-y;
+    dt {
+        font-size: 14px;
+        line-height: 35px;
+        text-align: left;
+        width: 305px;
+        clear: left;
+        float: left;
+        padding-left: 50px;
+        border-top: 1px solid $gray-color;
+        &:first-of-type {
+            border-top-color: transparent;
+        }
+        &.contacts-list-address, &.contacts-list-phone, &.contacts-list-email {
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 50px;
+            }
+        }
+        &.contacts-list-address {
+            &:before {
+                @include sprite($contacts-address);
+            }
+        }
+        &.contacts-list-phone {
+            &:before {
+                @include sprite($contacts-phone);
+            }
+        }
+        &.contacts-list-email {
+            &:before {
+                @include sprite($contacts-email);
+            }
+        }
+    }
+    dd {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 35px;
+        padding-left: 310px;
+        padding-right: 23px;
+        text-align: right;
+        border-top: 1px solid $gray-color;
+        &:first-of-type {
+            border-top-color: transparent;
+        }
+        &.contacts-list-phone, &.contacts-list-address {
+            font-family: $font1;
+            font-size: 19px;
+            font-weight: 600;
+        }
+        &.contacts-list-phone {
+            font-size: 23px;
+        }
+    }
+}
+
+.map {
+    .page-introtext {
+        margin-top: 40px;
+        .bebas {
+            font-size: 19px;
+        }
+        .btn {
+            margin-left: 50px;
+            vertical-align: baseline;
+        }
+    }
+    .product-heading {
+        margin: 40px 0 20px;
+    }
+}
+.map-wrapper {
+    position: relative;
+    .scroll-element {
+        background-color: transparent;
+    }
+    .map-content {
+        height: 972px;
+        border: 1px solid $gray-color;
+        background-color: $gray-light-color;
+    }
+    .points {
+        position: absolute;
+        top: 10px;
+        right: 50%;
+        margin-right: -617px;
+        width: 505px;
+        height: 942px;
+        border: 1px solid $gray-color;
+        background-color: rgba(255,255,255,.3);
+        padding: 10px;
+        .points {
+            top: 0;
+        }
+        .points-item {
+            border: 1px solid $gray-color;
+            margin-bottom: 20px;
+            > div {
+                background-color: $gray-light-color;
+                background-image: 
+                    url(#{$img}popup-bg-right.png),
+                    url(#{$img}popup-bg-left.png); 
+                background-position: right, left;
+                background-repeat: repeat-y, repeat-y;
+                padding: 0 10px 0 15px;
+                line-height: 35px;
+                border-bottom: 1px solid $gray-color;
+                &:last-of-type, &:first-of-type {
+                    border-bottom: none;
+                }
+                &:before {
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-right: 15px;
+                }
+            }
+            .points-item-title {
+                background-color: $gold-light-color;
+                background-image: 
+                    url(#{$img}gold-bg-right.png),
+                    url(#{$img}gold-bg-left.png); 
+                font-family: $font1;
+                font-weight: 600;
+                font-size: 20px;
+                cursor: pointer;
+                &:before {
+                    @include sprite($contacts-address);
+                }
+            }
+            .points-item-time {
+                position: relative;
+                cursor: pointer;
+                &:before {
+                    @include sprite($contacts-time);
+                }
+                &:after {
+                    position: absolute;
+                    content: '';
+                    @include sprite($points-time-arrow);
+                    top: 15px;
+                    right: 50%;
+                    margin-right: -6px;
+                }
+                &.active {
+                    background-color: $white-color;
+                    &:after {
+                        transform: rotate(180deg);
+                    }
+                }
+                dl {
+                    overflow: hidden;
+                    margin: 0 -10px 0 -15px;
+                    display: none;
+                    dt, dd {
+                        border-top: 1px solid $gray-color;
+                        font-size: 13px;
+                        line-height: 21px;
+                    }
+                    dt {
+                        clear: left;
+                        float: left;
+                        padding-left: 55px;
+                    }
+                    dd {
+                        padding-left: 120px;
+                    }
+                }
+            }
+            .points-item-phone {
+                &:before {
+                    @include sprite($contacts-phone);
+                }
+                font-size: 0;
+                line-height: 0;
+                ul {
+                    margin: 0;
+                    display: inline-block;
+                    vertical-align: middle;
+                    li {
+                        display: inline-block;
+                        margin-right: 30px;
+                        font-size: 15px;
+                        line-height: 35px;
+                        &:last-of-type {
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .points-item-web {
+                &:before {
+                    @include sprite($contacts-email);
+                }
+                a {
+                    color: $blue-color;
+                    display: inline-block;
+                    margin-right: 30px;
+                }
+                .bebas {
+                    font-weight: 600;
+                    font-size: 20px;
+                    display: inline-block;
+                    margin-right: 10px;
+                }
+                .narrow {
+                    font-size: 11px;
+                }
+            }
+            &.active {
+                border-color: $primary-color;
+                .points-item-title {
+                    color: $white-color;
+                    background-color: $primary-color;
+                    background-image: 
+                        url(#{$img}primary-bg-right.png),
+                        url(#{$img}primary-bg-left.png); 
+                    &:before {
+                        @include sprite($contacts-address-active);
+                    }
+                }
+            }
+        }
+    }
+}

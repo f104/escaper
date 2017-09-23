@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Оформление заказа"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Оформление заказа</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="checkout">
+                <h1 class="page-h1 page-h1_primary"><span>Оформление заказа<i class="icon icon-middle icon-heading-checkout"></i></span></h1>
+                @@include('./template/checkout-step.html', {
+                "step": 3
+                })
+
+                <div class="checkout-summary-header">
+                    <div class="container">
+                        <dl>
+                            <dt>Способ получения</dt>
+                            <dd>Самовывоз</dd>
+                            <dt>Где забирать</dt>
+                            <dd>Россия, Нижний Новгород, Гордеевская улица, 7, оф. 117</dd>
+                            <dt>Когда</dt>
+                            <dd>16 мая</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="checkout-summary-footer">
+                    <a href="#" class="btn btn-md btn-gold"><span>Изменить</span></a>
+                </div>
+
+                <div class="page-h1">Наименование товаров</div>
+                <div class="checkout-summary-goods">
+                    <div class="checkout-summary-goods-heading">Заявки на изготовление под заказ</div>
+                    <div class="container">
+                        <table class="checkout-summary-goods-table">
+                            <thead>
+                                <tr>
+                                    <th>Артикул</th>
+                                    <th>Наименование</th>
+                                    <th class="center-align">Количество</th>
+                                    <th class="center-align">Сумма</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="narrow">SD1234JG</td>
+                                    <td class="uppercase">Майка баскетбольная на заказ</td>
+                                    <td class="nowrap narrow center-align">20 шт.</td>
+                                    <td class="nowrap right-align">от 24 000* руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="narrow">GFRHS</td>
+                                    <td class="uppercase">Шорты баскетбольные на заказ</td>
+                                    <td class="nowrap narrow center-align">20 шт.</td>
+                                    <td class="nowrap right-align">от 24 000* руб.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="checkout-summary-goods-a">
+                            * Окончательная цена может отличаться в большую или меньшую стоимость, в зависимости от сложности заказа.<br>
+                            Окончательная цена согласовывается с менеджером
+                        </div>
+                    </div>
+                    <div class="checkout-summary-goods-heading">готовые товары с нанесеним под заказ</div>
+                    <div class="container">
+                        <table class="checkout-summary-goods-table">
+                            <thead>
+                                <tr>
+                                    <th>Артикул</th>
+                                    <th>Наименование</th>
+                                    <th class="center-align">Количество</th>
+                                    <th class="center-align">Сумма</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="narrow">SD1234JG</td>
+                                    <td class="uppercase">Майка баскетбольная Nike</td>
+                                    <td class="nowrap narrow center-align">15 шт.</td>
+                                    <td class="nowrap right-align">24 000** руб.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="checkout-summary-goods-a">
+                            ** Цена только на товар. Окончательная стоимость нанесений согласовывается с менеджером
+                        </div>
+                    </div>
+                    <div class="checkout-summary-goods-heading">Товары</div>
+                    <div class="container">
+                        <table class="checkout-summary-goods-table">
+                            <thead>
+                                <tr>
+                                    <th>Артикул</th>
+                                    <th>Наименование</th>
+                                    <th class="center-align">Количество</th>
+                                    <th class="center-align">Сумма</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="narrow">GFRHS</td>
+                                    <td class="uppercase">Майка баскетбольная Nike</td>
+                                    <td class="nowrap narrow center-align">15 шт.</td>
+                                    <td class="nowrap right-align">24 000* руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="narrow">GFRHS</td>
+                                    <td class="uppercase">Майка баскетбольная Nike</td>
+                                    <td class="nowrap narrow center-align">15 шт.</td>
+                                    <td class="nowrap right-align">24 000 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="narrow">GFRHS</td>
+                                    <td class="uppercase">Майка баскетбольная Nike</td>
+                                    <td class="nowrap narrow center-align">15 шт.</td>
+                                    <td class="nowrap right-align">24 000 руб.</td>
+                                </tr>
+                                <tr>
+                                    <td class="narrow">GFRHS</td>
+                                    <td class="uppercase">Майка баскетбольная Nike</td>
+                                    <td class="nowrap narrow center-align">15 шт.</td>
+                                    <td class="nowrap right-align">24 000 руб.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="checkout-summary-goods-a">
+                            *** Цена с учетом покупки товаров под заказ на изготовление 
+                        </div>
+                    </div>
+                    <div class="checkout-summary-goods-discount">
+                        <div class="container">
+                            <div class="left">
+                                Скидка по коду:
+                                <input type="text" placeholder="Введите код для скидки">
+                            </div>
+                            <div class="right">
+                                - 124 000 рублей
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-summary-goods-total">
+                        <div class="container">
+                            <div class="left">
+                                Итого к оплате:
+                            </div>
+                            <div class="right">
+                                <del>148 000</del>
+                                <span class="primary">124 000</span>* рублей
+                                <div class="checkout-summary-goods-a">
+                                    *Цена указана с учетом всех выше перечисленных пунктов 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="page-h1">Укажите способ оплаты</div>
+                <ul class="content-page-icons content-page-icons_bordered js-payment-radio">
+                    <li data-payment="1" class="active">
+                        <span class="icon-wrapper"><i class="icon icon-payment-step1"></i></span>
+                        Онлайн-оплата банковской картой
+                    </li>
+                    <li data-payment="2">
+                        <span class="icon-wrapper"><i class="icon icon-payment-step2"></i></span>
+                        Оплата наличными (наложный платеж)
+                    </li>
+                    <li data-payment="3">
+                        <span class="icon-wrapper"><i class="icon icon-payment-step3"></i></span>
+                        Онлайн-оплата интернет-деньгами
+                    </li>
+                    <li data-payment="4">
+                        <span class="icon-wrapper"><i class="icon icon-payment-step4"></i></span>
+                        Получить счет на оплату
+                    </li>
+                    <li data-payment="5">
+                        <span class="icon-wrapper"><i class="icon icon-payment-step5"></i></span>
+                        Банковский или почтовый перевод
+                    </li>
+                    <li data-payment="6">
+                        <span class="icon-wrapper"><i class="icon icon-payment-step6"></i></span>
+                        Кредит
+                    </li>
+                </ul>
+                <form class="checkout-summary-form">
+                    <div class="checkout-summary-form-inputs">
+                        <div class="container">
+                            <div class="checkout-summary-form-input-group">
+                                <label for="phone">Присылать СМС о состоянии моего заказа</label>
+                                <input type="text" id="phone" placeholder="+7">
+                                <div class="checkout-summary-form-help">
+                                    Без пробелов, типе и скобок, например +79108950230
+                                </div>
+
+                            </div>
+                            <div class="checkout-summary-form-input-group">
+                                <label for="mail">Присылать уведомление о заказе на почту</label>
+                                <input type="text" id="mail" placeholder="email">
+                                <input type="checkbox" id="want" checked>
+                                <label class="checkout-summary-form-want" for="want">
+                                    Я хочу получать рассылку специальных предложений от Эскейпер
+                                </label>                                         
+                            </div>
+                        </div>
+                    </div>
+                    <input name="selected-payment" type="hidden">
+                    <div class="container">
+                        <p>После уточнения менеджером наличия всех товаров Вам будет выслано письмо на e-mail со ссылкой на онлайн-оплату банковской картой или интернет-деньгами
+                            Или же, Вы можете произвести оплату в личном кабинете, в разделе МОИ ЗАКАЗЫ</p>
+                    </div>
+                    <div class="checkout-alt">
+                        <button type="submit" class="btn btn-lg btn-primary"><span>Подтвердить заказ</span></button>
+                    </div>
+                </form>
+
+                <div class="page-h1">Способ оплаты</div>
+                <form class="checkout-summary-form">
+                    <div class="container">
+                        <p class="checkout-summary-big">Менеджер согласует с Вами стоимость товаров на изготовление под заказ, а также наличие всех сопутствующих товаров.<br>
+                            Вам будет предложено несколько вариантов оплаты.<br>
+                            Вы можете произвести оплату в личном кабинете, в разделе МОИ ЗАКАЗЫ</p>
+                    </div>
+                    <div class="checkout-summary-form-inputs">
+                        <div class="container">
+                            <div class="checkout-summary-form-input-group">
+                                <label for="phone">Присылать СМС о состоянии моего заказа</label>
+                                <input type="text" id="phone" placeholder="+7">
+                                <div class="checkout-summary-form-help">
+                                    Без пробелов, типе и скобок, например +79108950230
+                                </div>
+
+                            </div>
+                            <div class="checkout-summary-form-input-group">
+                                <label for="mail">Присылать уведомление о заказе на почту</label>
+                                <input type="text" id="mail" placeholder="email">
+                                <input type="checkbox" id="want" checked>
+                                <label class="checkout-summary-form-want" for="want">
+                                    Я хочу получать рассылку специальных предложений от Эскейпер
+                                </label>                                         
+                            </div>
+                        </div>
+                    </div>
+                    <input name="selected-payment" type="hidden">
+                    <div class="checkout-alt">
+                        <button type="submit" class="btn btn-lg btn-primary"><span>Подтвердить заказ</span></button>
+                    </div>
+                </form>
+
+            </section>
+
+        </main>
+
+        <div class="hide">
+        </div>
+        @@include('./template/footer.html')
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqvju8nmUERH8w1ylBooavXluAApYM-Ag&language=ru&region=RU"></script>
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

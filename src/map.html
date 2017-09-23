@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Пункты выдачи"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Пункты выдачи</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section>
+                <h1 class="page-h1">Пункты выдачи <i class="icon icon-middle icon-heading-regions"></i></h1>
+                @@include('./template/map.html', {
+                    "id": "map",
+                    "title": "Адреса в вашем регионе",
+                    "header": true
+                })
+            </section>
+
+        </main>
+
+        <div class="hide">
+        </div>
+        @@include('./template/footer.html')
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqvju8nmUERH8w1ylBooavXluAApYM-Ag&language=ru&region=RU"></script>
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Контакты"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class="page-h1">Контакты <i class="icon icon-middle icon-heading-contacts"></i></h1>
+            <div class="container">
+                <section class="contacts">
+
+                    <p class="page-introtext">Обратитесь к нам любым удобным для Вас способом:</p>
+
+                    <div class="product-heading">Общие контакты для всех регионов</div>
+                    <dl class="contacts-list">
+                        <dt class="contacts-list-phone">Бесплатный звонок по РФ</dt>
+                        <dd class="contacts-list-phone">8-800-700-45-86</dd>
+                        <dt class="contacts-list-email">e-mail</dt>
+                        <dd>info@escaper.ru</dd>
+                    </dl>
+                    
+                    <div class="contacts-callme">
+                        <a class="btn btn-lg btn-primary" href="#"><span>Перезвоните мне</span></a>
+                    </div>
+                    <div class="narrow">Или воспользуйтесь формой обратной связи</div>
+                    <a class="btn btn-lg btn-gold" href="feedback.html"><span>Обратная связь</span></a>
+                    
+                    <div class="product-heading">Контакты в Вашем регионе</div>
+                    
+                    <dl class="contacts-list">
+                        <dt class="contacts-list-address">Адрес</dt>
+                        <dd class="contacts-list-address">Россия, Нижний Новгород, Улица свободы, дом 63, оф.403</dd>
+                        <dt class="contacts-list-phone">Телефон</dt>
+                        <dd class="contacts-list-phone">8 (831) 46-0000-4</dd>
+                        <dt class="contacts-list-email">e-mail</dt>
+                        <dd>info@escaper.ru</dd>
+                    </dl>
+                    
+                    <dl class="contacts-list">
+                        <dt class="contacts-list-address">Адрес</dt>
+                        <dd class="contacts-list-address">Россия, Нижний Новгород, Улица свободы, дом 63, оф.403</dd>
+                        <dt class="contacts-list-phone">Телефон</dt>
+                        <dd class="contacts-list-phone">8 (831) 46-0000-4</dd>
+                        <dt class="contacts-list-email">e-mail</dt>
+                        <dd>info@escaper.ru</dd>
+                    </dl>
+                    
+                    <a class="btn btn-lg btn-primary" href="map.html"><span>Пункты выдачи в вашем регионе</span></a>
+
+                </section>
+            </div>
+
+        </main>
+
+        <div class="hide">
+        </div>
+        @@include('./template/footer.html')
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

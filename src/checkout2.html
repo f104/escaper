@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Оформление заказа"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Оформление заказа</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="checkout">
+                <h1 class="page-h1 page-h1_primary"><span>Оформление заказа<i class="icon icon-middle icon-heading-checkout"></i></span></h1>
+                @@include('./template/checkout-step.html', {
+                    "step": 2
+                })
+
+                <div class="checkout-introtext">
+                    <p class="checkout-introtext-title">Укажите способ получения товара</p>
+                </div>
+
+                <div id="tabs">
+                    <ul class="content-page-icons content-page-icons_tabs">
+                        <li>
+                            <a href="#delivery1">
+                                <span class="icon-wrapper"><i class="icon icon-delivery-step1"></i></span>
+                                Самовывоз из пункта выдачи
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#delivery2">
+                                <span class="icon-wrapper"><i class="icon icon-delivery-step2"></i></span>
+                                Курьерской службой
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#delivery3">
+                                <span class="icon-wrapper"><i class="icon icon-delivery-step3"></i></span>
+                                Почтой России
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#delivery4">
+                                <span class="icon-wrapper"><i class="icon icon-delivery-step4"></i></span>
+                                Транспортной компанией
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="checkout-selected-delivery">
+                        <span class="bebas"><strong>Самовывоз:</strong></span>
+                        <a href="#">Нижний Новгород (пункт выдачи)</a> 16 мая,
+                        <span class="bebas green"><strong>Бесплатно</strong></span>
+                    </p>
+
+                    <div id="delivery1">
+                        <div class="page-h1">Самовывоз из пункта выдачи</div>
+                        <div class="container content-page">
+                            <div class="content-page-content">
+                                <p>Компания ЭСКЕЙПЕР предлагает Вам выгодную услугу — самовывоз товара из пункта выдачи товаров. Просто выберите удобное время и сами заберите свою покупку.
+                                    Выгодно, удобно и просто!</p>
+                                <ul>
+                                    <li>Вы приезжаете за товаром в удобную для Вас точку самовывоза;</li>
+                                    <li>Вы экономите деньги на стоимости курьерской доставки;</li>
+                                    <li>Вы не ждете доставки заказа, а забираете его в любое подходящее для Вас время.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        @@include('./template/map.html', {
+                            "id": "map",
+                            "title": "Адреса Пунктов самовывоза в вашем регионе",
+                            "header": true
+                        })
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg"><span>Продолжить</span></button>
+                        </div>
+                    </div>
+                    <div id="delivery2">
+                        <div class="page-h1">Доставка курьерской службой</div>
+                        <div class="container content-page">
+                            <div class="content-page-content">
+                                <p>Доставка в удобное для вас место и время. Осмотреть товар и принять решение можно до оплаты. Если товар не подошел, платить не нужно.<br>
+                                    Оплата наличными или банковской картой прямо на месте.<br>
+                                    <strong>Важно! Доставка заказов на сумму свыше 120 тысяч рублей производится только после полной предоплаты.</strong></p>
+                                <div class="checkout-delivery-form">
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-city">Населенный пункт <small>(город, поселок)</small></label>
+                                        <input id="df1-city" type="text" value="Нижний Новгород" class="checkout-delivery-form_city">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-street">Улица</label>
+                                        <input id="df1-street" type="text" class="checkout-delivery-form_street">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-building">Дом, корпус</label>
+                                        <input id="df1-building" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-room">Квартира</label>
+                                        <input id="df1-room" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df1-zip">Индекс</label>
+                                        <input id="df1-zip" type="text" disabled>
+                                    </div>
+                                </div>
+                                <p>Курьерские службы осуществляют доставку непосредственно по адресу, указанному во время оформления покупки. Предварительно представитель компании свяжется с вами, 
+                                    чтобы уточнить время и место получения.</p>
+                                <p>При оформлении заказа вы можете выбрать одного из наших партнеров, осуществляющих доставку до адреса получателя:</p>
+                                <div class="checkout-delivery-list">
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery4.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio" checked>
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery5.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio">
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery6.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio">
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery7.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio">
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery8.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df1-radio">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg"><span>Продолжить</span></button>
+                        </div>
+                    </div>
+                    <div id="delivery3">
+                        <div class="page-h1">Доставка почтой россии</div>
+                        <div class="container content-page">
+                            <div class="content-page-content">
+                                <p class="center-align">Укажите адрес для определения условий доставки.</p>
+                                <div class="checkout-delivery-form">
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-city">Населенный пункт <small>(город, поселок)</small></label>
+                                        <input id="df3-city" type="text" value="Нижний Новгород" class="checkout-delivery-form_city">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-street">Улица</label>
+                                        <input id="df3-street" type="text" class="checkout-delivery-form_street">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-building">Дом, корпус</label>
+                                        <input id="df3-building" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-room">Квартира</label>
+                                        <input id="df3-room" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df3-zip">Индекс</label>
+                                        <input id="df3-zip" type="text" disabled>
+                                    </div>
+                                </div>
+                                <p><strong>Важные условия</strong></p>
+                                <p><strong class="underline">Ограничения</strong></p>
+                                <ul>
+                                    <li>Доставка Почтой России работает в тестовом режиме, только при заказе и 100% предоплате через сайт;</li>
+                                    <li>Для юридических лиц доставка Почтой России недоступна;</li>
+                                    <li>Доставляются заказы весом до 20 кг;</li>
+                                    <li>По габаритам сумма трех измерений (длина, ширина, высота) не должна превышать 3 м;</li>
+                                    <li>Жидкости не доставляются.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg"><span>Продолжить</span></button>
+                        </div>
+                    </div>
+                    <div id="delivery4">
+                        <div class="page-h1">Доставка транспортной компанией</div>
+                        <div class="container content-page">
+                            <div class="content-page-content">
+                                <p class="center-align">Укажите адрес для определения условий доставки.</p>
+                                <div class="checkout-delivery-form">
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-city">Населенный пункт <small>(город, поселок)</small></label>
+                                        <input id="df4-city" type="text" value="Нижний Новгород" class="checkout-delivery-form_city">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-street">Улица</label>
+                                        <input id="df4-street" type="text" class="checkout-delivery-form_street">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-building">Дом, корпус</label>
+                                        <input id="df4-building" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-room">Квартира</label>
+                                        <input id="df4-room" type="text">
+                                    </div>
+                                    <div class="checkout-delivery-form-group">
+                                        <label for="df4-zip">Индекс</label>
+                                        <input id="df4-zip" type="text" disabled>
+                                    </div>
+                                </div>
+                                <p>Курьерские службы осуществляют доставку непосредственно по адресу, указанному во время оформления покупки. Предварительно представитель компании свяжется с вами, 
+                                    чтобы уточнить время и место получения.</p>
+                                <p>При оформлении заказа вы можете выбрать одного из наших партнеров, осуществляющих доставку до адреса получателя:</p>
+                                <div class="checkout-delivery-list">
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery1.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df4-radio" checked>
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery2.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df4-radio">
+                                    </label>
+                                    <label>
+                                        <span class="checkout-delivery-list-img">
+                                            <img src="img/delivery3.jpg" alt="alt text">
+                                        </span>
+                                        Выбрать данную службу
+                                        <input type="radio" name="df4-radio">
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg"><span>Продолжить</span></button>
+                        </div>
+                        @@include('./template/map.html', {
+                            "id": "map1",
+                            "title": "Адреса Терминалов транспортной компании в вашем регионе",
+                            "header": false
+                        })
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+        <div class="hide">
+        </div>
+        @@include('./template/footer.html')
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqvju8nmUERH8w1ylBooavXluAApYM-Ag&language=ru&region=RU"></script>
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

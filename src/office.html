@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Личный кабинет"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Личный кабинет</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class="page-h1"><span>Личный кабинет<i class="icon icon-middle icon-heading-office"></i></span></h1>
+
+            <div class="container">
+                <ul class="tabs">
+                    <li class="tab">
+                        <a class="btn btn-tab" href="#orders">
+                            <span>Мои заказы</span></a></li>
+                    <li class="tab">
+                        <a class="btn btn-tab active" href="#info">
+                            <span>Мои данные</span></a></li>
+                    <li class="tab">
+                        <a class="btn btn-tab" href="#favorites">
+                            <span>Избранное <span class="counter">6</span></span></a></li>
+                    <li class="tab">
+                        <a class="btn btn-tab" href="#wait">
+                            <span>Лист ожидания <span class="counter">1</span></span></a></li>
+                    <li class="tab">
+                        <a class="btn btn-tab" href="#share">
+                            <span>В общем доступе <span class="counter">1</span></span></a></li>
+                </ul>
+
+                <div id="info">
+                    @@include('./template/about-me.html', {
+                    "popup": 0
+                    })
+                </div>
+
+            </div>
+
+        </main>
+
+        <div class="hide">
+            <div id="password-popup" class="popup password-popup">
+                <div class="container">
+                    <div class="login-wrapper">
+                        <div class="register">
+                            <div class="login-heading">Смена пароля</div>
+                            <div class="input-group">
+                                <label>Старый пароль</label>
+                                <input type="password">
+                            </div>
+                            <div class="input-group">
+                                <label>Новый пароль</label>
+                                <input type="password">
+                            </div>
+                            <div class="input-group">
+                                <label>Повторите</label>
+                                <input type="password">
+                            </div>
+                            <div class="tooltip-warning">
+                                Пароль должен содержать буквы латинского
+                                алфавита, цифры и спецсимволы,
+                                не менее 6 символов.
+                            </div>
+                            <button class="btn btn-lg btn-green js-popup-close"><span>Сохранить данные</span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('./template/footer.html')
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

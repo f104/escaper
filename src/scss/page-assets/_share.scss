@@ -1,0 +1,159 @@
+.share {
+    .share-social {
+        font-family: $font1;
+        font-size: 19px;
+        font-weight: 600;
+        line-height: 10px;
+        text-align: center;
+        margin: 50px 0;
+        .social {
+            display: inline;
+            margin-left: 5px;
+        }
+    }
+    .share-h3 {
+        text-align: center;
+        font-family: $font1;
+        font-size: 29px;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+    .share-search {
+        margin-bottom: 40px;
+        .row {
+            padding: 0 3rem;
+        }
+        input {
+            @extend .input-default;
+            display: inline-block;
+            margin-bottom: 0;
+        }
+        .input-group {
+            display: inline-block;
+        }
+        .share-search-{
+            &1 {
+                label { width: 64px; }
+                .select-default, input { width: 130px; }
+                .select-default, input { margin-right: 16px; }
+            }
+            &2 {
+                label { width: 67px; }
+                .select-default, input { width: 265px; }
+            }
+            &3 {
+                label { width: 213px; }
+                input { width: 342px; }
+            }
+            &5 {
+                label { width: 85px; }
+                .select-default, input { width: 470px; }
+            }
+            &6 {
+                label { width: 142px; }
+                input { width: 413px; }
+            }
+            &7 {
+                label { width: 160px; }
+                input { width: 395px; }
+            }
+        }
+        .btn {
+            width: 278px;
+            display: block;
+            margin: 20px auto 0;
+        }
+    }
+    .share-item {
+        border: 1px solid $gray-color;
+        margin-bottom: 20px;
+        &.closed {
+            .share-item-heading {
+                background-color: #dfe2e8;
+                &:after {
+                    transform: rotate(180deg);
+                }
+            }
+        }
+        .share-item-heading {
+            background-color: $gold-light-color;
+            margin: 0;
+            padding: 0 25px;
+            cursor: pointer;
+            line-height: 30px;
+            font-weight: 600;
+            position: relative;
+            &:after {
+                position: absolute;
+                content: '';
+                @include sprite($product-select-trigger);
+                top: 50%;
+                margin-top: -3.5px;
+                right: 25px;
+            }
+            li {
+                display: inline-block;
+                margin-right: 20px;
+            }
+        }
+        .share-search {
+            margin: 0 -1px 20px;
+            .share-h3 {
+                font-size: 19px;
+                    margin: 15px 0 10px;
+            }
+            .input-group {
+                label {
+                    display: default;
+                }
+                input {
+                    display: inline-block;
+                    background-color: $gray-light-color;
+                    font-weight: 600;
+                    pointer-events: none;
+                }
+            }
+        }
+        .share-item-row {
+            margin: 0 3rem 25px;
+            .cart-item {
+                .cart-item-maket {
+                    width: 300px;
+                }
+            }
+            .share-item-footer {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 15px;
+                border: 1px solid $gray-color;
+                border-top: none;
+                font-family: $font2;
+                .btn {
+                    width: 270px;
+                }
+                .product-data-list-wrapper {
+                    padding-left: 40px;
+                }
+                .share-price, .share-count {
+                    > * {
+                        display: inline-block;
+                        vertical-align: middle;
+                    }
+                    .share-price-price {
+                        font-family: $font1;
+                        font-weight: 600;
+                        font-size: 37px;
+                        color: $primary-color;
+                        line-height: 30px;
+                    }
+                }
+            }
+        }
+        .share-social {
+            font-size: 29px;
+            text-align: center;
+            margin: 50px 0;
+        }
+    }
+}

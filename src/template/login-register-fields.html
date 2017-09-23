@@ -1,0 +1,53 @@
+<div class="register-left">
+    <div class="input-group required">
+        <label>e-mail</label>
+        <input name="email" type="text" required value="user@host.com">
+    </div>
+    <div class="input-group required">
+        <label>Пароль</label>
+        <input name="password1" type="password" required value="1234">
+    </div>
+    <div class="input-group required">
+        <label>Повторите пароль</label>
+        <input name="password2" type="password" required value="1234">
+    </div>
+    <div class="input-group required">
+        <label>Мобильный телефон</label>
+        <input name="phone" type="text" required class="js-mask_phone" value="9271234567">
+    </div>
+</div>
+<div class="register-right">
+    <div class="input-group required">
+        <label>Имя</label>
+        <input name="i" type="text" required value="Окно с ошибкой" class="input-error js-tooltiped">
+        <div class="tooltip">
+            <div class="tooltip-warning">
+                Пароль должен содержать буквы латинского
+                алфавита, цифры и спецсимволы,
+                не менее 6 символов.
+            </div>
+        </div>
+    </div>
+    <div class="input-group">
+        <label>Отчество</label>
+        <input name="o" type="text" value="Корректно заполненное окно" class="input-success">
+    </div>
+    <div class="input-group">
+        <label>Фамилия</label>
+        <input name="f" type="text">
+    </div>
+    @@if (confirm == true) {
+        <div class="input-group confirm-code">
+            <label class="js-tooltiped">Выслать код подтверждения</label>
+            <input type="text">
+            <div class="tooltip">
+                <div class="center-align">
+                    Подтвердите свой номер телефона
+                    Если Вы вдруг забудете свой пароль - мы вышлем 
+                    бесплатное СМС с вашим паролем на этот номер.
+                </div>
+            </div>
+        </div>
+    }
+</div>
+<p class="right-align primary">* Обязательные для заполнения поля.</p>

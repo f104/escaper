@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Оформление заказа"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Оформление заказа</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="checkout">
+                <h1 class="page-h1 page-h1_primary"><span>Оформление заказа<i class="icon icon-middle icon-heading-checkout"></i></span></h1>
+                @@include('./template/checkout-step.html', {
+                "step": 1
+                })
+
+                <div class="container">
+                    <div class="checkout-introtext">
+                        <p class="checkout-introtext-title">Войдите в учетную запись Эскейпер</p>
+                        <div class="checkout-introtext-container">
+                            <p><span class="primary"><strong>ЗАРЕГИСТРИРУЙТЕСЬ!</strong></span><br>
+                                Вы сможете отслеживать информацию по вашему заказу, а также
+                                Вы получите возможность покупать товары по специальной клубной цене.</p>
+                            <p>или</p>
+                            <p><span class="primary"><strong>ЗАЙДИТЕ!</strong></span><br>
+                                Если у Вас уже есть логин и пароль</p>
+                        </div>
+                    </div>
+                    <div class="checkout-login-wrapper">
+                        @@include('./template/login-register.html')
+                    </div>
+                    <div class="checkout-alt">
+                        <a class="btn btn-primary btn-lg"><span>Купить без регистрации</span></a>
+                        <p class="narrow">Вы не сможете получить бонусы за покупку. При следующей покупке придется заново указывать контактную информацию или адрес доставки.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="checkout">
+                <h1 class="page-h1 page-h1_primary"><span>Оформление заказа<i class="icon icon-middle icon-heading-checkout"></i></span></h1>
+                @@include('./template/checkout-step.html', {
+                "step": 1
+                })
+
+                <div class="container">
+                    <div class="checkout-introtext">
+                        <p class="checkout-introtext-title">Войдите в учетную запись Эскейпер</p>
+                        <div class="checkout-introtext-container">
+                            <p class="checkout-introtext-warning"><i class="icon icon-warning"></i> Внимание!</p>
+                            <p>В вашем ЗАКАЗЕ находится ЗАЯВКА НА ИЗГОТОВЛЕНИЕ! 
+                                Возможность ОПЛАТЫ появится после СОГЛАСОВАНИЯ ЦЕНЫ 
+                                в Вашем ЛИЧНОМ КАБИНЕТЕ в разделе МОИ ЗАКАЗЫ</p>
+                            <br>
+                            <p><span class="primary"><strong>ЗАРЕГИСТРИРУЙТЕСЬ!</strong></span><br>
+                                Вы сможете отслеживать информацию по вашему заказу, а также
+                                Вы получите возможность покупать товары по специальной клубной цене.</p>
+                            <p>или</p>
+                            <p><span class="primary"><strong>ЗАЙДИТЕ!</strong></span><br>
+                                Если у Вас уже есть логин и пароль</p>
+                        </div>
+                    </div>
+                    @@include('./template/login-register.html')
+                </div>
+            </section>
+
+            <section class="checkout">
+                <h1 class="page-h1 page-h1_primary"><span>Оформление заказа<i class="icon icon-middle icon-heading-checkout"></i></span></h1>
+                @@include('./template/checkout-step.html', {
+                "step": 1
+                })
+
+                <div class="container">
+                    <div class="checkout-introtext">
+                        <p class="checkout-introtext-title">Оформление без регистрации</p>
+                    </div>
+                    <form class="js-validate">
+                        <div class="login-wrapper">
+                            <div class="register single">
+                                @@include('./template/login-register-fields.html', {
+                                "confirm": false
+                                })
+                            </div>
+                        </div>
+                        <div class="checkout-alt">
+                            <button type="submit" class="btn btn-primary btn-lg" disabled><span>Продолжить</span></button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+
+        <div class="hide">
+        </div>
+        @@include('./template/footer.html')
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

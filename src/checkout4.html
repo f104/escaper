@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Оформление заказа"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Оформление заказа</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="checkout">
+                <h1 class="page-h1 page-h1_primary"><span>Оформление заказа<i class="icon icon-middle icon-heading-checkout"></i></span></h1>
+                @@include('./template/checkout-step.html', {
+                "step": 4
+                })
+
+                <div class="checkout-introtext tnx">
+                    <p class="checkout-introtext-title">Спасибо за ваш заказ!</p>
+                    <p>Ваш заказ <strong>№ 1707-200300-45998</strong> на сумму <strong>24 000 рублей</strong> был принят в обработку</p>
+                    <p class="small">В случае необходимости с Вами свяжется менеджер для уточнения заказа<br>
+                        Также Вам будут приходить уведомления о заказе на почту <strong>g-ilya-nn@mail.ru</strong></p>
+                </div>
+
+                <div class="checkout-summary-header tnx">
+                    <div class="container">
+                        <dl>
+                            <dt>Заказ</dt>
+                            <dd class="order-num">№ 1707-200300-45998</dd>
+                            <dt>Способ получения</dt>
+                            <dd>Самовывоз</dd>
+                            <dt>Где забирать</dt>
+                            <dd>Россия, Нижний Новгород, Гордеевская улица, 7, оф. 117</dd>
+                            <dt>Когда</dt>
+                            <dd>16 мая (ориентировочно)</dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="checkout-summary-header tnx">
+                    <div class="container">
+                        <dl>
+                            <dt>Ваш персональный менеджер по заказу</dt>
+                            <dd>Игнатов Игорь Игоревич</dd>
+                            <dt>Телефон</dt>
+                            <dd>8-800-333-83-28 добавочный 12</dd>
+                            <dt>E-mail</dt>
+                            <dd>igor.ignatov@escaper.ru </dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="checkout-summary-footer tnx">
+                    <div class="container">
+                        <dl>
+                            <dt>Оплата</dt>
+                            <dd>
+                                Онлайн-оплата
+                                <strong>Вам придет письмо со ссылкой на оплату на почту gilya-nn@mail.ru</strong>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+
+                <div class="checkout-alt tnx">
+                    <div class="container">
+                        <p>После уточнения менеджером наличия всех товаров Вам будет выслано письмо на e-mail со ссылкой на онлайн-оплату 
+                            банковской картой или интернет-деньгами<br>
+                            Или же, Вы можете произвести оплату в личном кабинете, в разделе МОИ ЗАКАЗЫ  </p>
+                        <button type="submit" class="btn btn-lg btn-primary"><span>Перейти в личный кабинет</span></button>
+                    </div>
+                </div>
+
+            </section>
+            
+            <section>
+                <h3 class="product-heading">Возможно вам еще понадобится</h3>
+                @@include('./template/catalog-slider.html')
+            </section>
+
+        </main>
+
+        <div class="hide">
+        </div>
+        @@include('./template/footer.html')
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBqvju8nmUERH8w1ylBooavXluAApYM-Ag&language=ru&region=RU"></script>
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

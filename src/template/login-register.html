@@ -1,0 +1,50 @@
+<div class="login-wrapper flex">
+    <div class="login">
+        <div class="login-heading">Вход</div>
+        <div class="login-label-wrapper">
+            <label class="active">E-mail</label>
+            <label>Телефон</label>
+        </div>
+        <input>
+        <label>Пароль</label>
+        <input type="password">
+        <div class="login-footer">
+            <button class="btn btn-blue btn-md"><span>Войти</span></button>
+            <a href="#">Забыли пароль?</a>
+        </div>
+        <div class="login-social">
+            Войти через социальные сети
+            <ul class="social">
+                <li><a href="#"><i class="icon icon-vk"></i></a></li>
+                <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                <li><a href="#"><i class="icon icon-odnoklassniki"></i></a></li>
+                <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="register">
+        <div class="login-heading">Регистрация</div>
+        <p>Для упрощения регистрации и входа Вы можете связать свой аккаунт
+            в соц.сети с личным кабинетом на сайте Эскейпер.</p>
+        <ul class="social">
+            <li><a href="#"><i class="icon icon-vk"></i></a></li>
+            <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+            <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+            <li><a href="#"><i class="icon icon-odnoklassniki"></i></a></li>
+            <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+        </ul>
+        <p>Заполните, пожалуйста, оставшиеся поля формы</p>
+        <form class="js-validate">
+            @@include('./login-register-fields.html', {
+                "confirm": true
+            })
+            <button type="submit" class="btn btn-primary btn-md js-btn-register"><span>Зарегистрироваться</span></button>
+        </form>
+        <p class="register-a">Нажимая кнопку «Зарегистрироваться», я соглашаюсь на получение информации от 
+            интернет-магазина и уведомлений о состоянии моих заказов, а также принимаю 
+            условия <a href="#">политики конфиденциальности</a> и <a href="#">пользовательского соглашения</a>.</p>
+    </div>
+</div>

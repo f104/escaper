@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Обратная связь"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Обратная связь</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <h1 class="page-h1">Обратная связь <i class="icon icon-middle icon-heading-feedback"></i></h1>
+            <div class="container">
+                <section class="feedback">
+
+                    <p class="page-introtext">Интернет-магазин «ЭСКЕЙПЕР» дорожит вашим мнением и учитывает все сообщения наших клиентов. После модерации обращения сотрудник компании ответит на 
+                        него в течение 24 часов (или чуточку позже, если вы написали нам во время выходных или праздничных дней).</p>
+
+                    <form class="feedback-form">
+
+                        <div class="product-heading">Информация о клиенте</div>
+                        <div class="feedback-form_input">
+                            <label for="feedback_form_name">Имя</label>
+                            <input id="feedback_form_name" value="Илья">
+                        </div>
+                        <div class="feedback-form_input">
+                            <label for="feedback_form_second_name">Отчество</label>
+                            <input id="feedback_form_second_name" value="Алексеевич">
+                        </div>
+                        <div class="feedback-form_input">
+                            <label for="feedback_form_third_name">Фамилия</label>
+                            <input id="feedback_form_third_name" value="Гужин">
+                        </div>
+                        <div class="feedback-form_input">
+                            <label for="feedback_form_email">e-mail</label>
+                            <input id="feedback_form_email" value="gilya-nn@mail.ru">
+                        </div>
+                        <div class="feedback-form_input">
+                            <label for="feedback_form_phone">Мобильный телефон</label>
+                            <input id="feedback_form_phone" value="+7 910-895-02-30">
+                        </div>
+
+                        <div class="product-heading">Текст обращения</div>
+                        <div><textarea class="js-scrollbar scrollbar-outer"></textarea></div>
+
+                        <button type="submit" class="btn btn-lg btn-gold"><span>Отправить</span></button>
+
+                    </form>
+
+                </section>
+            </div>
+
+        </main>
+
+        <div class="hide">
+        </div>
+        @@include('./template/footer.html')
+        @@include('./template/scripts.html')
+    </body>
+</html>

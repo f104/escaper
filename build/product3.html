@@ -1446,7 +1446,8 @@
                 В корзине <span class="header-basket-counter">999</span>
             </a>
             <div class="header-user">
-                <a href="#" data-fancybox="" data-src="#login-popup">Личный кабинет</a>
+                <a href="office.html">Личный кабинет</a> 
+                <a href="#" data-fancybox="" data-src="#login-popup">Вход/регистрация</a>
                 <a href="#" title="Выйти"><i class="icon icon-logout"></i></a>
             </div>
         </div>
@@ -4096,19 +4097,19 @@
             <div class="register-left">
     <div class="input-group required">
         <label>e-mail</label>
-        <input name="email" type="text" required>
+        <input name="email" type="text" required value="user@host.com">
     </div>
     <div class="input-group required">
         <label>Пароль</label>
-        <input name="password1" type="password" required>
+        <input name="password1" type="password" required value="1234">
     </div>
     <div class="input-group required">
         <label>Повторите пароль</label>
-        <input name="password2" type="password" required>
+        <input name="password2" type="password" required value="1234">
     </div>
     <div class="input-group required">
         <label>Мобильный телефон</label>
-        <input name="phone" type="text" required class="js-mask_phone">
+        <input name="phone" type="text" required class="js-mask_phone" value="9271234567">
     </div>
 </div>
 <div class="register-right">
@@ -4146,7 +4147,7 @@
     
 </div>
 <p class="right-align primary">* Обязательные для заполнения поля.</p>
-            <button type="submit" class="btn btn-primary btn-md js-btn-register" disabled><span>Зарегистрироваться</span></button>
+            <button type="submit" class="btn btn-primary btn-md js-btn-register"><span>Зарегистрироваться</span></button>
         </form>
         <p class="register-a">Нажимая кнопку «Зарегистрироваться», я соглашаюсь на получение информации от 
             интернет-магазина и уведомлений о состоянии моих заказов, а также принимаю 
@@ -4155,16 +4156,23 @@
 </div>
         </div>
     </div>
-    <div id="about-popup" class="login-wrapper popup about-popup about">
-    <div class="container">
-        
-        <div class="login-heading">Подробнее о себе</div>
-        <div>
-            <a class="btn btn-blue about-later js-popup-close" href="#"><span>Заполню позже</span></a>
-        </div>
+    <div id="about-popup" class="popup about-popup">
+        <div class="container">
+            <div class="login-wrapper about">
 
+    
+    <div class="login-heading">Подробнее о себе</div>
+    <div>
+        <a class="btn btn-blue about-later js-popup-close" href="#"><span>Заполню позже</span></a>
+    </div>
+    
+    
+    
+
+    <div class="about-row">
+        <div class="product-heading">Адреса доставки</div>
         <div class="about-wrapper">
-            <div class="product-heading">Адреса доставки</div>
+            
             <div class="about-add">
                 <i class="icon icon-printable-add icon-middle js-about-add"></i>
                 Добавить адрес
@@ -4206,11 +4214,15 @@
                     <label>Офис</label>
                     <input>
                 </div>
+                
             </div>
         </div>
+    </div>
 
+    <div class="about-row">
+        <div class="product-heading">Мои организации</div>
         <div class="about-wrapper">
-            <div class="product-heading">Мои организации</div>
+            
             <div class="about-add">
                 <i class="icon icon-printable-add icon-middle js-about-add"></i>
                 Добавить организацию
@@ -4256,11 +4268,14 @@
                     <label>БИК</label>
                     <input>
                 </div>
+                
             </div>
         </div>
+    </div>
 
+    <div class="about-row">
+        <div class="product-heading">Оповещения</div>
         <div class="about-wrapper">
-            <div class="product-heading">Оповещения</div>
             <div class="about-inner">
                 <ul class="about-checkbox">
                     <li><label><input type="checkbox" name="somename1" checked> Предложение оценить сервисы Эскейпер (E-mail)</label></li>
@@ -4269,12 +4284,18 @@
                     <li><label><input type="checkbox" name="somename4" checked> Напоминание о товарах в корзине (E-mail)</label></li>
                     <li><label><input type="checkbox" name="somename5" checked> Персональные рекомендации и уведомления (E-mail)</label></li>
                 </ul>
+                
             </div>
         </div>
+    </div>
 
+    <div class="about-row">
+         
+        <div class="product-heading toggler closed"><span class="wrapper">Интересующие вас виды спорта</span></div>
         <div class="about-wrapper">
-            <div class="product-heading toggler closed"><span class="wrapper">Интересующие вас виды спорта</span></div>
-            <div class="about-inner">
+        
+        
+            <div class="about-inner ">
                 <p>Укажите пожалуйста интересующие Вас виды спорта!<br>
                     Вам будет приходить информация касающаяся выбранных разделов.</p>
                 <ul class="alphabet">
@@ -4386,15 +4407,20 @@
                     <li data-alphabet="К"><label><input type="checkbox"> Киберспорт</label></li>
                     <li data-alphabet="С"><label><input type="checkbox"> Скалолазание</label></li>
                 </ul>
+                
             </div>
         </div>
-
-        <div class="about-save">
-            <button class="btn btn-green btn-lg js-popup-close"><span>Сохранить данные</span></button>
-        </div>
-    
     </div>
+    
+    
+    <div class="about-save">
+        <button class="btn btn-green btn-lg js-popup-close"><span>Сохранить данные</span></button>
+    </div>
+    
+
 </div>
+        </div>
+    </div>
 </div>
         <script src="js/libs/jquery.min.js" type="text/javascript"></script>
 <script src="js/libs/materialize.js" type="text/javascript"></script>

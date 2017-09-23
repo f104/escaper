@@ -1,0 +1,56 @@
+body.coming-soon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    header, footer {
+        flex: 1;
+    }
+    header {
+        padding: 15px;
+        display: flex;
+        align-items: flex-end;
+        .logo {
+            display: block;
+            margin: 0 auto;
+            width: 342px;
+        }
+    }
+    .slider {
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: $container-width;
+        }
+        .slide-{
+            &1 {
+                background-color: #0BB2EA;
+            }
+            &2 {
+                background-color: #000;
+            }
+        }
+    }
+    footer {
+        padding: 15px;
+        text-align: center;
+        * {
+            display: inline-block;
+            vertical-align: middle;
+        }
+        > * {
+            margin: 0 3px;
+        }
+        .phone {
+            font-family: $font1;
+            font-weight: 700;
+            font-size: 24px;
+            margin-left: -3px;
+        }
+    }
+    a {
+        @include transition(.3s);
+        &:hover{
+            opacity: .8;            
+        }
+    }
+}

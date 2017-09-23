@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Макеты в общем доступе"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Макеты в общем доступе</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="share">
+                <h1 class="page-h1"><span>Макеты в общем доступе<i class="icon icon-middle icon-heading-share"></i></span></h1>
+
+                <div class="container">
+                    <p class="center-align">Для упрощения повторных заказов на продукцию для спортивных клубов, ФОК, спортивных школ и иных организаций, 
+                        Вы можете найти интересующий товар <strong>в общем доступе</strong>, если первоначальный заказчик или администратор интернет-магазина добавил его в общий доступ </p>
+                    <div class="share-social">
+                        Вы можете поделиться макетами через соц.сети:
+                        <ul class="social">
+                            <li><a href="#"><i class="icon icon-vk"></i></a></li>
+                            <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon icon-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <form class="share-search">
+                        <div class="share-h3">Поиск макета</div>
+                        <div class="row">
+                            <div class="col s6">
+                                <div class="input-group share-search-1">
+                                    <label>Страна</label>
+                                    <select class="select-default">
+                                        <option>Россия</option>
+                                        <option selected="">Казахстан</option>
+                                        <option>Украина</option>
+                                    </select>
+                                </div>
+                                <div class="input-group share-search-2">
+                                    <label>Регион</label>
+                                    <select class="select-default">
+                                        <option selected="">Нижегородская область</option>
+                                        <option>Волгоградская область</option>
+                                        <option>Саратовская область</option>
+                                    </select>
+                                </div>
+                                <div class="input-group share-search-3 disabled">
+                                    <label>Наименование организации</label>
+                                    <input>
+                                </div>
+                                <div class="input-group share-search-3 disabled">
+                                    <label>Тренеры</label>
+                                    <input>
+                                </div>
+                            </div>
+                            <div class="col s6">
+                                <div class="input-group share-search-5">
+                                    <label>Город</label>
+                                    <select class="select-default">
+                                        <option selected="">Нижний Новгород</option>
+                                        <option>Волгоград</option>
+                                        <option>Саратов</option>
+                                    </select>
+                                </div>
+                                <div class="input-group share-search-6 disabled">
+                                    <label>Название команды</label>
+                                    <input>
+                                </div>
+                                <div class="input-group share-search-7 disabled">
+                                    <label>Возрастная группа</label>
+                                    <input>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-gold btn-lg"><span>Найти</span></button>
+                    </form>
+                    
+                    <div class="share-h3">Макеты по вашему запросу в общем доступе</div>
+                    @@include('./template/share-item.html', {
+                        "closed": 1
+                    })
+                    @@include('./template/share-item.html', {
+                        "closed": 1
+                    })
+                    @@include('./template/share-item.html', {
+                        "closed": 0
+                    })
+                    @@include('./template/share-item.html', {
+                        "closed": 1
+                    })
+                    @@include('./template/share-item.html', {
+                        "closed": 1
+                    })
+                </div>
+            </section>
+
+        </main>
+        
+        <div class="hide">
+            @@include('./template/product-size.html')
+        </div>
+
+        @@include('./template/footer.html')
+        @@include('./template/scripts.html')
+
+    </body>
+</html>
