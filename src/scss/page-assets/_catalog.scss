@@ -163,11 +163,10 @@
     .product-list-item-extended {
         display: none;
         margin: 0 -20px;
-        form button {
+        .btn {
             width: 215px;
             margin: 5px auto 10px;
             display: block;
-            padding-left: 60px;
             background-color: #0bb2ea;
             color: $white-color;
             font-family: $font1;
@@ -176,18 +175,24 @@
             transform: initial;
             margin-bottom: 5px;
             border-radius: 3px;
-            &:after {
-                content: '';
-                display: inline-block;
-                vertical-align: middle;
-                margin-left: 10px;
-                @include sprite($basket-grid);
-            }
-            &:hover {
-                background-color: $primary-color;
+            &.add {
+                padding-left: 60px;
                 &:after {
-                    @include sprite($basket-grid-hover);
+                    content: '';
+                    display: inline-block;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                    @include sprite($basket-grid);
                 }
+                &:hover {
+                    background-color: $primary-color;
+                    &:after {
+                        @include sprite($basket-grid-hover);
+                    }
+                }
+            }
+            &.remove {
+                background-color: #474747;
             }
             &.wait {
                 font-size: 19px;
@@ -454,9 +459,6 @@
         .product-list-sort {
             float: left;
             margin-right: 30px;
-        }
-        .product-list-pagination {
-            float: right;
         }
     }
     &.footer {
