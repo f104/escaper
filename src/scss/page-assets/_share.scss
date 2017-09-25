@@ -1,4 +1,7 @@
 .share {
+    .share-introtext {
+        padding: 0 50px;
+    }
     .share-social {
         font-family: $font1;
         font-size: 19px;
@@ -15,6 +18,7 @@
         text-align: center;
         font-family: $font1;
         font-size: 29px;
+        line-height: 35px;
         font-weight: 600;
         margin-bottom: 20px;
     }
@@ -100,7 +104,7 @@
             margin: 0 -1px 20px;
             .share-h3 {
                 font-size: 19px;
-                    margin: 15px 0 10px;
+                margin: 15px 0 10px;
             }
             .input-group {
                 label {
@@ -155,5 +159,57 @@
             text-align: center;
             margin: 50px 0;
         }
+    }
+    &.share-popup {
+        .container {
+            padding: 20px 0;
+        }
+        .share-item-row {
+            margin-left: 25px;
+            margin-right: 25px;
+        }
+        .share-item {
+            border-left-width: 0;
+            border-right-width: 0;
+        }
+        .share-search {
+            margin-top: 50px;
+            .row {
+                padding: 0 25px;
+            }
+            .share-search-2 input {
+                width: 214px;
+            }
+            .share-search-3 input {
+                width: 291px;
+            }
+            .share-search-5 input {
+                width: 419px;
+            }
+            .share-search-6 input {
+                width: 362px;
+            }
+            .share-search-7 input {
+                width: 344px;
+            }
+        }
+        .share-item-heading {
+            font-weight: normal;
+            strong {
+                display: inline-block;
+                margin-left: 15px;
+            }
+            li {
+                margin-right: 55px;
+            }
+        }
+        .wrapper {
+            padding: 25px 0;
+        }
+    }
+}
+#share {
+    .about-add {
+        margin-bottom: 30px;
     }
 }

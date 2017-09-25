@@ -108,6 +108,15 @@
             margin: 0 auto;
         }
     }
+    .cart-item-checkbox {
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .jq-radio__div {
+            border-color: $gray-color;
+        }
+    }
     .cart-item-info {
         width: 325px;
         flex: 1;

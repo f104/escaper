@@ -589,13 +589,16 @@ jQuery(function () {
         $('.share-item-heading').click(function(){
             var $this = $(this);
             var $parent = $this.parent();
+            var $wrapper = $this.parents('.share');
             if ($parent.hasClass('closed')) {
-                $('.share-item').addClass('closed').find('.wrapper').slideUp(200);
+                $wrapper.find('.share-item').addClass('closed').find('.wrapper').slideUp(200);
                 $parent.removeClass('closed');
                 $parent.find('.wrapper').slideDown(200);
-                setTimeout(function() {
-                    $("html, body").animate({scrollTop: $parent.offset().top - 50});
-                }, 500);
+                if (!$wrapper.hasClass('popup')) {
+                    setTimeout(function() {
+                        $("html, body").animate({scrollTop: $parent.offset().top - 50});
+                    }, 500);
+                }
             } else {
                 $parent.addClass('closed');
                 $parent.find('.wrapper').slideUp();
