@@ -160,6 +160,19 @@
             }
         }
     }
+    .product-list-item-wait {
+        width: 215px;
+        margin: 0 auto 5px;
+        display: block;
+        border-radius: 3px;
+        background-color: $gray-light-color;
+        color: $off-black;
+        font-family: $font1;
+        font-weight: 600;
+        font-size: 25px;
+        line-height: 35px;
+        text-align: center;
+    }
     .product-list-item-extended {
         display: none;
         margin: 0 -20px;
@@ -469,6 +482,12 @@
             float: left;
             margin-right: 30px;
         }
+    }
+}
+.product-list-clear {
+    text-align: center;
+    .btn {
+        width: 285px;
     }
 }
 

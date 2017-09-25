@@ -11,16 +11,26 @@
     <div class="product-list-item-brand">
         Bauer
     </div>
+    @@if (wait == 0) {
     <div class="product-list-item-price primary">
         <del>2 200</del> 1 980 <i class="icon icon-rub-grid"></i>
     </div>
     <div class="product-list-item-available yes">
         В наличии на складе
     </div>
+    }
+    @@if (wait == 1) {
+    <div class="product-list-item-wait">Ожидается</div>
+    <div class="product-list-item-available not">
+        Временно нет в наличии
+    </div>
+    }
     <div class="product-list-item-extended">
+        @@if (wait == 0) {
         <form>
             <button class="btn add">В корзину</button>
         </form>
+        }
         <div class="product-list-item-size">
             Размеры производителя
             <ul>
@@ -49,7 +59,7 @@
             <dd>Да</dd>
         </dl>
         <div class="clearfix"></div>
-        @@if (fav == 1) {
+        @@if (fav == 1 || wait == 1) {
         <button class="btn remove">Удалить</button>
         }
     </div>
