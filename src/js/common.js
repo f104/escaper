@@ -28,6 +28,7 @@ jQuery(function () {
             });
         });
         $('.js-mask_phone').inputmask('+7(999)999-99-99');
+        $('.js-mask_price').inputmask('9{+} рублей');
         $('#tabs').easytabs();
         $('.js-tooltiped').each(function (i) {
             var $tooltip = $(this).parent().find('.tooltip');

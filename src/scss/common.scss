@@ -140,6 +140,7 @@ input {
     &rub-small{ @include sprite($rub-small); }
     &product-size-show-all{ @include sprite($product-size-show-all); }
     &product-size-hide-all{ @include sprite($product-size-hide-all); }
+    &success-rounded{ @include sprite($success-rounded); }
     &btn-size{ @include sprite($btn-size); }
     &credit{ @include sprite($credit); }
     &heart-o{ @include sprite($heart-o); }
@@ -579,3 +580,4 @@ label {
 @import "page-assets/checkout";
 @import "page-assets/coming-soon";
 @import "page-assets/share";
+@import "page-assets/office";

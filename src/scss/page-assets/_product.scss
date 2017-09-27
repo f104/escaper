@@ -161,6 +161,22 @@
         &.focused {
             border-color: transparent;
         }
+        .jq-number.percent {
+            input {
+                text-align: right;
+                padding-right: 23px;
+                width: 57px;
+            }
+            &:after {
+                content: '%';
+                position: absolute;
+                right: 10px;
+                top: 1px;
+                font-family: $font1;
+                font-weight: 600;
+                font-size: 20px;
+            }
+        }
         .jq-number__spin {
             visibility: visible;
             width: 31px;
