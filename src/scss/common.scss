@@ -564,6 +564,44 @@ label {
     }
 }
 
+.accordion-item {
+    border: 1px solid $gray-color;
+    margin-bottom: 20px;
+    &.closed {
+        .accordion-item-heading {
+            background-color: #dfe2e8;
+            &:after {
+                transform: none;
+            }
+        }
+    }
+    .accordion-item-heading {
+        background-color: $gold-light-color;
+        margin: 0;
+        padding: 0 25px;
+        cursor: pointer;
+        line-height: 30px;
+        font-weight: 600;
+        position: relative;
+        &:after {
+            position: absolute;
+            content: '';
+            @include sprite($product-select-trigger);
+            top: 50%;
+            margin-top: -3.5px;
+            right: 25px;
+            transform: rotate(180deg);
+        }
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    }
+    .accordion-item-inner {
+        padding-top: 15px;
+    }
+}
+
 @import "page-assets/menu";
 @import "page-assets/header";
 @import "page-assets/login";

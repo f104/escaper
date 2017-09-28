@@ -586,23 +586,23 @@ jQuery(function () {
     }
     
     function initShare() {
-        $('.share-item.closed').find('.wrapper').slideUp();
-        $('.share-item-heading').click(function(){
+        $('.accordion-item.closed').find('.accordion-item-inner').slideUp();
+        $('.accordion-item-heading').click(function(){
             var $this = $(this);
-            var $parent = $this.parent();
-            var $wrapper = $this.parents('.share');
+            var $parent = $this.parent('.accordion-item');
+            var $wrapper = $this.parents('.accordion-wrapper');
             if ($parent.hasClass('closed')) {
-                $wrapper.find('.share-item').addClass('closed').find('.wrapper').slideUp(200);
+                $wrapper.find('.accordion-item').addClass('closed').find('.accordion-item-inner').slideUp(200);
                 $parent.removeClass('closed');
-                $parent.find('.wrapper').slideDown(200);
-                if (!$wrapper.hasClass('popup')) {
+                $parent.find('.accordion-item-inner').slideDown(200);
+                if ($wrapper.parents('.popup').length == 0) {
                     setTimeout(function() {
                         $("html, body").animate({scrollTop: $parent.offset().top - 50});
                     }, 500);
                 }
             } else {
                 $parent.addClass('closed');
-                $parent.find('.wrapper').slideUp();
+                $parent.find('.accordion-item-inner').slideUp();
             }
         });
     }

@@ -69,42 +69,11 @@
         }
     }
     .share-item {
-        border: 1px solid $gray-color;
-        margin-bottom: 20px;
-        &.closed {
-            .share-item-heading {
-                background-color: #dfe2e8;
-                &:after {
-                    transform: rotate(180deg);
-                }
-            }
-        }
-        .share-item-heading {
-            background-color: $gold-light-color;
-            margin: 0;
-            padding: 0 25px;
-            cursor: pointer;
-            line-height: 30px;
-            font-weight: 600;
-            position: relative;
-            &:after {
-                position: absolute;
-                content: '';
-                @include sprite($product-select-trigger);
-                top: 50%;
-                margin-top: -3.5px;
-                right: 25px;
-            }
-            li {
-                display: inline-block;
-                margin-right: 20px;
-            }
-        }
         .share-search {
             margin: 0 -1px 20px;
             .share-h3 {
                 font-size: 19px;
-                margin: 15px 0 10px;
+                margin-bottom: 10px;
             }
             .input-group {
                 label {

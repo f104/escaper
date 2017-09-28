@@ -38,8 +38,8 @@
                 </ul>
 
                 <section id="orders" class="orders">
-                    <div class="product-heading">Текушие заказы</div>
                     <div class="orders-current">
+                        <div class="product-heading">Текушие заказы</div>
                         <div class="order-item">
                             <ul class="order-item-heading">
                                 <li>№ Заказа <strong>SD9249</strong></li>
@@ -531,7 +531,38 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-heading">Завершенные заказы</div>
+                    <div class="orders-complete">
+                        <div class="product-heading">Завершенные заказы</div>
+                        <div class="accordion-wrapper">
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 1
+                            })
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 1
+                            })
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 1
+                            })
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 1
+                            })
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 0
+                            })
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 1
+                            })
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 1
+                            })
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 1
+                            })
+                            @@include('./template/orders-complete-item.html', {
+                            "closed": 1
+                            })
+                        </div>
+                    </div>
                 </section>
                 <section id="info">
                     @@include('./template/about-me.html', {
@@ -808,36 +839,38 @@
                         </a>
                     </div>
                     <div class="share-h3">Ваши макеты в общем доступе</div>
-                    @@include('./template/share-item.html', {
-                    "closed": 1,
-                    "footer": 0,
-                    "checkbox": 0,
-                    "checked": 0
-                    })
-                    @@include('./template/share-item.html', {
-                    "closed": 1,
-                    "footer": 0,
-                    "checkbox": 0,
-                    "checked": 0
-                    })
-                    @@include('./template/share-item.html', {
-                    "closed": 0,
-                    "footer": 0,
-                    "checkbox": 0,
-                    "checked": 0
-                    })
-                    @@include('./template/share-item.html', {
-                    "closed": 1,
-                    "footer": 0,
-                    "checkbox": 0,
-                    "checked": 0
-                    })
-                    @@include('./template/share-item.html', {
-                    "closed": 1,
-                    "footer": 0,
-                    "checkbox": 0,
-                    "checked": 0
-                    })
+                    <div class="accordion-wrapper">
+                        @@include('./template/share-item.html', {
+                        "closed": 1,
+                        "footer": 0,
+                        "checkbox": 0,
+                        "checked": 0
+                        })
+                        @@include('./template/share-item.html', {
+                        "closed": 1,
+                        "footer": 0,
+                        "checkbox": 0,
+                        "checked": 0
+                        })
+                        @@include('./template/share-item.html', {
+                        "closed": 0,
+                        "footer": 0,
+                        "checkbox": 0,
+                        "checked": 0
+                        })
+                        @@include('./template/share-item.html', {
+                        "closed": 1,
+                        "footer": 0,
+                        "checkbox": 0,
+                        "checked": 0
+                        })
+                        @@include('./template/share-item.html', {
+                        "closed": 1,
+                        "footer": 0,
+                        "checkbox": 0,
+                        "checked": 0
+                        })
+                    </div>
                 </section>
             </div>
 
@@ -874,36 +907,38 @@
             <div id="share-add-popup" class="popup share share-popup">
                 <div class="container">
                     <div class="share-h3">Добавление макета в общий доступ</div>
-                    @@include('./template/share-item-popup.html', {
-                    "closed": 1,
-                    "checkbox": 1,
-                    "checked": 1,
-                    "idx": 1
-                    })
-                    @@include('./template/share-item-popup.html', {
-                    "closed": 1,
-                    "checkbox": 1,
-                    "checked": 1,
-                    "idx": 2
-                    })
-                    @@include('./template/share-item-popup.html', {
-                    "closed": 0,
-                    "checkbox": 1,
-                    "checked": 1,
-                    "idx": 3
-                    })
-                    @@include('./template/share-item-popup.html', {
-                    "closed": 1,
-                    "checkbox": 1,
-                    "checked": 1,
-                    "idx": 4
-                    })
-                    @@include('./template/share-item-popup.html', {
-                    "closed": 1,
-                    "checkbox": 1,
-                    "checked": 1,
-                    "idx": 5
-                    })
+                    <div class="accordion-wrapper">
+                        @@include('./template/share-item-popup.html', {
+                        "closed": 1,
+                        "checkbox": 1,
+                        "checked": 1,
+                        "idx": 1
+                        })
+                        @@include('./template/share-item-popup.html', {
+                        "closed": 1,
+                        "checkbox": 1,
+                        "checked": 1,
+                        "idx": 2
+                        })
+                        @@include('./template/share-item-popup.html', {
+                        "closed": 0,
+                        "checkbox": 1,
+                        "checked": 1,
+                        "idx": 3
+                        })
+                        @@include('./template/share-item-popup.html', {
+                        "closed": 1,
+                        "checkbox": 1,
+                        "checked": 1,
+                        "idx": 4
+                        })
+                        @@include('./template/share-item-popup.html', {
+                        "closed": 1,
+                        "checkbox": 1,
+                        "checked": 1,
+                        "idx": 5
+                        })
+                    </div>
                     <form class="share-search">
                         <div class="share-h3">
                             Выделите нужные товары которые вы хотите добавить в общий доступ и укажите<br>
