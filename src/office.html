@@ -36,10 +36,12 @@
                         <a class="btn btn-tab" href="#share">
                             <span>В общем доступе <span class="counter">1</span></span></a></li>
                 </ul>
+            </div>
 
-                <section id="orders" class="orders">
-                    <div class="orders-current">
-                        <div class="product-heading">Текушие заказы</div>
+            <section id="orders" class="orders">
+                <div class="orders-current">
+                    <div class="product-heading">Текушие заказы</div>
+                    <div class="container">
                         <div class="order-item">
                             <ul class="order-item-heading">
                                 <li>№ Заказа <strong>SD9249</strong></li>
@@ -531,8 +533,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="orders-complete">
-                        <div class="product-heading">Завершенные заказы</div>
+                </div>
+                <div class="orders-complete">
+                    <div class="product-heading">Завершенные заказы</div>
+                    <div class="container">
                         <div class="accordion-wrapper">
                             @@include('./template/orders-complete-item.html', {
                             "closed": 1
@@ -563,13 +567,17 @@
                             })
                         </div>
                     </div>
-                </section>
-                <section id="info">
+                </div>
+            </section>
+            <section id="info">
+                <div class="container">
                     @@include('./template/about-me.html', {
                     "popup": 0
                     })
-                </section>
-                <section id="favorites">
+                </div>
+            </section>
+            <section id="favorites">
+                <div class="container">
                     <div class="product-list-head header">
                         <ul class="product-list-pagination">
                             <li class="first"><a href="#"></a></li>
@@ -692,8 +700,10 @@
                     <div class="product-list-clear">
                         <a class="btn btn-gold btn-lg" href="#"><span>Очистить избранное</span></a>
                     </div>
-                </section>
-                <section id="wait">
+                </div>
+            </section>
+            <section id="wait">
+                <div class="container">
                     <div class="product-list-head header">
                         <ul class="product-list-pagination">
                             <li class="first"><a href="#"></a></li>
@@ -816,8 +826,10 @@
                     <div class="product-list-clear">
                         <a class="btn btn-gold btn-lg" href="#"><span>Очистить лист ожидания</span></a>
                     </div>
-                </section>
-                <section id="share" class="share">
+                </div>
+            </section>
+            <section id="share" class="share">
+                <div class="container">
                     <p class="share-introtext">Для упрощения повторных заказов на продукцию для ФОК, спортивных школ и иных организаций, Вы можете разместить <strong>макет</strong> и сопутствующую информацию
                         <strong>в общий доступ</strong>. В дальнейшем Вы можете только указать ссылку на наш сайт, <strong>ваши заказы могут повторять третьи лица</strong> (например Родители) связанные 
                         с этими товарами в разделе <a href="#"><strong>Корпоративным командам</strong></a>.</p>
@@ -871,8 +883,8 @@
                         "checked": 0
                         })
                     </div>
-                </section>
-            </div>
+                </div>
+            </section>
 
         </main>
 
