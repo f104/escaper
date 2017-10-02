@@ -568,6 +568,7 @@ label {
     border: 1px solid $gray-color;
     margin-bottom: 20px;
     &.closed {
+        margin-bottom: 10px;
         .accordion-item-heading {
             background-color: #dfe2e8;
             &:after {

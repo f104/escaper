@@ -195,6 +195,107 @@
         }
     }
 }
+.product-data-list-wrapper1 {
+    display: inline-block;
+    border: 1px solid $gray-color;
+    border-radius: 5px;
+    margin-right: 5px;
+    label {
+        cursor: default;
+        &:first-of-type {
+            padding: 5px 5px;
+            line-height: 27px;
+        }
+    }
+    .product-data-list-wrapper1-gray-bg {
+        background-color: $gray-light-color;
+        border-bottom: 1px solid $gray-color;
+        border-top: 1px solid $gray-color;
+    }
+    label, input {
+        font-size: initial;
+        display: block;
+        text-align: center;
+        padding: 0 5px;
+        line-height: 28px;
+        outline: none;
+        min-width: 40px;
+    }
+    input {
+        max-width: 40px;
+        min-width: 100%;
+        font-family: $font1;
+        font-weight: 600;
+        font-size: 22px;
+        margin-bottom: 3px;
+        height: 25px;
+        border: none;
+    }
+    input[disabled] {
+        background: transparent;
+    }
+    .jq-number__spin {
+        visibility: hidden;
+        bottom: -30px;
+        &:before {
+            left: 0;
+        }
+    }
+    &.focused {
+        .jq-number__spin {
+            visibility: visible;
+        }
+    }
+    &.active {
+        .product-data-list-wrapper1-gray-bg {
+            background-color: $primary-color;
+            color: $white-color;
+        }
+    }
+    .available-status {
+        margin: 0 auto;
+        width: 28px;
+        border: 1px solid $gray-color;
+        li {
+            height: 7px;
+            margin-bottom: 2px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+            &.available-status-full {
+                background-color: #389F53;
+            }
+            &.available-status-medium {
+                background-color: #8FAB66;
+            }
+            &.available-status-small {
+                background-color: #C5B273;
+            }
+        }
+    }
+    &.available-medium {
+        .available-status li.available-status-full {
+            background-color: transparent;
+        }
+    }
+    &.available-small {
+        .available-status li.available-status-full {
+            background-color: transparent;
+        }
+        .available-status li.available-status-medium {
+            background-color: transparent;
+        }
+    }
+    &.available-none {
+        label:first-of-type {
+            font-family: $font1;
+            font-weight: 600;
+            line-height: 16px;
+            color: $blue-color;
+            padding: 3px 0 2px 0;
+        }
+    }
+}
 
 .product {
     font-family: $font2;
@@ -314,7 +415,7 @@
             font-size: 0;
             margin-bottom: 10px;
             &.size {
-                margin-bottom: $gutter-width;                
+                margin-bottom: 40px; 
             }
             .color {
                 li {
@@ -327,6 +428,15 @@
                     cursor: pointer;
                     &.active {
                         border: 2px solid $primary-color;
+                    }
+                    &.color-yellow {
+                        background-color: yellow;
+                    }
+                    &.color-green {
+                        background-color: green;
+                    }
+                    &.color-blue {
+                        background-color: blue;
                     }
                 }
             }
@@ -414,6 +524,25 @@
                 width: 100%;
                 &.sel, &:hover {
                     color: $primary-color;
+                }
+            }
+        }
+        .product-size {
+            .count {
+                margin-bottom: 30px;
+            }
+            &.no-inputs {
+                .product-data-list-wrapper1 {
+                    overflow: hidden;
+                    .product-data-list-wrapper1-gray-bg {
+                        border-bottom: none;
+                    }
+                    > *:last-child {
+                        display: none;
+                    }
+                }
+                .product-data-list.size {
+                    margin-bottom: 20px;
                 }
             }
         }
@@ -1273,6 +1402,94 @@
             p {
                 margin-top: 0;
                 margin-bottom: 30px;
+            }
+            .product-panel_content_count_extended {
+                text-align: left;
+                > div {
+                    margin-bottom: 5px;
+                    > * {
+                        display: inline-block;
+                        margin-right: 10px;
+                        &.last {
+                            margin-left: 10px;
+                            margin-right: 0;
+                        }
+                    }
+                    &:first-of-type {
+                        margin-bottom: 20px;
+                    }
+                }
+                label {
+                    font-weight: 600;
+                    /*font-size: 16px;*/
+                    border: 1px solid $gray-color;
+                    background-color: $gray-light-color;
+                    line-height: 36px;
+                    border-radius: 5px;
+                    cursor: default;
+                    padding: 0 10px;
+                    text-align: center;
+                }
+                .size1 {
+                    width: 132px;
+                }
+                .size2 {
+                    width: 120px;
+                }
+                .size3 {
+                    width: 105px;
+                }
+                .size4 {
+                    width: 163px;
+                }
+                .product-panel_content_count_extended_selected {
+                    font-weight: 600;
+                    color: $white-color;
+                    background-color: $blue-color;
+                    line-height: 33px;
+                    text-align: center;
+                    border-radius: 5px;
+                }
+                .jq-selectbox__select {
+                    width: auto;
+                }
+                .product-data-list-wrapper.count {
+                    padding-left: 36px;
+                    border: none;
+                    input {
+                        font-family: inherit;
+                        font-weight: normal;
+                        font-size: inherit;
+                    }
+                }
+                .product-panel_content_count_extended_add {
+                    font-family: $font1;
+                    font-weight: 600;
+                    font-size: 16px;
+                    .icon {
+                        margin-right: 5px;
+                    }
+                }
+                .product-panel_content_count_extended_total {
+                    font-family: $font1;
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin: 20px 0 0;
+                    label, input {
+                        line-height: 30px;
+                    }
+                    label {
+                        width: 140px;
+                    }
+                    input {
+                        width: 65px;
+                        background-color: #f2f3f5;
+                        border: 1px solid $gray-color;
+                        border-radius: 5px;
+                        text-align: center;
+                        padding: 0;
+                    }
+                }
             }
         }
     }

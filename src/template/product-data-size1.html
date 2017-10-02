@@ -1,0 +1,41 @@
+<div class="product-size">
+    <h3 class="product-heading">Оригинальные размеры и количество</h3>
+    <p class="center-align narrow product-discount">
+        Скидки на количество от:
+        <span class="bebas ">10</span>
+        <span class="bebas gold">30</span>
+        <span class="bebas ">50</span>
+        <span class="bebas ">100</span>
+        <span class="bebas ">200</span>
+        шт.
+    </p>
+    <p class="js-product-data-personal">Вы указали, что вам нужна <strong>персонализация</strong> каждого человека, а именно, номера, фамилии и т.п. <br>
+        Таблица соответствий размеров и персональных отличий каждого человека <br>
+        заполняется в корзине!</p>
+    @@include('./product-data-size-row.html')
+    <div class="js-product-data-personal">
+        <p>Укажите только общее количество, чтобы мы смогли рассчитать Вам цену</p>
+        <div class="product-data-list-wrapper count">
+            <input type="number" value="10">
+        </div>
+    </div>
+    <div class="product-data-list-hidden">
+        @@include('./product-data-size-row.html')
+        @@include('./product-data-size-row.html')
+    </div>
+    <div class="bg-style-1 center-align">
+        <a class="product-data-show-all" href="#" 
+           data-text-show="Показать все размеры"
+           data-text-hide="Скрыть">
+            <i class="icon icon-product-size-show-all"></i>
+            <span>Показать все размеры</span>
+        </a>
+    </div>
+    <p class="center-align">
+        <button data-fancybox data-src="#size-popup" class="btn btn-gold btn-lg">
+            <span>Определить размер
+                <i class="icon icon-btn-size"></i>
+            </span>
+        </button>
+    </p>
+</div>

@@ -98,15 +98,24 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding: 15px;
+                padding: 20px 35px;
                 border: 1px solid $gray-color;
                 border-top: none;
                 font-family: $font2;
-                .btn {
-                    width: 270px;
-                }
                 .product-data-list-wrapper {
                     padding-left: 40px;
+                    padding-right: 50px;
+                }
+                .share-count {
+                    margin-bottom: 20px;
+                    .bebas {
+                        font-weight: 600;
+                    }
+                }
+                .share-price {
+                    .btn {
+                        margin-right: 30px;
+                    }                    
                 }
                 .share-price, .share-count {
                     > * {
@@ -119,6 +128,15 @@
                         font-size: 37px;
                         color: $primary-color;
                         line-height: 30px;
+                    }
+                }
+                .share-item-footer-right {
+                    text-align: center;
+                    line-height: 18px;
+                    padding-right: 40px;
+                    .btn {
+                        width: 285px;
+                        margin-top: 22px;
                     }
                 }
             }

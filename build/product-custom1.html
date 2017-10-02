@@ -1997,8 +1997,8 @@
                                                 укажите это. Таблица соответствий размеров и персональных отличий каждого человека заполняется в корзине</p>
                                             <div class="product-heading no-bg">Нанести номера или фамилии?</div>
                                             <ul class="product-data-checkbox">
-                                                <li><label><input type="radio" name="somename" checked> Да</label></li>
-                                                <li><label><input type="radio" name="somename"> Нет, только логотипы</label></li>
+                                                <li><label><input type="radio" name="somename" class="js-product-data-personal-radio" value="1"> Да</label></li>
+                                                <li><label><input type="radio" name="somename" checked class="js-product-data-personal-radio" value="0"> Нет, только логотипы</label></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -2016,8 +2016,68 @@
                                                 <span class="bebas gold">200</span>
                                                 шт.
                                             </p>
-                                            <div class="product-data-list-wrapper count">
+                                            <div class="product-data-list-wrapper count js-product-data-common">
                                                 <input type="number" value="10">
+                                            </div>
+                                            <div class="product-panel_content_count_extended js-product-data-personal">
+                                                <div>
+                                                    <label class="size1">Диапазон роста</label>
+                                                    <label class="size2">Обхват груди</label>
+                                                    <label class="size3">Рост/размер</label>
+                                                    <label class="size4 last">Количество</label>
+                                                </div>
+                                                <div>
+                                                    <select class="size1">
+                                                        <option></option>
+                                                        <option selected>168-173</option>
+                                                        <option>174-185</option>
+                                                    </select>
+                                                    <select class="size2">
+                                                        <option></option>
+                                                        <option selected>168-173</option>
+                                                        <option>174-185</option>
+                                                    </select>
+                                                    <div class="size3 product-panel_content_count_extended_selected">170 / 46</div>
+                                                    <div class="product-data-list-wrapper count last">
+                                                        <input type="number" value="10">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <select class="size1">
+                                                        <option></option>
+                                                        <option selected>168-173</option>
+                                                        <option>174-185</option>
+                                                    </select>
+                                                    <select class="size2">
+                                                        <option></option>
+                                                        <option selected>168-173</option>
+                                                        <option>174-185</option>
+                                                    </select>
+                                                    <div class="size3 product-panel_content_count_extended_selected">170 / 46</div>
+                                                    <div class="product-data-list-wrapper count last">
+                                                        <input type="number" value="10">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <select class="size1">
+                                                        <option></option>
+                                                        <option>168-173</option>
+                                                        <option>174-185</option>
+                                                    </select>
+                                                    <select class="size2">
+                                                        <option></option>
+                                                        <option>168-173</option>
+                                                        <option>174-185</option>
+                                                    </select>
+                                                </div>
+                                                <a href="#" class="product-panel_content_count_extended_add">
+                                                    <i class="icon icon-printable-add icon-middle"></i>
+                                                    Добавить еще
+                                                </a>
+                                                <div class="product-panel_content_count_extended_total">
+                                                    <label>Общее количество</label>
+                                                    <input value="20" readonly>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>

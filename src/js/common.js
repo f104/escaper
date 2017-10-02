@@ -268,9 +268,30 @@ jQuery(function () {
             e.preventDefault();
             $("html, body").animate({scrollTop: $('#info').offset().top - 50}, 500);
         });
-        $('.product-data-list input').on("focus blur", function () {
-            var elem = $(this).parents('.product-data-list-wrapper');
-            elem.toggleClass("focused");
+        $('.js-product-data-personal-radio').on("click", function () {
+            if ($(this).val() == "1") {
+                $('.js-product-data-personal').show();
+                $('.js-product-data-common').hide();
+                $('.product-size').addClass('no-inputs');
+            } else {
+                $('.js-product-data-personal').hide();
+                $('.js-product-data-common').show();
+                $('.product-size').removeClass('no-inputs');
+            }
+        });
+        $('.js-product-data-personal-radio[checked]').click();
+        $('.product-data-list input').on("focus", function () {
+            $(this).parents('.product-data-list').find('.focused').removeClass('focused');
+            var elem = $(this).parents('.product-data-list-wrapper, .product-data-list-wrapper1');
+            elem.addClass("focused");
+        });
+        $('.product-data-list input').on("change", function () {
+            var elem = $(this).parents('.product-data-list-wrapper, .product-data-list-wrapper1');
+            if ($(this).val() != "0" ) {
+                elem.addClass("active");
+            } else {
+                elem.removeClass("active");
+            }
         });
         $('.product-data-list-wrapper').each(function (i) {
             var $tooltip = $(this).find('.tooltip');

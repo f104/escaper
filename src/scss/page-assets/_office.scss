@@ -137,7 +137,6 @@
     }
     .orders-complete-item {
         &.closed {
-            margin-bottom: 10px;
             .accordion-item-heading {
                 @include pseudoInnerShadowLeftRight(popup);
             }
