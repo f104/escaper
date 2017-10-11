@@ -603,6 +603,28 @@ label {
     }
 }
 
+// 3d
+.wrapper-3d {
+    position: relative;
+    &:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        @include sprite($view-3d);
+    }
+}
+div#viewwindow {
+    cursor: e-resize;
+}
+img#backbuffer {
+    position: relative !important;
+    width: auto !important;
+    height: 100% !important;
+    display: block !important;
+    margin: 0px auto;
+}
+
 @import "page-assets/menu";
 @import "page-assets/header";
 @import "page-assets/login";

@@ -15,6 +15,7 @@ jQuery(function () {
         initCheckout();
         initLogin();
         initShare();
+        initKeyShotVR();
         $('select, input[type=checkbox], input[type=radio], input[type=number]').styler();
         $('.js-scrollbar').scrollbar();
         $('.js-validate').each(function () {
@@ -54,7 +55,7 @@ jQuery(function () {
             });
         });
     });
-
+    
     function initMenu() {
         $('.header-catalog-switcher').click(function (e) {
             e.preventDefault();
@@ -627,5 +628,40 @@ jQuery(function () {
             }
         });
     }
+    
+    function initKeyShotVR() {
+        $('.js-3d').each(function(i){
+            var $t = $(this);
+            var nameOfDiv = "3d_" + i;
+            $t.attr('id', nameOfDiv);
+            var folderName = '3d/' + $t.data('folder');
+            var viewPortWidth = $t.data('width');
+            var viewPortHeight = $t.data('height');
+            var backgroundColor = "#FFFFFF";
+            var uCount = 36;
+            var vCount = 1;
+            var uWrap = true;
+            var vWrap = false;
+            var uMouseSensitivity = -0.1;
+            var vMouseSensitivity = 1;
+            var uStartIndex = 18;
+            var vStartIndex = 0;
+            var minZoom = 1;
+            var maxZoom = 2;
+            var rotationDamping = 0.96;
+            var downScaleToBrowser = true;
+            var addDownScaleGUIButton = false;
+            var downloadOnInteraction = false;
+            var imageExtension = "jpg";
+            var showLoading = true;
+            var loadingIcon = ""; // Set to empty string for default icon.
+            var allowFullscreen = true; // Double-click in desktop browsers for fullscreen.
+            var uReverse = false;
+            var vReverse = false;
+            var hotspots = {};
+
+            new keyshotVR(nameOfDiv,folderName,viewPortWidth,viewPortHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,downloadOnInteraction,imageExtension,showLoading,loadingIcon,allowFullscreen,uReverse,vReverse,hotspots);
+        });    
+      }
     
 });

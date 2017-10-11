@@ -95,12 +95,13 @@
                 }
             }
             .share-item-footer {
+                margin-top: 5px;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 20px 35px;
                 border: 1px solid $gray-color;
-                border-top: none;
+                background-color: $gray-light-color;;
                 font-family: $font2;
                 .product-data-list-wrapper {
                     padding-left: 40px;

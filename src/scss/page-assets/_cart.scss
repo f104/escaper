@@ -6,7 +6,7 @@
     > div {
         padding: 10px 5px;
         border-right: 1px solid $gray-color;
-        &:first-of-type, &:last-of-type {
+        &:last-of-type {
             border-right-color: transparent;
         }
     }
@@ -102,6 +102,7 @@
         width: 155px;
         display: flex;
         align-items: center;
+        border-right-color: transparent;
         img {
             display: block;
             max-width: 100%;
@@ -120,12 +121,13 @@
     .cart-item-info {
         width: 325px;
         flex: 1;
-        padding-top: 15px;
+        padding: 30px 15px;
         .cart-item-info-title {
             font-family: $font1;
             font-size: 18px;
             line-height: 21px;
             font-weight: 600;
+            text-align: center;
         }
         .cart-item-info-list {
             overflow: hidden;
@@ -133,11 +135,18 @@
             dt {
                 clear: left;
                 float: left;
+                padding-left: 7px;
             }
             dd {
                 font-weight: 600;
                 padding-left: 100px;
+                padding-right: 7px;
                 margin: 0;
+                text-align: right;
+                border-bottom: 1px solid $gray-color;
+                &:last-of-type {
+                    border-bottom-color: transparent;                    
+                }
                 .blue {
                     font-family: $font1;
                     font-weight: 600;

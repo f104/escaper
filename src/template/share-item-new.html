@@ -1,0 +1,62 @@
+<div class="accordion-item share-item @@if (closed == 1) { closed }">
+    <ul class="accordion-item-heading">
+        <li>Казахстан</li>
+        <li>Нижегородская обл.</li>
+        <li>Нижний Новгород</li>
+        <li>ФОК Мещерский</li>
+        <li>Красные крылья</li>
+        <li>Боровков, Меркутов</li>
+    </ul>
+    <div class="accordion-item-inner">
+        <div class="share-search">
+            <div class="share-h3">Аттрибуты для поиска</div>
+            <div class="row">
+                <div class="col s6">
+                    <div class="input-group share-search-1">
+                        <label>Страна</label>
+                        <input value="Казахстан">
+                    </div>
+                    <div class="input-group share-search-2">
+                        <label>Регион</label>
+                        <input value="Нижегородская область">
+                    </div>
+                    <div class="input-group share-search-3">
+                        <label>Наименование организации</label>
+                        <input value="ФОК Мещерский">
+                    </div>
+                    <div class="input-group share-search-3">
+                        <label>Тренеры</label>
+                        <input value="Боровков, Меркутов">
+                    </div>
+                </div>
+                <div class="col s6">
+                    <div class="input-group share-search-5">
+                        <label>Город</label>
+                        <input value="Нижний Новгород">
+                    </div>
+                    <div class="input-group share-search-6">
+                        <label>Название команды</label>
+                        <input value="Красные крылья">
+                    </div>
+                    <div class="input-group share-search-7">
+                        <label>Возрастная группа</label>
+                        <input value="2010-2011 года рождения">
+                    </div>
+                </div>
+            </div>
+        </div>
+        @@include('./share-item-row-new.html')
+        @@include('./share-item-row-new.html')
+        <div class="share-social">
+            Поделиться макетами через соц.сети:
+            <ul class="social">
+                <li><a href="#"><i class="icon icon-vk"></i></a></li>
+                <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                <li><a href="#"><i class="icon icon-odnoklassniki"></i></a></li>
+                <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
