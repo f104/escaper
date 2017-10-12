@@ -141,6 +141,7 @@ input {
     &product-size-show-all{ @include sprite($product-size-show-all); }
     &product-size-hide-all{ @include sprite($product-size-hide-all); }
     &success-rounded{ @include sprite($success-rounded); }
+    &success-rounded-cart{ @include sprite($success-rounded-cart); }
     &btn-size{ @include sprite($btn-size); }
     &credit{ @include sprite($credit); }
     &heart-o{ @include sprite($heart-o); }
@@ -170,6 +171,7 @@ input {
     &catalog-btn{ @include sprite($catalog-btn); }  
     &warning{ @include sprite($warning); }  
     &warning-red{ @include sprite($warning-red); }  
+    &warning-red-cart{ @include sprite($warning-red-cart); }  
     &menu-plus{ @include sprite($menu-plus); }  
     &menu-minus{ @include sprite($menu-minus); }  
     &printable-add{ @include sprite($printable-add); }  

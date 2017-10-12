@@ -98,6 +98,7 @@
             width: 100%;
             text-align: center;
             line-height: 23px;
+            left: 0;
         }
         &.minus {
             left: -3px;
@@ -132,9 +133,6 @@
     }
     .jq-number__spin {
         visibility: hidden;
-        &:before {
-            left: 0;
-        }
     }
     &.focused {
         .jq-number__spin {
@@ -190,7 +188,6 @@
             &:before {
                 font-size: 20px;
                 line-height: 34px;
-                left: 0;
             }
         }
     }
