@@ -16,7 +16,7 @@ jQuery(function () {
         initLogin();
         initShare();
         initKeyShotVR();
-        $('select, input[type=checkbox], input[type=radio], input[type=number]').styler();
+        $('select, input[type=checkbox], input[type=radio], input[type=number], input[type=file]').styler();
         $('.js-scrollbar').scrollbar();
         $('.js-validate').each(function () {
             var $form = $(this);
@@ -42,20 +42,20 @@ jQuery(function () {
                 });
             }
         });
-        $('.js-popup-close').click(function(e){
+        $('.js-popup-close').click(function (e) {
             $.fancybox.close();
         });
         // temporary, must be deleted
-        $('.js-btn-register').click(function(e){
+        $('.js-btn-register').click(function (e) {
             e.preventDefault();
             $.fancybox.close();
             $.fancybox.open({
-                src  : '#about-popup',
-                type : 'inline'
+                src: '#about-popup',
+                type: 'inline'
             });
         });
     });
-    
+
     function initMenu() {
         $('.header-catalog-switcher').click(function (e) {
             e.preventDefault();
@@ -199,6 +199,22 @@ jQuery(function () {
             focusOnSelect: true,
             infinite: false,
         });
+        $('.cart-popup-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            dots: false,
+            focusOnSelect: false,
+            infinite: false
+        });
+        // recalc slisk slider on show tab
+        $('.cart-popup .tabs').tabs({
+            onShow: function ($tab) {
+                $tab.find('.cart-popup-slider').slick('setPosition')
+            }}
+        );
+        // fix all tabs active in hudden div
+        $('.cart-popup .tabs .tab').first().find('a').click()
         $('.product-list-item').hover(
                 function () {
                     $(this).find('.list-item-slider').slick('setPosition');
@@ -288,7 +304,7 @@ jQuery(function () {
         });
         $('.product-data-list input').on("change", function () {
             var elem = $(this).parents('.product-data-list-wrapper, .product-data-list-wrapper1');
-            if ($(this).val() != "0" ) {
+            if ($(this).val() != "0") {
                 elem.addClass("active");
             } else {
                 elem.removeClass("active");
@@ -378,10 +394,10 @@ jQuery(function () {
             var $optional = $parent.find('.product-color-optional');
 //            $optional.show();
             $optional.find('li.template')
-                .clone(true)
-                .removeClass('template')
+                    .clone(true)
+                    .removeClass('template')
 //                .appendTo($optional.find('ul'));
-                .insertBefore($optional.find('li.template'));
+                    .insertBefore($optional.find('li.template'));
             if ($optional.find('li').length == 7) {
                 $parent.find('.product-color-add').hide();
             }
@@ -606,10 +622,10 @@ jQuery(function () {
             }
         });
     }
-    
+
     function initShare() {
         $('.accordion-item.closed').find('.accordion-item-inner').slideUp();
-        $('.accordion-item-heading').click(function(){
+        $('.accordion-item-heading').click(function () {
             var $this = $(this);
             var $parent = $this.parent('.accordion-item');
             var $wrapper = $this.parents('.accordion-wrapper');
@@ -618,7 +634,7 @@ jQuery(function () {
                 $parent.removeClass('closed');
                 $parent.find('.accordion-item-inner').slideDown(200);
                 if ($wrapper.parents('.popup').length == 0) {
-                    setTimeout(function() {
+                    setTimeout(function () {
                         $("html, body").animate({scrollTop: $parent.offset().top - 50});
                     }, 500);
                 }
@@ -628,9 +644,9 @@ jQuery(function () {
             }
         });
     }
-    
+
     function initKeyShotVR() {
-        $('.js-3d').each(function(i){
+        $('.js-3d').each(function (i) {
             var $t = $(this);
             var nameOfDiv = "3d_" + i;
             $t.attr('id', nameOfDiv);
@@ -660,8 +676,8 @@ jQuery(function () {
             var vReverse = false;
             var hotspots = {};
 
-            new keyshotVR(nameOfDiv,folderName,viewPortWidth,viewPortHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,downloadOnInteraction,imageExtension,showLoading,loadingIcon,allowFullscreen,uReverse,vReverse,hotspots);
-        });    
-      }
-    
+            new keyshotVR(nameOfDiv, folderName, viewPortWidth, viewPortHeight, backgroundColor, uCount, vCount, uWrap, vWrap, uMouseSensitivity, vMouseSensitivity, uStartIndex, vStartIndex, minZoom, maxZoom, rotationDamping, downScaleToBrowser, addDownScaleGUIButton, downloadOnInteraction, imageExtension, showLoading, loadingIcon, allowFullscreen, uReverse, vReverse, hotspots);
+        });
+    }
+
 });

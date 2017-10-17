@@ -205,6 +205,7 @@ input {
 .gold { color: $gold-color; }
 .blue { color: $blue-color; background: transparent !important;}
 .green { color: $green-color; background: transparent !important;}
+.blue-bg { background-color: $blue-color; }
 
 button:disabled {
     background: linear-gradient(to top, $gray-color, $gray-light-color);
@@ -625,6 +626,22 @@ img#backbuffer {
     height: 100% !important;
     display: block !important;
     margin: 0px auto;
+}
+
+::-webkit-input-placeholder {
+  color: $placeholder-text-color;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: $placeholder-text-color;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: $placeholder-text-color;
+}
+
+:-ms-input-placeholder {
+  color: $placeholder-text-color;
 }
 
 @import "page-assets/menu";
