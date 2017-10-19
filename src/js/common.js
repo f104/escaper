@@ -214,7 +214,7 @@ jQuery(function () {
             }}
         );
         // fix all tabs active in hudden div
-        $('.cart-popup .tabs .tab').first().find('a').click()
+//        $('.cart-popup .tabs .tab').first().find('a').click()
         $('.product-list-item').hover(
                 function () {
                     $(this).find('.list-item-slider').slick('setPosition');
