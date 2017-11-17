@@ -5,7 +5,7 @@
             <li class="tab"><a href="#cart-popup-1_1" class="active">Общая информация о команде</a></li>
             <li class="tab"><a href="#cart-popup-1_2">Информация по отдельным позициям</a></li>
         </ul>
-        <div id="cart-popup-1_1">
+        <div id="cart-popup-1_1" class="js-personal">
             <p><strong>Чтобы Вы не заполняли повторно информацию по персонализации для разных товаров<br>
                     Мы автоматически заполним страницы конкретных товаров в соответствии с размерами</strong><br>
                 которые Вы укажите на этой странице и указали ранее. <br>
@@ -15,74 +15,76 @@
                 <p>Вы указали, что вам нужна персонализация каждого человека, а именно, номера, фамилии и т.п.</p>
                 <div class="product-heading no-bg primary">Нанести номера или фамилии?</div>
                 <ul class="checkbox-inline">
-                    <li><label><input type="radio" name="somename1" checked> Да</label></li>
-                    <li><label><input type="radio" name="somename1"> Нет, только логотипы</label></li>
+                    <li><label><input type="radio" name="somename1" checked class="js-personal__show"> Да</label></li>
+                    <li><label><input type="radio" name="somename1" class="js-personal__hide"> Нет, только логотипы</label></li>
                 </ul>
-                <p><strong>Укажите параметры телосложения и мы автоматически подберем оптимальный размер.</strong></p>
-                <p>Мы настоятельно рекомендуем заполнить эту информацию, во избежание неточностей при производстве.</p>
-                <button class="btn btn-gold btn-lg btn-size">
-                    <span>Как снять мерки
-                        <i class="icon icon-btn-size"></i>
-                    </span>
-                </button>
-                <div class="cart-popup-form-inputs">
-                    <div class="cart-popup-form-inputs-inner">
-                        <div class="cart-popup-form-input-wrapper">
-                            <div class="input-group">
-                                <label class="size1">№<br>п.п.</label>
-                                <label class="size2">Фамилия<br>игрока</label>
-                                <label class="size3">Номер<br>игрока</label>
-                                <label class="size3">Рост</label>
-                                <label class="size3">Обхват<br>груди</label>
-                                <label class="size3">Обхват<br>бедер</label>
+                <div class="js-personal__wrapper_show">
+                    <p><strong>Укажите параметры телосложения и мы автоматически подберем оптимальный размер.</strong></p>
+                    <p>Мы настоятельно рекомендуем заполнить эту информацию, во избежание неточностей при производстве.</p>
+                    <button class="btn btn-gold btn-lg btn-size">
+                        <span>Как снять мерки
+                            <i class="icon icon-btn-size"></i>
+                        </span>
+                    </button>
+                    <div class="cart-popup-form-inputs">
+                        <div class="cart-popup-form-inputs-inner">
+                            <div class="cart-popup-form-input-wrapper">
+                                <div class="input-group">
+                                    <label class="size1">№<br>п.п.</label>
+                                    <label class="size2">Фамилия<br>игрока</label>
+                                    <label class="size3">Номер<br>игрока</label>
+                                    <label class="size3">Рост</label>
+                                    <label class="size3">Обхват<br>груди</label>
+                                    <label class="size3">Обхват<br>бедер</label>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-popup-form-input-wrapper">
-                            <p class="center-align"><strong>Игрок (основной)</strong></p>
-                            <div class="input-group">
-                                <label class="size1">000</label>
-                                <input class="size2" placeholder="Фамилия">
-                                <input class="size3" placeholder="000">
-                                <input class="size3" placeholder="000">
-                                <input class="size3" placeholder="000">
-                                <input class="size3" placeholder="000">
-                                <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                            <div class="cart-popup-form-input-wrapper">
+                                <p class="center-align"><strong>Игрок (основной)</strong></p>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="about-add">
+                                    <a href="#" >
+                                        <i class="icon icon-printable-add icon-middle"></i>
+                                        Добавить еще
+                                    </a>
+                                </div>
                             </div>
-                            <div class="about-add">
-                                <a href="#" >
-                                    <i class="icon icon-printable-add icon-middle"></i>
-                                    Добавить еще
-                                </a>
+                            <div class="cart-popup-form-input-wrapper">
+                                <p class="center-align"><strong>Вратарь (либеро) и т.д.</strong></p>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="about-add">
+                                    <a href="#" >
+                                        <i class="icon icon-printable-add icon-middle"></i>
+                                        Добавить еще
+                                    </a>
+                                </div>
                             </div>
-                        </div>
-                        <div class="cart-popup-form-input-wrapper">
-                            <p class="center-align"><strong>Вратарь (либеро) и т.д.</strong></p>
-                            <div class="input-group">
-                                <label class="size1">000</label>
-                                <input class="size2" placeholder="Фамилия">
-                                <input class="size3" placeholder="000">
-                                <input class="size3" placeholder="000">
-                                <input class="size3" placeholder="000">
-                                <input class="size3" placeholder="000">
-                                <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
-                            </div>
-                            <div class="about-add">
-                                <a href="#" >
-                                    <i class="icon icon-printable-add icon-middle"></i>
-                                    Добавить еще
-                                </a>
-                            </div>
-                        </div>
-                        <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__total">
-                            <div class="input-group">
-                                <label class="bebas size4">Общее количество</label>
-                                <input class="size5" value="20">
+                            <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__total">
+                                <div class="input-group">
+                                    <label class="bebas size4">Общее количество</label>
+                                    <input class="size5" value="20">
+                                </div>
                             </div>
                         </div>
                     </div>
+                    <p>Далее, при оформлении конкретных товаров, вы можете удалить некоторые позиции или вносить в них изменения, косаемые отдельного товара.
+                        Эта таблица изменена не будет</p>
                 </div>
-                <p>Далее, при оформлении конкретных товаров, вы можете удалить некоторые позиции или вносить в них изменения, косаемые отдельного товара.
-                    Эта таблица изменена не будет</p>
 
                 <div class="product-heading">Общая концепция дизайна для всего заказа</div>
                 <p><strong>Описание общего для всех товаров дизайна (общая концепция для всего заказа)</strong></p>
@@ -106,7 +108,7 @@
                 </div>
             </form>
         </div>
-        <div id="cart-popup-1_2">
+        <div id="cart-popup-1_2" class="js-personal">
             <div class="cart-popup-slider">
                 <div class="slide">
                     <div class="cart-item">
@@ -135,7 +137,7 @@
                         <div class="cart-item-design cart-item__centered">
                             <div class="product-heading">Дизайн</div>
                             <div class="cart-item-inner">
-                                <img src="img/product/cart8.jpg" alt="alt text">
+                                <div class="wrapper-3d js-3d" data-folder="Майка шорты Груничева_VR.61" data-width="480" data-height="250"></div>
                                 <p class="cart-item-design-text">
                                     Стандартный дизайн #1
                                     <a href="#" class="cart-item-link">изменить</a>
@@ -240,7 +242,7 @@
                         <div class="cart-item-design cart-item__centered">
                             <div class="product-heading">Дизайн</div>
                             <div class="cart-item-inner">
-                                <img src="img/product/cart9.jpg" alt="alt text">
+                                <div class="wrapper-3d js-3d" data-folder="Майка шорты Груничева_VR.61" data-width="480" data-height="250"></div>
                                 <p class="cart-item-design-text">
                                     Стандартный дизайн #1
                                     <a href="#" class="cart-item-link">изменить</a>
@@ -325,8 +327,8 @@
                     <br>укажите это. </p>
                 <div class="product-heading no-bg primary">Нанести номера или фамилии?</div>
                 <ul class="checkbox-inline">
-                    <li><label><input type="radio" name="somename2" checked> Да</label></li>
-                    <li><label><input type="radio" name="somename2"> Нет, только логотипы</label></li>
+                    <li><label><input type="radio" name="somename2" checked class="js-personal__show"> Да</label></li>
+                    <li><label><input type="radio" name="somename2" class="js-personal__hide"> Нет, только логотипы</label></li>
                 </ul>
                 <button class="btn btn-gold btn-lg btn-size">
                     <span>Как снять мерки
@@ -334,7 +336,7 @@
                     </span>
                 </button>
                 <p><strong>Изменения которые Вы тут внесете будут касаться только данного товара</strong></p>
-                <div class="cart-popup-form-inputs">
+                <div class="cart-popup-form-inputs js-personal__wrapper_show">
                     <div class="cart-popup-form-inputs-inner">
                         <div class="cart-popup-form-input-wrapper">
                             <div class="input-group">
@@ -473,6 +475,88 @@
                                 <input class="size3" placeholder="000">
                                 <input class="size6 cart-popup-form-input-blue" placeholder="000" value="170 / 46">
                                 <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                            </div>
+                            <div class="about-add">
+                                <a href="#" >
+                                    <i class="icon icon-printable-add icon-middle"></i>
+                                    Добавить еще
+                                </a>
+                            </div>
+                        </div>
+                        <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__total">
+                            <div class="input-group">
+                                <label class="bebas size4">Общее количество</label>
+                                <input class="size5" value="20">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart-popup-form-inputs js-personal__wrapper_hide">
+                    <div class="cart-popup-form-inputs-inner">
+                        <div class="cart-popup-form-input-wrapper">
+                            <div class="input-group">
+                                <label class="size7">Диапазон роста</label>
+                                <label class="size7">Обхват груди</label>
+                                <label class="size7">Роси / Размер</label>
+                                <label class="size8">Количество</label>
+                            </div>
+                        </div>
+                        <div class="cart-popup-form-input-wrapper">
+                            <div class="input-group">
+                                <div class="size7">
+                                    <select class="select-default">
+                                        <option>168-173</option>
+                                        <option>174-185</option>
+                                    </select>
+                                </div>
+                                <div class="size7">
+                                    <select class="select-default">
+                                        <option>168-173</option>
+                                        <option>174-185</option>
+                                    </select>
+                                </div>
+                                <input class="size7 cart-popup-form-input-blue" value="170 / 46">
+                                <div class="size8">
+                                    <div class="product-data-list-wrapper count">
+                                        <input type="number" value="20">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="size7">
+                                    <select class="select-default">
+                                        <option>168-173</option>
+                                        <option>174-185</option>
+                                    </select>
+                                </div>
+                                <div class="size7">
+                                    <select class="select-default">
+                                        <option>168-173</option>
+                                        <option>174-185</option>
+                                    </select>
+                                </div>
+                                <input class="size7 cart-popup-form-input-blue" value="170 / 46">
+                                <div class="size8">
+                                    <div class="product-data-list-wrapper count">
+                                        <input type="number" value="20">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input-group">
+                                <div class="size7">
+                                    <select class="select-default">
+                                        <option></option>
+                                        <option>168-173</option>
+                                        <option>174-185</option>
+                                    </select>
+                                </div>
+                                <div class="size7">
+                                    <select class="select-default">
+                                        <option></option>
+                                        <option>168-173</option>
+                                        <option>174-185</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="about-add">
                                 <a href="#" >

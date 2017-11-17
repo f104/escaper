@@ -328,24 +328,24 @@ button:disabled {
         position: absolute;
         width: 16px;
         height: 16px;
-        bottom: -6px;
+        bottom: -7px;
         left: 50%;
         margin-left: -8px;
         border-width: 8px;
-        border-color: transparent #b5b5b5 #b5b5b5 #b5b5b5;
+        border-color: #b5b5b5 transparent transparent transparent;
         border-style: solid;
-        background: white;
+        /*background: white;*/
     }
     &:after {
         content: '';
         position: absolute;
         width: 16px;
         height: 16px;
-        bottom: -7px;
+        bottom: -6px;
         left: 50%;
         margin-left: -8px;
         border-width: 8px;
-        border-color: transparent white white white;
+        border-color: white transparent transparent transparent;
         border-style: solid;
     }
 }
@@ -360,6 +360,24 @@ button:disabled {
         top: 3px;
         @include sprite($warning-red);
     }
+}
+.tooltip-cart-popup {
+    max-width: 220px;
+    font-family: $font2;
+    font-size: 14px;
+    a {
+        color: $blue-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+.qtip-custom {
+    background: white;
+    border: 1px solid $gray-color;
+    padding: 5px 10px;
+    line-height: normal;
+    width: 220px;
 }
 
 .breadcrumb {
@@ -481,6 +499,7 @@ label {
         border-radius: 3px;
         padding: 0 40px 0 5px;
         line-height: 31px;
+        height: 31px;
         text-align: left;
         .jq-selectbox__trigger {
             position: absolute;
@@ -523,6 +542,47 @@ label {
         }
         .jq-selectbox__trigger {
             display: none;
+        }
+    }
+}
+.select-confirm {
+    @extend .select-default;
+    .jq-selectbox__select {
+        border: 1px solid $blue-color;
+        background: $blue-color;
+        color: $white-color;
+        font-weight: 600;
+        padding: 0 50px 0 25px;
+        .jq-selectbox__trigger {
+            width: 50px;
+            .jq-selectbox__trigger-arrow {
+                @include sprite($product-select-trigger-blue);
+                margin-top: -5.5px;
+                margin-left: -14px;
+            }
+        }
+    }
+    .jq-selectbox__dropdown {
+        border: 1px solid $blue-color;
+        border-top: transparent;
+        background: $blue-color;
+        color: $white-color;
+        padding: 5px 50px 5px 25px;
+        li {
+            &.sel, &:hover {
+                color: $white-color;
+                opacity: .8;
+            }
+        }
+    }
+    &.select-confirm_confirmed {
+        .jq-selectbox__select {
+            border: 1px solid $green-color;
+            background: $green-color;
+        }
+        .jq-selectbox__dropdown {
+            border: 1px solid $green-color;
+            background: $green-color;
         }
     }
 }
@@ -629,19 +689,19 @@ img#backbuffer {
 }
 
 ::-webkit-input-placeholder {
-  color: $placeholder-text-color;
+    color: $placeholder-text-color;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: $placeholder-text-color;
+    color: $placeholder-text-color;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: $placeholder-text-color;
+    color: $placeholder-text-color;
 }
 
 :-ms-input-placeholder {
-  color: $placeholder-text-color;
+    color: $placeholder-text-color;
 }
 
 @import "page-assets/menu";

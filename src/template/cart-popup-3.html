@@ -1,0 +1,543 @@
+<div id="cart-popup-3" class="popup cart cart-popup">
+    <div class="container">
+        <h3 class="cart-h3">Укажите соответствий размеров, номеров и фамилий</h3>
+        <ul class="tabs">
+            <li class="tab"><a href="#cart-popup-3_1" class="active">Общая информация о команде</a></li>
+            <li class="tab"><a href="#cart-popup-3_2">Информация по отдельным позициям</a></li>
+        </ul>
+        <div id="cart-popup-3_1" class="js-personal">
+            <p><strong>Чтобы Вы не заполняли повторно информацию по персонализации для разных товаров<br>
+                    Мы автоматически заполним страницы конкретных товаров в соответствии с размерами</strong><br>
+                которые Вы укажите на этой странице и указали ранее. <br>
+                Далее Вы можете уточнить подробности по каждому отдельному товару.</p>
+            <form class="cart-popup-form" enctype="multipart/form-data">
+                <div class="product-heading">Персонализация</div>
+                <p>Если Вам нужна персонализация каждого человека, а именно, номера, фамилии и т.п. 
+                    <br>укажите это. </p>
+                <div class="product-heading no-bg primary">Нанести номера или фамилии?</div>
+                <ul class="checkbox-inline">
+                    <li><label><input type="radio" name="somename5" checked class="js-personal__show"> Да</label></li>
+                    <li><label><input type="radio" name="somename5" class="js-personal__hide"> Нет, только логотипы</label></li>
+                </ul>
+                <div class="js-personal__wrapper_show">
+                    <p><strong>Укажите параметры телосложения и мы автоматически подберем оптимальный размер.</strong></p>
+                    <p>Мы настоятельно рекомендуем заполнить эту информацию, во избежание неточностей при производстве.</p>
+                    <button class="btn btn-gold btn-lg btn-size">
+                        <span>Как снять мерки
+                            <i class="icon icon-btn-size"></i>
+                        </span>
+                    </button>
+                    <div class="cart-popup-form-inputs">
+                        <div class="cart-popup-form-inputs-inner">
+                            <div class="cart-popup-form-input-wrapper">
+                                <div class="input-group">
+                                    <label class="size1">№<br>п.п.</label>
+                                    <label class="size2">Фамилия<br>игрока</label>
+                                    <label class="size3">Номер<br>игрока</label>
+                                    <label class="size3">Рост</label>
+                                    <label class="size3">Обхват<br>груди</label>
+                                    <label class="size3">Обхват<br>бедер</label>
+                                </div>
+                            </div>
+                            <div class="cart-popup-form-input-wrapper">
+                                <p class="center-align"><strong>Игрок (основной)</strong></p>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="about-add">
+                                    <a href="#" >
+                                        <i class="icon icon-printable-add icon-middle"></i>
+                                        Добавить еще
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cart-popup-form-input-wrapper">
+                                <p class="center-align"><strong>Вратарь (либеро) и т.д.</strong></p>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="about-add">
+                                    <a href="#" >
+                                        <i class="icon icon-printable-add icon-middle"></i>
+                                        Добавить еще
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__total">
+                                <div class="input-group">
+                                    <label class="bebas size4">Общее количество</label>
+                                    <input class="size5" value="20">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Далее, при оформлении конкретных товаров, вы можете удалить некоторые позиции или вносить в них изменения, косаемые отдельного товара.
+                        Эта таблица изменена не будет</p>
+                </div>
+                <div class="product-heading">Дизайн</div>
+                <p><strong>Описание общего для всех товаров дизайна (общая концепция для всего заказа)</strong></p>
+                <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__textarea">
+                    <textarea></textarea>
+                </div>
+
+                <div class="product-heading">Загрузка файлов</div>
+                <p>Здесь Вы можете загрузить все сопутствующие вашему заказу файлы: логотипы, шрифты, рисунки, таблицы и т.п.</p>
+                <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__file">
+                    <div class="input-group">
+                        <input type="file" data-placeholder="" data-browse="" multiple>
+                        <button class="file-upload-submit">Загрузить</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-blue btn-md btn-submit">
+                        <span>Заполнить эту информацию ко всем позициям</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div id="cart-popup-3_2">
+            <div class="cart-popup-slider">
+                <div class="slide">
+                    <div class="cart-item style1">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart1.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Коньки хоккейные
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                                <dt>Брэнд:</dt>
+                                <dd>Easton</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-color cart-item__centered">
+                            <div class="product-heading">Цвет</div>
+                            <div class="cart-item-inner">
+                                <div class="cart-item-input-color cart-item-input-color_primary" style="background-color: yellow"></div>
+                                <a href="#" class="cart-item-link">изменить</a>
+                            </div>
+                        </div>
+                        <div class="cart-item-print cart-item__centered">
+                            <div class="product-heading">Нанесения</div>
+                            <div class="cart-item-inner">
+                                <select class="cart-item-select">
+                                    <option>Аппликация</option>
+                                    <option>Шеврон</option>
+                                    <option>Пленка</option>
+                                    <option>Пленка</option>
+                                </select>
+                                <select class="cart-item-select">
+                                    <option>Шеврон</option>
+                                    <option>Аппликация</option>
+                                    <option>Пленка</option>
+                                    <option>Пленка</option>
+                                </select>
+                                <select class="cart-item-select">
+                                    <option>Пленка</option>
+                                    <option>Аппликация</option>
+                                    <option>Шеврон</option>
+                                    <option>Пленка</option>
+                                </select>
+                                <select class="cart-item-select">
+                                    <option>Пленка</option>
+                                    <option>Аппликация</option>
+                                    <option>Шеврон</option>
+                                    <option>Пленка</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="cart-item style1">
+                        <div class="cart-item-image">
+                            <img src="img/product/cart1.jpg" alt="alt text">
+                        </div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-info-title">
+                                Коньки хоккейные
+                            </div>
+                            <dl class="cart-item-info-list">
+                                <dt>Артикул:</dt>
+                                <dd>SD1234JG</dd>
+                                <dt>Брэнд:</dt>
+                                <dd>Easton</dd>
+                            </dl>
+                        </div>
+                        <div class="cart-item-color cart-item__centered">
+                            <div class="product-heading">Цвет</div>
+                            <div class="cart-item-inner">
+                                <div class="cart-item-input-color cart-item-input-color_primary" style="background-color: yellow"></div>
+                                <a href="#" class="cart-item-link">изменить</a>
+                            </div>
+                        </div>
+                        <div class="cart-item-print cart-item__centered">
+                            <div class="product-heading">Нанесения</div>
+                            <div class="cart-item-inner">
+                                <select class="cart-item-select">
+                                    <option>Аппликация</option>
+                                    <option>Шеврон</option>
+                                    <option>Пленка</option>
+                                    <option>Пленка</option>
+                                </select>
+                                <select class="cart-item-select">
+                                    <option>Шеврон</option>
+                                    <option>Аппликация</option>
+                                    <option>Пленка</option>
+                                    <option>Пленка</option>
+                                </select>
+                                <select class="cart-item-select">
+                                    <option>Пленка</option>
+                                    <option>Аппликация</option>
+                                    <option>Шеврон</option>
+                                    <option>Пленка</option>
+                                </select>
+                                <select class="cart-item-select">
+                                    <option>Пленка</option>
+                                    <option>Аппликация</option>
+                                    <option>Шеврон</option>
+                                    <option>Пленка</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form class="cart-popup-form js-personal" enctype="multipart/form-data">
+                <div class="product-heading">Персонализация</div>
+                <p>Если Вам нужна персонализация каждого человека, а именно, номера, фамилии и т.п. 
+                    <br>укажите это. </p>
+                <div class="product-heading no-bg primary">Нанести номера или фамилии?</div>
+                <ul class="checkbox-inline">
+                    <li><label><input type="radio" name="somename6" checked class="js-personal__show"> Да</label></li>
+                    <li><label><input type="radio" name="somename6" class="js-personal__hide"> Нет, только логотипы</label></li>
+                </ul>
+                <button class="btn btn-gold btn-lg btn-size">
+                    <span>Как снять мерки
+                        <i class="icon icon-btn-size"></i>
+                    </span>
+                </button>
+                <div class="cart-popup-form-inputs">
+                    <div class="hide">
+                        <div id="tooltip-cart-popup" class="tooltip-cart-popup">
+                            Нажимая кнопку «подтвердить»,
+                            Я подтверждаю правильность 
+                            выбранного размера и 
+                            соглашаюсь с <a href="#">условиями 
+                                пользовательского соглашения</a>
+                        </div>
+                    </div>
+                    <div class="cart-popup-form-inputs-inner">
+                        <div class="js-personal__wrapper_show">
+                            <p>Мы автоматически заполнили данную таблицу согласно общему списку вашей команды!<br>
+                                <strong>Но Вам обязательно нужно перепроверить информацию</strong></p>
+                            <p><strong>Изменения которые Вы тут внесете будут касаться только данного товара</strong></p>
+                            <div class="cart-popup-form-input-wrapper">
+                                <div class="input-group">
+                                    <label class="size1">№<br>п.п.</label>
+                                    <label class="size2">Фамилия<br>игрока</label>
+                                    <label class="size3">Номер<br>игрока</label>
+                                    <label class="size3">Рост</label>
+                                    <label class="size3">Обхват<br>груди</label>
+                                    <label class="size9 cart-popup-form-input-blue cart-popup-form-input-blue_bebas">Рекомендуемый<br>Оригинальный размер</label>
+                                </div>
+                            </div>
+                            <div class="cart-popup-form-input-wrapper">
+                                <p class="center-align"><strong>Игрок (основной)</strong></p>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm select-confirm_confirmed">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <button class="size10 button-confirm button-confirm_confirmed">Подтверждено</button>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm select-confirm_confirmed">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <button class="size10 button-confirm button-confirm_confirmed">Подтверждено</button>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm select-confirm_confirmed">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <button class="size10 button-confirm button-confirm_confirmed">Подтверждено</button>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm select-confirm_confirmed">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <button class="size10 button-confirm button-confirm_confirmed">Подтверждено</button>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm select-confirm_confirmed">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <button class="size10 button-confirm button-confirm_confirmed">Подтверждено</button>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm select-confirm_confirmed">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <button class="size10 button-confirm button-confirm_confirmed">Подтверждено</button>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <div>
+                                        <button class="size10 button-confirm js-qtip" data-qtip-el="#tooltip-cart-popup">Подтвердить</button>
+                                    </div>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <div>
+                                        <button class="size10 button-confirm js-qtip" data-qtip-el="#tooltip-cart-popup">Подтвердить</button>
+                                    </div>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <div>
+                                        <button class="size10 button-confirm js-qtip" data-qtip-el="#tooltip-cart-popup">Подтвердить</button>
+                                    </div>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <div>
+                                        <button class="size10 button-confirm js-qtip" data-qtip-el="#tooltip-cart-popup">Подтвердить</button>
+                                    </div>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <div>
+                                        <button class="size10 button-confirm js-qtip" data-qtip-el="#tooltip-cart-popup">Подтвердить</button>
+                                    </div>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <div>
+                                        <button class="size10 button-confirm js-qtip" data-qtip-el="#tooltip-cart-popup">Подтвердить</button>
+                                    </div>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="about-add">
+                                    <a href="#" >
+                                        <i class="icon icon-printable-add icon-middle"></i>
+                                        Добавить еще
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="cart-popup-form-input-wrapper">
+                                <p class="center-align"><strong>Вратарь (либеро) и т.д.</strong></p>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <div>
+                                        <button class="size10 button-confirm js-qtip" data-qtip-el="#tooltip-cart-popup">Подтвердить</button>
+                                    </div>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="input-group">
+                                    <label class="size1">000</label>
+                                    <input class="size2" placeholder="Фамилия">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <input class="size3" placeholder="000">
+                                    <select class="size9 select-confirm">
+                                        <option>XL</option>
+                                        <option>XXL</option>
+                                        <option>XXXL</option>
+                                    </select>
+                                    <div>
+                                        <button class="size10 button-confirm js-qtip" data-qtip-el="#tooltip-cart-popup">Подтвердить</button>
+                                    </div>
+                                    <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                                </div>
+                                <div class="about-add">
+                                    <a href="#" >
+                                        <i class="icon icon-printable-add icon-middle"></i>
+                                        Добавить еще
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        @@include('./product-data-size-row-popup.html')
+                        
+                        <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__total">
+                            <div class="input-group">
+                                <label class="bebas size4">Общее количество</label>
+                                <input class="size5" value="20">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-heading">Дизайн</div>
+                <p><strong>Описание желаемого дизайна в свободной форме</strong></p>
+                <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__textarea">
+                    <textarea></textarea>
+                </div>
+
+                <div class="product-heading">Загрузка файлов</div>
+                <p>Здесь Вы можете загрузить все сопутствующие вашему заказу файлы: логотипы, шрифты, рисунки, таблицы и т.п.</p>
+                <div class="cart-popup-form-input-wrapper cart-popup-form-input-wrapper__file">
+                    <div class="input-group">
+                        <label>Логотип.cdr</label>
+                        <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="input-group">
+                        <label>Логотип.cdr</label>
+                        <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="input-group">
+                        <label>Логотип.cdr</label>
+                        <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="input-group">
+                        <label>Логотип.cdr</label>
+                        <a href="#" class="cart-popup-form-remove"><i class="fa fa-times"></i></a>
+                    </div>
+                    <div class="input-group">
+                        <input type="file" data-placeholder="" data-browse="" multiple>
+                        <button class="file-upload-submit">Загрузить</button>
+                    </div>
+                </div>
+
+                <div>
+                    <button type="submit" class="btn btn-blue btn-md btn-submit">
+                        <span>Сохранить</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

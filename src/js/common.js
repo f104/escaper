@@ -42,6 +42,26 @@ jQuery(function () {
                 });
             }
         });
+        $.fn.qtip.zindex = 150000;
+        $('.js-qtip').each(function () {
+            if ($(this).data('qtip-el')) {
+                var text = $($(this).data('qtip-el'));
+                $(this).qtip({
+                    style: {classes: 'qtip-custom'},
+                    position: {
+                        my: 'bottom center',
+                        at: 'top center',
+                    },
+                    content: {
+                        text: text
+                    },
+                    hide: {
+                        fixed: true,
+                        delay: 300
+                    }
+                });
+            }
+        });
         $('.js-popup-close').click(function (e) {
             $.fancybox.close();
         });
@@ -205,14 +225,19 @@ jQuery(function () {
             arrows: true,
             dots: false,
             focusOnSelect: false,
+            draggable: false,
             infinite: false
         });
-        // recalc slisk slider on show tab
+        // recalc slisk slider and styler on show tab
         $('.cart-popup .tabs').tabs({
             onShow: function ($tab) {
-                $tab.find('.cart-popup-slider').slick('setPosition')
-            }}
-        );
+                $tab.find('.cart-popup-slider').slick('setPosition');
+                setTimeout(function () {
+                    $tab.find('select').trigger('refresh');
+                }, 500);
+                initKeyShotVR();
+            }
+        });
         // fix all tabs active in hudden div
 //        $('.cart-popup .tabs .tab').first().find('a').click()
         $('.product-list-item').hover(
@@ -250,7 +275,7 @@ jQuery(function () {
             dots: true,
             fade: true,
         });
-        $('.cart .product-data-list').slick({
+        $('.js-product-data-list').slick({
             arrows: true,
             dots: false,
             slidesToShow: 10,
@@ -565,6 +590,15 @@ jQuery(function () {
                 position: 'top',
                 html: true
             });
+        });
+        $('.js-personal__wrapper_hide').hide();
+        $('.js-personal__show').on('click', function () {
+            $(this).parents('.js-personal').find('.js-personal__wrapper_show').show();
+            $(this).parents('.js-personal').find('.js-personal__wrapper_hide').hide();
+        });
+        $('.js-personal__hide').on('click', function () {
+            $(this).parents('.js-personal').find('.js-personal__wrapper_show').hide();
+            $(this).parents('.js-personal').find('.js-personal__wrapper_hide').show();
         });
     }
 

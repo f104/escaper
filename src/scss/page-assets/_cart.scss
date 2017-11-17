@@ -797,10 +797,14 @@
             padding: 0 50px;
             .cart-item {
                 margin: 20px 20px 30px;
+                background-color: $white-color;
                 .cart-item-info { width: auto; }
                 .cart-item-color { width: 100px; }
                 .cart-item-material { width: 190px; }
                 .cart-item-print { width: 190px; }
+                &.style1 {
+                    margin: 20px 200px 30px;
+                }
             }
             .slick-list {
                 padding: 0;
@@ -883,10 +887,30 @@
                         display: inline-flex;
                         font-family: $font2;
                     }
-                    .select-default {
+                    .select-default, .select-confirm {
                         .jq-selectbox__select {
                             height: 36px;
                             width: 100%;
+                        }
+                    }
+                    .select-confirm {
+                        .jq-selectbox__dropdown {
+                            top: 36px;
+                        }
+                    }
+                    .button-confirm {
+                        font-family: $font1;
+                        font-weight: 600;
+                        font-size: 17px;
+                        border: 1px solid $gray-color;
+                        background-color: $gray-light-color;
+                        border-radius: 3px;
+                        line-height: 34px;
+                        outline: none;
+                        &.button-confirm_confirmed {
+                            border-color: $green-color;
+                            background-color: $green-color;
+                            color: $white-color;
                         }
                     }
                     .product-data-list-wrapper.count {
@@ -916,6 +940,8 @@
                     .size6 { width: 76px; }
                     .size7 { width: 135px; }
                     .size8 { width: 165px; }
+                    .size9 { width: 145px; }
+                    .size10 { width: 115px; }
                 }
                 textarea {
                     @extend .input-default;
@@ -928,6 +954,9 @@
                     border-color: $blue-color !important;
                     color: $white-color;
                     font-weight: 600;
+                    &.cart-popup-form-input-blue_bebas {
+                        font-family: $font1;
+                    }
                 }
                 .cart-popup-form-remove {
                     border-radius: 2px;
@@ -992,6 +1021,12 @@
             .btn-submit {
                 margin-top: 50px;
             }
+        }
+        .product-data-list.size {
+            margin: 40px 0;
+        }
+        .product-data-list-wrapper1.active .product-data-list-wrapper1-gray-bg {
+            background-color: $blue-color;
         }
     }
 }
