@@ -88,6 +88,9 @@ input {
 .necessaty_fields {
     display: none;
 }
+.jGrowl {
+    z-index: 99994;
+}
 
 .page-h1 {
     font-family: $font1;

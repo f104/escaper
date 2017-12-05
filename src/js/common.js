@@ -65,6 +65,11 @@ jQuery(function () {
         $('.js-popup-close').click(function (e) {
             $.fancybox.close();
         });
+        $(document).on('af_complete', function(event, response) {
+            if (response.success) {
+                $.fancybox.close();
+            }
+        });
         // temporary, must be deleted
         $('.js-btn-register').click(function (e) {
             e.preventDefault();
