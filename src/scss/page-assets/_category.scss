@@ -18,9 +18,9 @@ $gutter: $gutter-width;
         display: block;
         display: flex;
         flex-direction: column;
-        background: url(#{$img}category-bg.jpg) no-repeat;
+        /*background: url(#{$img}category-bg.jpg) no-repeat;*/
         margin-bottom: $gutter;
-        background-size: contain;
+        /*background-size: contain;*/
         height: 276px;
         .category-item-image {
             flex: 1;
@@ -43,9 +43,13 @@ $gutter: $gutter-width;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
+            background: linear-gradient(to top, #e8e9ee, #f2f4f6);
+        }
+        &.medium {
+            height: 216px;            
         }
         &.small {
-            height: 180px;
+            height: 175px;
             img {
                 padding: 12px;
                 max-height: 150px;
@@ -59,6 +63,7 @@ $gutter: $gutter-width;
             background-size: contain;
             p {
                 /*color: $white-color;*/
+                background: transparent;
             }
         }
     }

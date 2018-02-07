@@ -1,0 +1,139 @@
+<div id="product-material" class="popup cart cart-popup product-material">
+    <div class="container">
+        <h3 class="cart-h3">Выбор основного материала</h3>
+        
+        <div class="product-material-header">
+            <p>Вы можете выбрать материал из которого будет выполнен ваш заказ. От сегмента материала будет зависеть цена на единицу изделия</p>
+            <table class="product-material-table">
+                <tr>
+                    <td rowspan="2" class="_small">Сегмент материалов</td>
+                    <td colspan="6" class="_small">Стоимость за единицу (рублей)</td>
+                </tr>
+                <tr class="gray-medium-bg">
+                    <td>1-3 ед.</td>
+                    <td>4-10 ед.</td>
+                    <td>11-50 ед.</td>
+                    <td>51-100 ед.</td>
+                    <td>101-199 ед.</td>
+                    <td>Более 200 ед.</td>
+                </tr>
+                <tr>
+                    <td>Эконом</td>
+                    <td>1200</td>
+                    <td>1100</td>
+                    <td>1000</td>
+                    <td>900</td>
+                    <td>800</td>
+                    <td>Индивидуальная</td>
+                </tr>
+                <tr>
+                    <td>Стандарт</td>
+                    <td>1300</td>
+                    <td>1200</td>
+                    <td>1100</td>
+                    <td>1000</td>
+                    <td>900</td>
+                    <td>Индивидуальная</td>
+                </tr>
+                <tr>
+                    <td>Премиум</td>
+                    <td>1400</td>
+                    <td>1100</td>
+                    <td>1000</td>
+                    <td>900</td>
+                    <td>800</td>
+                    <td>Индивидуальная</td>
+                </tr>
+                <tr>
+                    <td><span class="coolmax _middle">CoolMax</span></td>
+                    <td>1800</td>
+                    <td>1700</td>
+                    <td>1600</td>
+                    <td>1500</td>
+                    <td>1400</td>
+                    <td>Индивидуальная</td>
+                </tr>
+            </table>
+            <p><strong>Подберите подходящий материал</strong></p>
+        </div>
+        
+        
+        <ul class="tabs">
+            <li class="tab"><a href="#product-material_3-1">Эконом</a></li>
+            <li class="tab"><a href="#product-material_3-2" class="active">Стандарт</a></li>
+            <li class="tab"><a href="#product-material_3-3">Премиум</a></li>
+            <li class="tab"><a href="#product-material_3-4"><span class="coolmax _middle">CoolMax</span></a></li>
+        </ul>
+        <div id="product-material_3-1">
+            Эконом
+        </div>
+        <div id="product-material_3-2">
+            <div class="product-material-list">
+                @@include('./product-material-list-item.html', {
+                "id": 31,
+                "colors": 0,
+                "active": 0,
+                "available": 1,
+                "selected": 0
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 32,
+                "colors": 0,
+                "active": 0,
+                "available": 0,
+                "selected": 0
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 33,
+                "colors": 0,
+                "active": 1,
+                "available": 1,
+                "selected": 1
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 34,
+                "colors": 0,
+                "active": 0,
+                "available": 1,
+                "selected": 0
+                })
+            </div>
+        </div>
+        <div id="product-material_3-3">
+            Премиум
+        </div>
+        <div id="product-material_3-4">
+            @@include('./product-material-coolmax.html')
+            <div class="product-material-list">
+                @@include('./product-material-list-item.html', {
+                "id": 35,
+                "colors": 0,
+                "active": 0,
+                "available": 1,
+                "selected": 0
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 36,
+                "colors": 0,
+                "active": 0,
+                "available": 0,
+                "selected": 0
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 37,
+                "colors": 0,
+                "active": 1,
+                "available": 1,
+                "selected": 1
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 38,
+                "colors": 0,
+                "active": 0,
+                "available": 1,
+                "selected": 0
+                })
+            </div>
+        </div>
+    </div>
+</div>

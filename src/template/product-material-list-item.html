@@ -1,0 +1,113 @@
+<div class="product-material-list__item">
+    <div class="_col1">
+        <div id="product-material-slider-@@id" data-nav="#product-material-slider-nav-@@id" class="product-material-slider">
+            <div class="slide">
+                <a data-fancybox="product-material-gallery-@@id" href="img/product/material1.jpg">
+                    <img src="img/product/material1_sm.jpg" alt="Material 1">
+                </a>
+            </div>
+            <div class="slide">
+                <a data-fancybox="product-material-gallery-@@id" href="img/product/material2.jpg">
+                    <img src="img/product/material2_sm.jpg" alt="Material 1">
+                </a>
+            </div>
+            <div class="slide">
+                <a data-fancybox="product-material-gallery-@@id" href="img/product/material3.jpg">
+                    <img src="img/product/material3_sm.jpg" alt="Material 1">
+                </a>
+            </div>
+            <div class="slide">
+                <a data-fancybox="product-material-gallery-@@id" href="img/product/material4.jpg">
+                    <img src="img/product/material4_sm.jpg" alt="Material 1">
+                </a>
+            </div>
+        </div>
+        <div id="product-material-slider-nav-@@id" data-nav="#product-material-slider-@@id" class="product-material-slider-nav">
+            <div class="slide">
+                <img src="img/product/material1_xs.jpg" alt="Material 1">
+            </div>
+            <div class="slide">
+                <img src="img/product/material2_xs.jpg" alt="Material 1">
+            </div>
+            <div class="slide">
+                <img src="img/product/material3_xs.jpg" alt="Material 1">
+            </div>
+            <div class="slide">
+                <img src="img/product/material4_xs.jpg" alt="Material 1">
+            </div>
+        </div>
+    </div>
+    <div class="_col2">
+        <div class="product-material-list__title">
+            Ложная сетка 230 г/м²
+        </div>
+        <div class="flex">
+            <div class="product-material-list__desc flex">
+                <div class="_dt">Плотность:</div>
+                <div class="_dd">230 г/м²</div>
+            </div>
+            <div class="product-material-list__desc flex">
+                <div class="_dt">Состав:</div>
+                <div class="_dd">90% полиэстер, 10% хлопок</div>
+            </div>
+        </div>
+        <div class="product-material-list__desc @@if (colors == 0) {_nocolors}">
+            <div class="js-scrollbar scrollbar-outer">
+                <div class="_dt">Описание:</div>
+                <div class="_dd _text">100% полиэфирное трикотажное полотно несквозной ячеистой структуры. Материал имеет самую 
+                    высокую плотность, широко применяется для производства одежды для зимних видов спорта. 
+                    Ложную сетку можно использовать для пошива хоккейной формы, формы для регби, американского 
+                    футбола и не только.Материал эластичный, хорошо тянется во всех направлениях, идеально 
+                    подходит для сублимационной печати. 100% полиэфирное трикотажное полотно несквозной ячеистой структуры. Материал имеет самую 
+                    высокую плотность, широко применяется для производства одежды для зимних видов спорта. 
+                    Ложную сетку можно использовать для пошива хоккейной формы, формы для регби, американского 
+                    футбола и не только.Материал эластичный, хорошо тянется во всех направлениях, идеально 
+                    подходит для сублимационной печати.</div>
+            </div>
+        </div>
+        @@if (colors == 1) {
+            <div class="product-material-list__desc flex _colors">
+                <div class="_dt">Цвета:</div>
+                <div class="_dd">
+                    <ul class="js-active-on-click__wrapper">
+                        <li><span style="background-color: yellow;" class="js-active-on-click"></span></li>
+                        <li><span style="background-color: orange;" class="js-active-on-click"></span></li>
+                        <li><span style="background-color: red;" class="js-active-on-click"></span></li>
+                        <li><span style="background-color: magenta;" class="js-active-on-click"></span></li>
+                        <li><span style="background-color: purple;" class="js-active-on-click @@if (active == 1) {active}"></span></li>
+                        <li><span style="background-color: darkblue;" class="js-active-on-click"></span></li>
+                        <li><span style="background-color: skyblue;" class="js-active-on-click"></span></li>
+                        <li><span style="background-color: greenyellow;" class="js-active-on-click"></span></li>
+                    </ul>
+                </div>
+            </div>
+        }
+    </div>
+    <div class="_col3">
+        @@if (available == 1) {
+            <div class="product-material-list__available">
+                В наличии на складе
+            </div>
+        }
+        @@if (available == 0) {
+            <div class="product-material-list__available _not">
+                Ткань под заказ
+            </div>
+            <p>Ориентировочная партия<br>
+                <strong>от 50 единиц</strong></p>
+            <p><strong>При заказе сегодня</strong>
+                Ориентировочная дата прибытия ткани на склад</p>
+            <p><strong class="blue">20.12.2017</strong></p>
+            <p>Точную минимальную партию и дату 
+                уточняйте у менеджера</p>
+        }
+    </div>
+    <div class="_col4">
+        @@if (selected == 1) {
+            <i class="icon icon-success-rounded-cart"></i>
+        }
+        @@if (selected == 0) {
+            <a class="btn btn-gold btn-md"><span>Выбрать</span></a>
+        }
+    </div>
+</div>

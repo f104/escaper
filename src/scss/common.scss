@@ -60,6 +60,11 @@ input {
     outline: none;
 }
 
+p, ul {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
 .popup {
     margin: 0;
     background: transparent;
@@ -74,7 +79,13 @@ input {
 }
 
 .no-margin {
-    margin: 0;
+    margin: 0 !important;
+}
+.no-margin-top {
+    margin-top: 0 !important;
+}
+.no-margin-bottom {
+    margin-bottom: 0 !important;
 }
 .underline {
     text-decoration: underline;
@@ -89,7 +100,7 @@ input {
     display: none;
 }
 .jGrowl {
-    z-index: 99994;
+    z-index: 99994 !important;
 }
 
 .page-h1 {
@@ -124,6 +135,18 @@ input {
 
 .icon {
     display: inline-block;
+}
+
+.coolmax {
+    display: inline-block;
+    @include sprite($coolmax);
+    @include text-hide;
+    &._middle {
+        vertical-align: middle;
+    }
+    &._margin {
+        margin: 0 3px;
+    }
 }
 
 .icon-{
@@ -189,7 +212,7 @@ input {
 }
 
 .flex {
-    display: flex;
+    display: flex !important;
 }
 .hidden {
     display: none;
@@ -212,6 +235,7 @@ input {
 .blue { color: $blue-color; background: transparent !important;}
 .green { color: $green-color; background: transparent !important;}
 .blue-bg { background-color: $blue-color; }
+.gray-medium-bg { background-color: $gray-medium-color; }
 
 button:disabled {
     background: linear-gradient(to top, $gray-color, $gray-light-color);

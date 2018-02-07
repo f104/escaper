@@ -1,0 +1,164 @@
+<div id="product-material" class="popup cart cart-popup product-material">
+    <div class="container">
+        <h3 class="cart-h3">Выбор материала вставок</h3>
+        
+        <div class="product-material-header">
+            <p class="_h1">Основной материал</p>
+            <div class="product-material-list">
+                <div class="product-material-list__item">
+                    <div class="_col1">
+                        <div id="product-material-slider-4" data-nav="#product-material-slider-nav-4" class="product-material-slider">
+                            <div class="slide">
+                                <a data-fancybox="product-material-gallery-0" href="img/product/material1.jpg">
+                                    <img src="img/product/material1_sm.jpg" alt="Material 1">
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a data-fancybox="product-material-gallery-0" href="img/product/material2.jpg">
+                                    <img src="img/product/material2_sm.jpg" alt="Material 1">
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a data-fancybox="product-material-gallery-0" href="img/product/material3.jpg">
+                                    <img src="img/product/material3_sm.jpg" alt="Material 1">
+                                </a>
+                            </div>
+                            <div class="slide">
+                                <a data-fancybox="product-material-gallery-0" href="img/product/material4.jpg">
+                                    <img src="img/product/material4_sm.jpg" alt="Material 1">
+                                </a>
+                            </div>
+                        </div>
+                        <div id="product-material-slider-nav-4" data-nav="#product-material-slider-4" class="product-material-slider-nav">
+                            <div class="slide">
+                                <img src="img/product/material1_xs.jpg" alt="Material 1">
+                            </div>
+                            <div class="slide">
+                                <img src="img/product/material2_xs.jpg" alt="Material 1">
+                            </div>
+                            <div class="slide">
+                                <img src="img/product/material3_xs.jpg" alt="Material 1">
+                            </div>
+                            <div class="slide">
+                                <img src="img/product/material4_xs.jpg" alt="Material 1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_col2">
+                        <div class="product-material-list__title">
+                            Ложная сетка 230 г/м²
+                        </div>
+                        <div class="flex">
+                            <div class="product-material-list__desc flex">
+                                <div class="_dt">Плотность:</div>
+                                <div class="_dd">230 г/м²</div>
+                            </div>
+                            <div class="product-material-list__desc flex">
+                                <div class="_dt">Состав:</div>
+                                <div class="_dd">90% полиэстер, 10% хлопок</div>
+                            </div>
+                        </div>
+                        <div class="product-material-list__desc _nocolors">
+                            <div class="js-scrollbar scrollbar-outer">
+                                <div class="_dt">Описание:</div>
+                                <div class="_dd _text">100% полиэфирное трикотажное полотно несквозной ячеистой структуры. Материал имеет самую 
+                                    высокую плотность, широко применяется для производства одежды для зимних видов спорта. 
+                                    Ложную сетку можно использовать для пошива хоккейной формы, формы для регби, американского 
+                                    футбола и не только.Материал эластичный, хорошо тянется во всех направлениях, идеально 
+                                    подходит для сублимационной печати. 100% полиэфирное трикотажное полотно несквозной ячеистой структуры. Материал имеет самую 
+                                    высокую плотность, широко применяется для производства одежды для зимних видов спорта. 
+                                    Ложную сетку можно использовать для пошива хоккейной формы, формы для регби, американского 
+                                    футбола и не только.Материал эластичный, хорошо тянется во всех направлениях, идеально 
+                                    подходит для сублимационной печати.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="_col3">
+                        <div class="product-material-list__available">
+                            В наличии на складе
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="_h2">Варианты тканей для вставок, подходящие для выбранного основного материала.</p>
+        </div>
+
+        <ul class="tabs">
+            <li class="tab"><a href="#product-material_4-1">Эконом</a></li>
+            <li class="tab"><a href="#product-material_4-2">Стандарт</a></li>
+            <li class="tab"><a href="#product-material_4-3">Премиум</a></li>
+            <li class="tab"><a href="#product-material_4-4" class="active"><span class="coolmax _middle">CoolMax</span></a></li>
+        </ul>
+        <div id="product-material_4-1">
+            Эконом
+        </div>
+        <div id="product-material_4-2">
+            <div class="product-material-list">
+                @@include('./product-material-list-item.html', {
+                "id": 41,
+                "colors": 0,
+                "active": 0,
+                "available": 1,
+                "selected": 0
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 42,
+                "colors": 0,
+                "active": 0,
+                "available": 0,
+                "selected": 0
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 43,
+                "colors": 0,
+                "active": 1,
+                "available": 1,
+                "selected": 1
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 44,
+                "colors": 0,
+                "active": 0,
+                "available": 1,
+                "selected": 0
+                })
+            </div>
+        </div>
+        <div id="product-material_4-3">
+            Премиум
+        </div>
+        <div id="product-material_4-4">
+            @@include('./product-material-coolmax.html')
+            <div class="product-material-list">
+                @@include('./product-material-list-item.html', {
+                "id": 45,
+                "colors": 0,
+                "active": 0,
+                "available": 1,
+                "selected": 0
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 46,
+                "colors": 0,
+                "active": 0,
+                "available": 0,
+                "selected": 0
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 47,
+                "colors": 0,
+                "active": 1,
+                "available": 1,
+                "selected": 1
+                })
+                @@include('./product-material-list-item.html', {
+                "id": 48,
+                "colors": 0,
+                "active": 0,
+                "available": 1,
+                "selected": 0
+                })
+            </div>
+        </div>
+    </div>
+</div>

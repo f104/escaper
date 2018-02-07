@@ -28,6 +28,21 @@ jQuery(function () {
                 $form.valid() ? $submit.prop('disabled', false) : $submit.prop('disabled', 'disabled');
             });
         });
+        $('.js-active-on-click').on('click', function() {
+            if (!$(this).hasClass('active')) {
+                $(this).parents('.js-active-on-click__wrapper').find('.active').removeClass('active');
+                $(this).addClass('active');
+            }
+        });
+        
+        $('.js-toggle-next').click(function (e) {
+            $(this).toggleClass('closed');
+            $(this).hasClass('closed')
+                    ? $(this).next().slideUp()
+                    : $(this).next().slideDown();
+        });
+        $('.js-toggle-next.closed').next().slideUp();
+        
         $('.js-mask_phone').inputmask('+7(999)999-99-99');
         $('.js-mask_price').inputmask('9{+} рублей');
         $('#tabs').easytabs();
@@ -66,6 +81,11 @@ jQuery(function () {
             $.fancybox.close();
         });
         $(document).on('af_complete', function(event, response) {
+            if (response.success) {
+                $.fancybox.close();
+            }
+        });
+        $(document).on('tickets_comment_save', function(event, response) {
             if (response.success) {
                 $.fancybox.close();
             }
@@ -166,6 +186,33 @@ jQuery(function () {
             focusOnSelect: true,
             infinite: false
         });
+        $('.product-material-slider').each(function(){
+            var nav = $(this).data('nav');
+            $(this).slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                asNavFor: nav
+            });
+        });
+        $('.product-material-slider-nav').each(function(){
+            var nav = $(this).data('nav');
+            $(this).slick({
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                asNavFor: nav,
+                focusOnSelect: true,
+                infinite: false
+            });
+        });
+        $('.product-material-print-slider').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            fade: true,
+            infinite: false
+        });
         $('.product-slider-vert').slick({
             slide: 'div',
             slidesToShow: 1,
@@ -240,7 +287,7 @@ jQuery(function () {
         // recalc slisk slider and styler on show tab
         $('.cart-popup .tabs').tabs({
             onShow: function ($tab) {
-                $tab.find('.cart-popup-slider').slick('setPosition');
+                $tab.find('.cart-popup-slider, .slick-slider').slick('setPosition');
                 setTimeout(function () {
                     $tab.find('select').trigger('refresh');
                 }, 500);
@@ -372,7 +419,7 @@ jQuery(function () {
         $('.product-data-list ul.color li').click(function () {
             $(this).addClass('active').siblings().removeClass('active');
         });
-        $('#data .tooltip, .product-heading .tooltip').each(function (i) {
+        $('#data .tooltip, .product-heading .tooltip, .product-material-price .tooltip').each(function (i) {
             var $parent = $(this).parent();
             var $help = $('<span/>', {
                 text: '?',
