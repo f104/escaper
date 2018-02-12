@@ -6,104 +6,196 @@
         </div>
     </div>
     <div class="product-material-heading">Примеры исполнения</div>
-    <div class="wrapper">
-        <div class="_col1">
-            <div class="product-material-print-slider">
-                <div class="slide">
+    <div class="product-material-print-slider">
+        <div class="slide">
+            <div class="wrapper">
+                <div class="_col1">
                     <img src="img/product/@@img" alt="Material 1">
                 </div>
-                <div class="slide">
-                    <img src="img/product/_@@img" alt="Material 1">
+                <div class="_col2">
+                    <table class="_table">
+                        <tr>
+                            <td colspan="2">
+                                <strong>Расчет</strong> при партии
+                                <strong>11-50 единиц</strong>
+                            </td>
+                        </tr>
+                        <tr class="gray-medium-bg">
+                            <td>Размеры, см</td>
+                            <td class="bebas">200×300</td>
+                        </tr>
+                        <tr>
+                            <td>Уровень сложности дизайна</td>
+                            <td class="bebas">2</td>
+                        </tr>
+                        <tr>
+                            <td>Стоимость разработки программы на вышивку, руб.</td>
+                            <td class="bebas"><span class="gold">450</span></td>
+                        </tr>
+                        <tr>
+                            <td>Количество стежков</td>
+                            <td class="bebas">14000</td>
+                        </tr>
+                        <tr>
+                            <td>Стоимость стежков, руб.</td>
+                            <td class="bebas"><span class="gold">235</span></td>
+                        </tr>
+                        @@if (appl == 1) {
+                            <tr>
+                                <td>Площадь аппликационного слоя, см²</td>
+                                <td class="bebas">850</td>
+                            </tr>
+                            <tr>
+                                <td>Количество слоев аппликации</td>
+                                <td class="bebas">3</td>
+                            </tr>
+                            <tr>
+                                <td>Стоимость аппликационных слоев, руб.</td>
+                                <td class="bebas">
+                                    <span class="gold">352</span> 
+                                </td>
+                            </tr>
+                        }
+                        @@if (shevron == 1) {
+                            <tr>
+                                <td>Площадь шевронного слоя, см²</td>
+                                <td class="bebas">850</td>
+                            </tr>
+                            <tr>
+                                <td>Фигурный периметр шеврона</td>
+                                <td>
+                                    <span class="bebas">+30%</span> 
+                                    <span class="_small">к стоимости стежков</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Стоимость шевронного слоя, руб.</td>
+                                <td class="bebas">
+                                    <span class="gold">352</span> 
+                                </td>
+                            </tr>
+                        }
+                        <tr>
+                            <td>Вышивка металлизированной нитью</td>
+                            <td class="bebas">
+                                +30%
+                                <span class="_small">к стоимости стежков</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Вышивка на ткани стейч</td>
+                            <td class="bebas">-</td>
+                        </tr>
+                        <tr>
+                            <td>Вышивка на ворсовых тканях</td>
+                            <td class="bebas">-</td>
+                        </tr>
+                        <tr>
+                            <td>Вышивка с эффектом 3D (Puff)</td>
+                            <td class="bebas">-</td>
+                        </tr>
+                        <tr class="gray-medium-bg">
+                            <td><strong>ИТОГО стоимость, руб.</strong></td>
+                            <td class="bebas _total">1254</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </div>
-        <div class="_col2">
-            <table class="_table">
-                <tr>
-                    <td colspan="2">
-                        <strong>Расчет</strong> при партии
-                        <strong>11-50 единиц</strong>
-                    </td>
-                </tr>
-                <tr class="gray-medium-bg">
-                    <td>Размеры, см</td>
-                    <td class="bebas">200×300</td>
-                </tr>
-                <tr>
-                    <td>Уровень сложности дизайна</td>
-                    <td class="bebas">2</td>
-                </tr>
-                <tr>
-                    <td>Стоимость разработки программы на вышивку, руб.</td>
-                    <td class="bebas"><span class="gold">450</span></td>
-                </tr>
-                <tr>
-                    <td>Количество стежков</td>
-                    <td class="bebas">14000</td>
-                </tr>
-                <tr>
-                    <td>Стоимость стежков, руб.</td>
-                    <td class="bebas"><span class="gold">235</span></td>
-                </tr>
-                @@if (appl == 1) {
-                    <tr>
-                        <td>Площадь аппликационного слоя, см²</td>
-                        <td class="bebas">850</td>
-                    </tr>
-                    <tr>
-                        <td>Количество слоев аппликации</td>
-                        <td class="bebas">3</td>
-                    </tr>
-                    <tr>
-                        <td>Стоимость аппликационных слоев, руб.</td>
-                        <td class="bebas">
-                            <span class="gold">352</span> 
-                        </td>
-                    </tr>
-                }
-                @@if (shevron == 1) {
-                    <tr>
-                        <td>Площадь шевронного слоя, см²</td>
-                        <td class="bebas">850</td>
-                    </tr>
-                    <tr>
-                        <td>Фигурный периметр шеврона</td>
-                        <td>
-                            <span class="bebas">+30%</span> 
-                            <span class="_small">к стоимости стежков</span>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>Стоимость шевронного слоя, руб.</td>
-                        <td class="bebas">
-                            <span class="gold">352</span> 
-                        </td>
-                    </tr>
-                }
-                <tr>
-                    <td>Вышивка металлизированной нитью</td>
-                    <td>
-                        <span class="bebas">+30%</span> 
-                        <span class="_small">к стоимости стежков</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Вышивка на ткани стейч</td>
-                    <td class="bebas">-</td>
-                </tr>
-                <tr>
-                    <td>Вышивка на ворсовых тканях</td>
-                    <td class="bebas">-</td>
-                </tr>
-                <tr>
-                    <td>Вышивка с эффектом 3D (Puff)</td>
-                    <td class="bebas">-</td>
-                </tr>
-                <tr class="gray-medium-bg">
-                    <td><strong>ИТОГО стоимость, руб.</strong></td>
-                    <td class="bebas _total">1254</td>
-                </tr>
-            </table>
+        <div class="slide">
+            <div class="wrapper">
+                <div class="_col1">
+                    <img src="img/product/@@img" alt="Material 1">
+                </div>
+                <div class="_col2">
+                    <table class="_table">
+                        <tr>
+                            <td colspan="2">
+                                <strong>Расчет</strong> при партии
+                                <strong>11-50 единиц</strong>
+                            </td>
+                        </tr>
+                        <tr class="gray-medium-bg">
+                            <td>Размеры, см</td>
+                            <td class="bebas">300×400</td>
+                        </tr>
+                        <tr>
+                            <td>Уровень сложности дизайна</td>
+                            <td class="bebas">2</td>
+                        </tr>
+                        <tr>
+                            <td>Стоимость разработки программы на вышивку, руб.</td>
+                            <td class="bebas"><span class="gold">450</span></td>
+                        </tr>
+                        <tr>
+                            <td>Количество стежков</td>
+                            <td class="bebas">14000</td>
+                        </tr>
+                        <tr>
+                            <td>Стоимость стежков, руб.</td>
+                            <td class="bebas"><span class="gold">235</span></td>
+                        </tr>
+                        @@if (appl == 1) {
+                            <tr>
+                                <td>Площадь аппликационного слоя, см²</td>
+                                <td class="bebas">850</td>
+                            </tr>
+                            <tr>
+                                <td>Количество слоев аппликации</td>
+                                <td class="bebas">3</td>
+                            </tr>
+                            <tr>
+                                <td>Стоимость аппликационных слоев, руб.</td>
+                                <td class="bebas">
+                                    <span class="gold">352</span> 
+                                </td>
+                            </tr>
+                        }
+                        @@if (shevron == 1) {
+                            <tr>
+                                <td>Площадь шевронного слоя, см²</td>
+                                <td class="bebas">850</td>
+                            </tr>
+                            <tr>
+                                <td>Фигурный периметр шеврона</td>
+                                <td>
+                                    <span class="bebas">+30%</span> 
+                                    <span class="_small">к стоимости стежков</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Стоимость шевронного слоя, руб.</td>
+                                <td class="bebas">
+                                    <span class="gold">352</span> 
+                                </td>
+                            </tr>
+                        }
+                        <tr>
+                            <td>Вышивка металлизированной нитью</td>
+                            <td class="bebas">
+                                +30%
+                                <span class="_small">к стоимости стежков</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Вышивка на ткани стейч</td>
+                            <td class="bebas">-</td>
+                        </tr>
+                        <tr>
+                            <td>Вышивка на ворсовых тканях</td>
+                            <td class="bebas">-</td>
+                        </tr>
+                        <tr>
+                            <td>Вышивка с эффектом 3D (Puff)</td>
+                            <td class="bebas">-</td>
+                        </tr>
+                        <tr class="gray-medium-bg">
+                            <td><strong>ИТОГО стоимость, руб.</strong></td>
+                            <td class="bebas _total">1254</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </div>
     </div>
 </div>
