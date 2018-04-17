@@ -11,6 +11,8 @@ var gulp = require('gulp'),
     browserSync = require("browser-sync"),
     rigger = require('gulp-rigger'),
     fileinclude = require('gulp-file-include'),
+    rename = require("gulp-rename"),
+    cleanCSS = require('gulp-clean-css'),
     reload = browserSync.reload;
     
 var path = {
@@ -88,6 +90,21 @@ gulp.task('style:build', function () {
         .pipe(gulp.dest(path.build.css))
         .pipe(reload({stream: true}));
 });
+
+gulp.task('css-prod', () =>
+    gulp.src('src/scss/common.scss')
+        .pipe(sass({
+            sourceMap: false,
+            errLogToConsole: true
+        }))
+        .pipe(prefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(cleanCSS())
+        .pipe(rename("common.min.css"))
+        .pipe(gulp.dest(path.build.css))
+);
 
 gulp.task('image:build', function () {
     gulp.src(path.src.img) 
