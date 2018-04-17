@@ -1926,11 +1926,11 @@
                 </div>
 
                 <div class="product-data order-detail">
-                    <div class="product-heading product-heading_sea">Из чего складывается стоимость</div>
+                    <div class="product-heading product-heading_sea no-margin-bottom">Из чего складывается стоимость</div>
                     <div class="container">
                         <div class="product-panel-wrapper">
                             <div class="row">
-                                <div class="col s4">
+                                <div class="col s4 flex">
                                     <div class="product-panel">
                                         <div class="product-panel_heading">Дизайн</div>
                                         <div class="product-panel_content product-panel_content_design">
@@ -1953,132 +1953,189 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row">
-                                    <div class="col s6">
-                                        <div class="product-panel">
-                                            <div class="product-panel_heading">Материал</div>
-                                            <div class="product-panel_content product-panel_content_material">
-                                                <ul class="product-data-materials-list">
-                                                    <li>
-                                                        <div class="product-panel-subtitle">Основной</div>
-                                                        <div class="product-data-materials-list_input">
-                                                            Интерлок 130 г/м?
-                                                        </div>
-                                                        <a class="product-panel_link" href="#">изменить материал</a>
-                                                    </li>
-                                                    <li>
-                                                        <div class="product-panel-subtitle">Дополнительный 
-                                                            <span>(вставки или часть вставок)</span>
-                                                        </div>
-                                                        <div class="product-data-materials-list_input">
-                                                            Как основной
-                                                        </div>
-                                                        <a class="product-panel_link" href="#">изменить материал</a>
-                                                    </li>
-                                                </ul>
-                                                <p>Комбинация и возможность комбинации материалов уточняется у менеджера</p>
+                                <div class="col s8">
+                                    <div class="row">
+                                        <div class="col s6 flex">
+                                            <div class="product-panel">
+                                                <div class="product-panel_heading">Материал</div>
+                                                <div class="product-panel_content product-panel_content_material">
+                                                    <ul class="product-data-materials-list">
+                                                        <li>
+                                                            <div class="product-panel-subtitle">Основной</div>
+                                                            <div class="product-data-materials-list_input">
+                                                                Интерлок 130 г/м?
+                                                            </div>
+                                                            <a class="product-panel_link" href="#">изменить материал</a>
+                                                        </li>
+                                                        <li>
+                                                            <div class="product-panel-subtitle">Дополнительный 
+                                                                <span>(вставки или часть вставок)</span>
+                                                            </div>
+                                                            <div class="product-data-materials-list_input">
+                                                                Как основной
+                                                            </div>
+                                                            <a class="product-panel_link" href="#">изменить материал</a>
+                                                        </li>
+                                                    </ul>
+                                                    <p>Комбинация и возможность комбинации материалов уточняется у менеджера</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s6 flex">
+                                            <div class="product-panel">
+                                                <div class="product-panel_heading">Дополнительные нанесения</div>
+                                                <div class="product-panel_content product-panel_content_printable">
+                                                    <div class="product-panel_content_printable-wrapper">
+                                                        <select data-placeholder="Куда нанести">
+                                                            <option></option>
+                                                            <option>На груди по центру</option>
+                                                            <option>На груди слева</option>
+                                                            <option>На груди справа</option>
+                                                            <option>На спине</option>
+                                                            <option selected>На левый рукав</option>
+                                                            <option>На правый рукав</option>
+                                                            <option>На левую штанину</option>
+                                                            <option>На правую штанину</option>
+                                                        </select>
+                                                        <ul class="product-printable">
+                                                            <li class="product-printable-remove">
+                                                                <span class="product-printable-input">Шеврон</span>
+                                                                <i class="icon icon-printable-remove icon-middle js-printable-remove"></i>
+                                                                <div class="product-printable-price"><span class="primary">+ от 200</span> рублей</div>
+                                                            </li>
+                                                            <li class="product-printable-remove">
+                                                                <span class="product-printable-input">Шеврон</span>
+                                                                <i class="icon icon-printable-remove icon-middle js-printable-remove"></i>
+                                                                <div class="product-printable-price"><span class="primary">+ от 200</span> рублей</div>
+                                                            </li>
+                                                            <li>
+                                                                <div class="product-printable-add">
+                                                                    <i class="icon icon-printable-add icon-middle js-printable-add"></i>
+                                                                    Добавить нанесение
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="product-panel_content_printable-wrapper">
+                                                        <select data-placeholder="Куда нанести">
+                                                            <option></option>
+                                                            <option>На груди по центру</option>
+                                                            <option>На груди слева</option>
+                                                            <option>На груди справа</option>
+                                                            <option>На спине</option>
+                                                            <option>На левый рукав</option>
+                                                            <option>На правый рукав</option>
+                                                            <option>На левую штанину</option>
+                                                            <option>На правую штанину</option>
+                                                        </select>
+                                                        <ul class="product-printable hidden">
+                                                            <li>
+                                                                <div class="product-printable-add">
+                                                                    <i class="icon icon-printable-add icon-middle js-printable-add"></i>
+                                                                    Добавить нанесение
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col s6">
+                                    <div class="row">
+                                        <div class="col s12 flex">
+                                            <div class="product-panel">
+                                                <div class="product-panel_heading">Количество</div>
+                                                <div class="product-panel_content product-panel_content_count">
+                                                    <p class="product-discount bebas">
+                                                        Скидки на количество от:
+                                                        <span class="gold">10</span>
+                                                        <span class="gold">30</span>
+                                                        <span class="gold">50</span>
+                                                        <span class="gold">100</span>
+                                                        <span class="gold">200</span>
+                                                        шт.
+                                                    </p>
+                                                    <div class="product-data-list-wrapper count js-product-data-common">
+                                                        <input type="number" value="10">
+                                                    </div>
+                                                    <!--<div class="product-panel_content_count_extended js-product-data-personal">
+                                                        <div>
+                                                            <label class="size1">Диапазон роста</label>
+                                                            <label class="size2">Обхват груди</label>
+                                                            <label class="size3">Рост/размер</label>
+                                                            <label class="size4 last">Количество</label>
+                                                        </div>
+                                                        <div>
+                                                            <select class="size1">
+                                                                <option></option>
+                                                                <option selected>168-173</option>
+                                                                <option>174-185</option>
+                                                            </select>
+                                                            <select class="size2">
+                                                                <option></option>
+                                                                <option selected>168-173</option>
+                                                                <option>174-185</option>
+                                                            </select>
+                                                            <div class="size3 product-panel_content_count_extended_selected">170 / 46</div>
+                                                            <div class="product-data-list-wrapper count last">
+                                                                <input type="number" value="10">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <select class="size1">
+                                                                <option></option>
+                                                                <option selected>168-173</option>
+                                                                <option>174-185</option>
+                                                            </select>
+                                                            <select class="size2">
+                                                                <option></option>
+                                                                <option selected>168-173</option>
+                                                                <option>174-185</option>
+                                                            </select>
+                                                            <div class="size3 product-panel_content_count_extended_selected">170 / 46</div>
+                                                            <div class="product-data-list-wrapper count last">
+                                                                <input type="number" value="10">
+                                                            </div>
+                                                        </div>
+                                                        <div>
+                                                            <select class="size1">
+                                                                <option></option>
+                                                                <option>168-173</option>
+                                                                <option>174-185</option>
+                                                            </select>
+                                                            <select class="size2">
+                                                                <option></option>
+                                                                <option>168-173</option>
+                                                                <option>174-185</option>
+                                                            </select>
+                                                        </div>
+                                                        <a href="#" class="product-panel_content_count_extended_add">
+                                                            <i class="icon icon-printable-add icon-middle"></i>
+                                                            Добавить еще
+                                                        </a>
+                                                        <div class="product-panel_content_count_extended_total">
+                                                            <label>Общее количество</label>
+                                                            <input value="20" readonly>
+                                                        </div>
+                                                    </div>-->
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col s6">
-                                    <div class="product-panel">
-                                        <div class="product-panel_heading">Персонализация</div>
-                                        <div class="product-panel_content product-panel_content_personal">
-                                            <p>Если Вам нужна персонализация каждого человека, а именно, номера, фамилии и т.п. 
-                                                укажите это. Таблица соответствий размеров и персональных отличий каждого человека заполняется в корзине</p>
-                                            <div class="product-heading no-bg">Нанести номера или фамилии?</div>
-                                            <ul class="product-data-checkbox">
-                                                <li><label><input type="radio" name="somename" class="js-product-data-personal-radio" value="1"> Да</label></li>
-                                                <li><label><input type="radio" name="somename" checked class="js-product-data-personal-radio" value="0"> Нет, только логотипы</label></li>
-                                            </ul>
-                                        </div>
-                                    </div>
+                            <!--<div class="product-panel">
+                                <div class="product-panel_heading">Персонализация</div>
+                                <div class="product-panel_content product-panel_content_personal">
+                                    <p>Если Вам нужна персонализация каждого человека, а именно, номера, фамилии и т.п. 
+                                        укажите это. Таблица соответствий размеров и персональных отличий каждого человека заполняется в корзине</p>
+                                    <div class="product-heading no-bg">Нанести номера или фамилии?</div>
+                                    <ul class="product-data-checkbox">
+                                        <li><label><input type="radio" name="somename" class="js-product-data-personal-radio" value="1"> Да</label></li>
+                                        <li><label><input type="radio" name="somename" checked class="js-product-data-personal-radio" value="0"> Нет, только логотипы</label></li>
+                                    </ul>
                                 </div>
-                                <div class="col s6">
-                                    <div class="product-panel">
-                                        <div class="product-panel_heading">Количество</div>
-                                        <div class="product-panel_content product-panel_content_count">
-                                            <p class="product-discount">
-                                                Скидки на количество от:
-                                                <span class="bebas gold">10</span>
-                                                <span class="bebas gold">30</span>
-                                                <span class="bebas gold">50</span>
-                                                <span class="bebas gold">100</span>
-                                                <span class="bebas gold">200</span>
-                                                шт.
-                                            </p>
-                                            <div class="product-data-list-wrapper count js-product-data-common">
-                                                <input type="number" value="10">
-                                            </div>
-                                            <div class="product-panel_content_count_extended js-product-data-personal">
-                                                <div>
-                                                    <label class="size1">Диапазон роста</label>
-                                                    <label class="size2">Обхват груди</label>
-                                                    <label class="size3">Рост/размер</label>
-                                                    <label class="size4 last">Количество</label>
-                                                </div>
-                                                <div>
-                                                    <select class="size1">
-                                                        <option></option>
-                                                        <option selected>168-173</option>
-                                                        <option>174-185</option>
-                                                    </select>
-                                                    <select class="size2">
-                                                        <option></option>
-                                                        <option selected>168-173</option>
-                                                        <option>174-185</option>
-                                                    </select>
-                                                    <div class="size3 product-panel_content_count_extended_selected">170 / 46</div>
-                                                    <div class="product-data-list-wrapper count last">
-                                                        <input type="number" value="10">
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <select class="size1">
-                                                        <option></option>
-                                                        <option selected>168-173</option>
-                                                        <option>174-185</option>
-                                                    </select>
-                                                    <select class="size2">
-                                                        <option></option>
-                                                        <option selected>168-173</option>
-                                                        <option>174-185</option>
-                                                    </select>
-                                                    <div class="size3 product-panel_content_count_extended_selected">170 / 46</div>
-                                                    <div class="product-data-list-wrapper count last">
-                                                        <input type="number" value="10">
-                                                    </div>
-                                                </div>
-                                                <div>
-                                                    <select class="size1">
-                                                        <option></option>
-                                                        <option>168-173</option>
-                                                        <option>174-185</option>
-                                                    </select>
-                                                    <select class="size2">
-                                                        <option></option>
-                                                        <option>168-173</option>
-                                                        <option>174-185</option>
-                                                    </select>
-                                                </div>
-                                                <a href="#" class="product-panel_content_count_extended_add">
-                                                    <i class="icon icon-printable-add icon-middle"></i>
-                                                    Добавить еще
-                                                </a>
-                                                <div class="product-panel_content_count_extended_total">
-                                                    <label>Общее количество</label>
-                                                    <input value="20" readonly>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </div>-->
                         </div>
                     </div>
 

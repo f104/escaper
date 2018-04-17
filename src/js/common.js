@@ -260,9 +260,9 @@ jQuery(function () {
             }
             $('.product-slider-pc-type span').removeClass('active');
             if (currentSlide === 0) {
-                $('.product-slider-pc-type span:first-of-type').addClass('active');                
+                $('.product-slider-pc-type span:first-of-type').addClass('active');
             } else {
-                $('.product-slider-pc-type span:last-of-type').addClass('active');                
+                $('.product-slider-pc-type span:last-of-type').addClass('active');
             }
             $('.pagg-slider-pc-wrapper .pagg-slider-pc-text-inner').html(text);
             $('.pagg-slider-pc-wrapper .pagg-slider-pc-text-inner').fadeIn();
@@ -515,6 +515,13 @@ jQuery(function () {
         $('.product-design-submit').click(function (e) {
             e.preventDefault();
             $.fancybox.close();
+        });
+        $('.product-panel_content_printable-wrapper').each(function () {
+            var $sel = $(this).find('select');
+            var $ul = $(this).find('.product-printable');
+            $sel.on('change', function () {
+                $ul.show();
+            });
         });
     }
 

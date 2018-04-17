@@ -928,7 +928,83 @@
                 }
             }
         }
-
+        .product-panel-wrapper .row .col {
+            display: block;
+            flex: auto;
+        }
+        .product-panel_content {
+            &.product-panel_content_count {
+                .product-discount {
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin: 15px 0 20px;
+                }
+            }
+            &.product-panel_content_printable {
+                padding: 0;
+                .product-panel_content_printable-wrapper {
+                    margin: 10px 0;
+                }
+                .jq-selectbox {
+                    width: 100%;
+                    .jq-selectbox__select {
+                        width: 100%;
+                        background: linear-gradient(to top, #333333, #636363);
+                        border: none;
+                        border-radius: 0;
+                        color: white;
+                        padding: 0 50px 0 25px;
+                    }
+                    .jq-selectbox__select-text {
+                        font-family: $font1;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 28px;
+                    }
+                    .jq-selectbox__trigger {
+                        right: 15px;
+                    }
+                    .jq-selectbox__trigger-arrow {
+                        @include sprite($product-select-trigger-white);
+                    }
+                    .jq-selectbox__dropdown {
+                        background: white;
+                        border-radius: 0px;
+                        padding: 5px 0;
+                        li {
+                            padding: 0 23px;
+                            &.sel, &:hover {
+                                color: inherit;
+                                font-weight: 600;
+                            }
+                            &:hover {
+                                background: #f2f3f5;
+                            }
+                        }
+                    }
+                }
+                .product-printable {
+                    background: white;
+                    padding: 10px 15px 0 25px;
+                    border-bottom: 1px solid #b5b5b5;
+                    li.product-printable-remove {
+                        .product-printable-input {
+                            margin-right: 10px;
+                            width: 307px;
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+            &.product-panel_content_material {
+                .product-data-materials-list_input {
+                    border-radius: 0;
+                }
+            }
+            &.product-panel_content_count {
+                padding: 20px;
+            }
+        }
         .product-actions {
             border: none;
             padding: 0;
