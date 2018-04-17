@@ -28,13 +28,13 @@ jQuery(function () {
                 $form.valid() ? $submit.prop('disabled', false) : $submit.prop('disabled', 'disabled');
             });
         });
-        $('.js-active-on-click').on('click', function() {
+        $('.js-active-on-click').on('click', function () {
             if (!$(this).hasClass('active')) {
                 $(this).parents('.js-active-on-click__wrapper').find('.active').removeClass('active');
                 $(this).addClass('active');
             }
         });
-        
+
         $('.js-toggle-next').click(function (e) {
             $(this).toggleClass('closed');
             $(this).hasClass('closed')
@@ -42,7 +42,7 @@ jQuery(function () {
                     : $(this).next().slideDown();
         });
         $('.js-toggle-next.closed').next().slideUp();
-        
+
         $('.js-mask_phone').inputmask('+7(999)999-99-99');
         $('.js-mask_price').inputmask('9{+} рублей');
         $('#tabs').easytabs();
@@ -80,12 +80,12 @@ jQuery(function () {
         $('.js-popup-close').click(function (e) {
             $.fancybox.close();
         });
-        $(document).on('af_complete', function(event, response) {
+        $(document).on('af_complete', function (event, response) {
             if (response.success) {
                 $.fancybox.close();
             }
         });
-        $(document).on('tickets_comment_save', function(event, response) {
+        $(document).on('tickets_comment_save', function (event, response) {
             if (response.success) {
                 $.fancybox.close();
             }
@@ -186,7 +186,7 @@ jQuery(function () {
             focusOnSelect: true,
             infinite: false
         });
-        $('.product-material-slider').each(function(){
+        $('.product-material-slider').each(function () {
             var nav = $(this).data('nav');
             $(this).slick({
                 slidesToShow: 1,
@@ -196,7 +196,7 @@ jQuery(function () {
                 asNavFor: nav
             });
         });
-        $('.product-material-slider-nav').each(function(){
+        $('.product-material-slider-nav').each(function () {
             var nav = $(this).data('nav');
             $(this).slick({
                 slidesToShow: 4,
@@ -248,6 +248,25 @@ jQuery(function () {
             focusOnSelect: true,
             infinite: false
         });
+        $('.pagg-slider-pc').on('beforeChange', function () {
+            $('.pagg-slider-pc-wrapper .pagg-slider-pc-text-inner').fadeOut();
+        });
+        $('.pagg-slider-pc').on('afterChange', function (event, slick, currentSlide) {
+            var text = $(slick.$slides[currentSlide]).find('.pagg-slider-pc-slide-text');
+            if (text.length) {
+                text = text.html();
+            } else {
+                text = '';
+            }
+            $('.product-slider-pc-type span').removeClass('active');
+            if (currentSlide === 0) {
+                $('.product-slider-pc-type span:first-of-type').addClass('active');                
+            } else {
+                $('.product-slider-pc-type span:last-of-type').addClass('active');                
+            }
+            $('.pagg-slider-pc-wrapper .pagg-slider-pc-text-inner').html(text);
+            $('.pagg-slider-pc-wrapper .pagg-slider-pc-text-inner').fadeIn();
+        });
         $('.product-slider-related').slick({
             slide: 'div',
             slidesToShow: 1,
@@ -269,6 +288,16 @@ jQuery(function () {
             arrows: true,
             dots: false,
             slidesToShow: 4,
+            slidesToScroll: 1,
+            centerPadding: '0',
+//            centerMode: true,
+            focusOnSelect: true,
+            infinite: false,
+        });
+        $('.list-item-slider-new').slick({
+            arrows: true,
+            dots: true,
+            slidesToShow: 1,
             slidesToScroll: 1,
             centerPadding: '0',
 //            centerMode: true,
@@ -298,7 +327,7 @@ jQuery(function () {
 //        $('.cart-popup .tabs .tab').first().find('a').click()
         $('.product-list-item').hover(
                 function () {
-                    $(this).find('.list-item-slider').slick('setPosition');
+                    $(this).find('.list-item-slider, .list-item-slider-new').slick('setPosition');
                 }
         );
         $('.catalog-slider').slick({

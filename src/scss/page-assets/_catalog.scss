@@ -16,9 +16,6 @@
     border-radius: 3px;
     margin-bottom: 15px;
     width: 240px;
-    &.order {
-        border-radius: 0;
-    }
     .product-list-item-print, .product-list-item-rating, .product-list-item-print-order {
         font-family: $font1;
         font-size: 18px;
@@ -33,15 +30,27 @@
         top: 5px;
         @include skewed-left($sea-color);
     }
+    $product-list-item-print-order-color: rgba(#00CFA9, .6);
     .product-list-item-print-order {
         text-align: right;
         font-size: 23px;
         line-height: 18px;
-        background: #0bb2ea;
+        background-color: $product-list-item-print-order-color;
         top: 0px;
-        @include skewed-left(#0bb2ea, 40px);
+        padding-left: 10px;
+        height: 40px;
         &:before {
-            transform: skewX(5deg);
+            content: '';
+            position: absolute;
+            left: -25px;
+            top: 0;
+            border-width: 20px;
+            border-style: solid;
+            border-color: 
+                $product-list-item-print-order-color
+                $product-list-item-print-order-color
+                transparent transparent;
+            transform: scaleX(0.25);
         }
         span {
             font-size: 13px;
@@ -66,7 +75,7 @@
     .product-list-item-pagetitle {
         font-family: $font2;
         font-size: 16px;
-        line-height: 20px;
+        line-height: 18px;
         font-weight: 600;
         display: block;
         padding: 0 5px;
@@ -83,7 +92,7 @@
         font-size: 18px;
         font-weight: 600;
         color: $blue-color;
-        padding: 3px 0 0;
+        padding: 3px 0;
         text-align: center;
         line-height: 23px;
     }
@@ -287,14 +296,43 @@
                 font-weight: 600;
             }
         }
+        .product-list-item-slider-new {
+            padding: 5px 0 10px;
+            .product-list-item-slider-new-text {
+                display: block;
+                font-size: 14px;
+                text-align: center;
+                margin-bottom: 5px;
+                font-family: $font2;
+            }
+        }
+    }
+    &.order {
+        overflow: hidden;
+        border-radius: 0;
+        img {
+            margin: 0 auto;
+        }
+        .product-list-item-price {
+            margin-bottom: 0;
+        }
+        .product-list-item-text {
+            span {
+                display: block;
+                text-align: center;
+            }
+        }
     }
     &:hover {
         position: absolute;
         width: 280px;
         margin: 0 -20px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
         z-index: 1;
         padding: 0 20px;
+        &.order {
+            border-color: $blue-color;
+        }
         .product-discount {
             left: 8px;
         }

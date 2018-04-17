@@ -1,4 +1,5 @@
 @import "../fonts/bebas/bebasneue.css";
+@import "../fonts/arialnarrow/arialnarrow.css";
 @import "libs/font-awesome/font-awesome.scss";
 @import "variables";
 @import "sprite";
@@ -164,6 +165,7 @@ p, ul {
     &phone{ @include sprite($phone); }
     &logout{ @include sprite($logout); }
     &rub{ @include sprite($rub); }
+    &rub-black{ @include sprite($rub-black); }
     &rub-grid{ @include sprite($rub-grid); }
     &rub-grid-white{ @include sprite($rub-grid-white); }
     &rub-small{ @include sprite($rub-small); }
