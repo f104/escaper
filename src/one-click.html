@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "One click"
+    })
+    <body>
+
+        <div class="popup cart cart-popup one-click">
+            <div class="container">
+                <h3 class="cart-h3">Отправка Заявки</h3>
+                @@include('./template/cart-submit.html', {
+                "popup": 1,
+                "extended": 0,
+                "btn-text": "Отправить заявку"
+                })
+            </div>
+        </div>
+
+        <div class="popup cart cart-popup one-click">
+            <div class="container">
+                <h3 class="cart-h3">Отправка Заявки</h3>
+                @@include('./template/cart-submit.html', {
+                "popup": 1,
+                "extended": 1,
+                "btn-text": "Отправить заявку"
+                })
+                <div class="one-click__ext">
+                    <div class="product-heading">Вы указали следующие параметры</div>
+                    <div class="cart-submit">
+                        <form>
+                            <div class="cart-submit__columns">
+                                <div class="input-group">
+                                    <label>Материал</label>
+                                    <div class="one-click__material">
+                                        <span class="one-click__material__item">
+                                            <span class="one-click__subh">Основной</span>
+                                            <span class="one-click__field">Интерлок 130 г/м²</span>
+                                        </span>
+                                        <span class="one-click__material__item">
+                                            <span class="one-click__subh">Дополнительный</span>
+                                            <span class="one-click__field">Как основной</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label>Доплнительный нанесения</label>
+                                    <div class="one-click__print">
+                                        <span class="one-click__print__item">
+                                            <span class="one-click__subh">Левый рукав</span>
+                                            <span class="one-click__field">Шеврон</span>
+                                            <span class="one-click__field">Шеврон</span>
+                                        </span>
+                                        <span class="one-click__print__item">
+                                            <span class="one-click__subh">Спина</span>
+                                            <span class="one-click__field">Шеврон</span>
+                                            <span class="one-click__field">Шеврон</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-submit__columns">
+                                <div class="input-group">
+                                    <label>Дизайн вашего макета</label>
+                                    <div class="one-click__design">
+                                        <div class="one-click__design__img">
+                                            <img src="img/product/d1.jpg" alt="alt text">
+                                            <span>Стандартный дизайн #1</span>
+                                        </div>
+                                        <textarea>Героическое готично образует онтологический статус искусства, однако само по себе состояние игры всегда амбивалентно. Прекрасное, согласно традиционным представлениям, готично использует постмодернизм. Эти слова совершенно справедливы, однако теоретическая социология готично диссонирует определенный статус художника.</textarea>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label>Загрузка файлов</label>
+                                    <div class="file-list">
+                                        <span class="file-list__item">
+                                            <span class="file-list__item__name">Логотип.cdr</span>
+                                            <span class="file-list__item__remove"><i class="fa fa-times"></i></span>                                            
+                                        </span>
+                                        <span class="file-list__item">
+                                            <span class="file-list__item__name">Логотип.cdr</span>
+                                            <span class="file-list__item__remove"><i class="fa fa-times"></i></span>                                            
+                                        </span>
+                                        <span class="file-list__item">
+                                            <span class="file-list__item__name">Логотип.cdr</span>
+                                            <span class="file-list__item__remove"><i class="fa fa-times"></i></span>                                            
+                                        </span>
+                                    </div>
+                                    <input type="file" data-placeholder="" data-browse="Выберите файл" multiple>
+                                </div>
+                            </div>
+                            <div class="cart-submit__allright">
+                                Все верно!
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-md"><span>Отправить заявку</span></button>
+                            <p>Менеджер свяжется с вами для уточнения всех подробностей заявки, согласует цену и отправит задание для подготовки дизайна.<br>
+                                Когда макет будет готов,  Вы можете увидеть и согласовать его в вашем личном кабинете.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

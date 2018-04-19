@@ -1,0 +1,49 @@
+<div class="cart-submit">
+    <p>Заполните поля и нажмите отправить заявку<br>
+        * поля обязательные для заполнения</p>
+    <form class="js-validate">
+        <div class="input-group required">
+            <label>Ваше имя</label>
+            <input required>
+        </div>
+        <div class="input-group">
+            <label>e-mail</label>
+            <input type="text">
+        </div>
+        <div class="input-group required">
+            <label>Телефон</label>
+            <input required class="js-mask_phone">
+        </div>
+        @@if (popup == 1 && extended == 0) {
+        <div class="cart-submit__columns">
+            <div class="input-group">
+                <label>Дизайн вашего макета</label>
+                <input placeholder="Опишите желаемый дизайн в свободной форме">
+            </div>
+            <div class="input-group">
+                <label>Загрузка файлов</label>
+                <input type="file" data-placeholder="" data-browse="Выберите файл" multiple>
+            </div>
+        </div>
+        }
+        @@if (popup == 1) {
+        <div class="input-group required">
+            <label>Количество</label>
+            <input required>
+        </div>
+        }
+        <div class="cart-submit__captcha">
+            <img src="img/captcha.png">
+        </div>
+        <div class="cart-submit__agree">
+            <label>
+                <input type="checkbox" checked>
+                Я согласен на обработку персональных данных и ознакомлен
+                с <a href="#">политикой конфиденциальности</a>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-md"><span>@@btn-text</span></button>
+        <p>Менеджер свяжется с вами для уточнения всех подробностей заявки, согласует цену и отправит задание для подготовки дизайна.<br>
+            Когда макет будет готов,  Вы можете увидеть и согласовать его в вашем личном кабинете.</p>
+    </form>
+</div>

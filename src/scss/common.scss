@@ -79,6 +79,10 @@ p, ul {
     }
 }
 
+label:not([for]) {
+    cursor: default;
+}
+
 .no-margin {
     margin: 0 !important;
 }

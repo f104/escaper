@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>One click</title>
+    <meta charset="UTF-8">
+    <link href="css/libs/materialize/materialize.css" rel="stylesheet" type="text/css">
+    <link href="css/libs/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/libs/jquery.fancybox.css" rel="stylesheet" type="text/css">
+    <link href="css/libs/jquery.formstyler.css" rel="stylesheet" type="text/css">
+    <link href="css/libs/nouislider.css" rel="stylesheet" type="text/css">
+    <link href="css/libs/perfect-scrollbar.css" rel="stylesheet" type="text/css"/>
+    <link href="css/libs/jquery.scrollbar.css" rel="stylesheet" type="text/css"/>
+    <link href="css/libs/jquery.qtip.css" rel="stylesheet" type="text/css"/>
+    <link href="css/common.css" rel="stylesheet" type="text/css">
+</head>
+    <body>
+
+        <div class="popup cart cart-popup one-click">
+            <div class="container">
+                <h3 class="cart-h3">Отправка Заявки</h3>
+                <div class="cart-submit">
+    <p>Заполните поля и нажмите отправить заявку<br>
+        * поля обязательные для заполнения</p>
+    <form class="js-validate">
+        <div class="input-group required">
+            <label>Ваше имя</label>
+            <input required>
+        </div>
+        <div class="input-group">
+            <label>e-mail</label>
+            <input type="text">
+        </div>
+        <div class="input-group required">
+            <label>Телефон</label>
+            <input required class="js-mask_phone">
+        </div>
+        
+        <div class="cart-submit__columns">
+            <div class="input-group">
+                <label>Дизайн вашего макета</label>
+                <input placeholder="Опишите желаемый дизайн в свободной форме">
+            </div>
+            <div class="input-group">
+                <label>Загрузка файлов</label>
+                <input type="file" data-placeholder="" data-browse="Выберите файл" multiple>
+            </div>
+        </div>
+        
+        
+        <div class="input-group required">
+            <label>Количество</label>
+            <input required>
+        </div>
+        
+        <div class="cart-submit__captcha">
+            <img src="img/captcha.png">
+        </div>
+        <div class="cart-submit__agree">
+            <label>
+                <input type="checkbox" checked>
+                Я согласен на обработку персональных данных и ознакомлен
+                с <a href="#">политикой конфиденциальности</a>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-md"><span>Отправить заявку</span></button>
+        <p>Менеджер свяжется с вами для уточнения всех подробностей заявки, согласует цену и отправит задание для подготовки дизайна.<br>
+            Когда макет будет готов,  Вы можете увидеть и согласовать его в вашем личном кабинете.</p>
+    </form>
+</div>
+            </div>
+        </div>
+
+        <div class="popup cart cart-popup one-click">
+            <div class="container">
+                <h3 class="cart-h3">Отправка Заявки</h3>
+                <div class="cart-submit">
+    <p>Заполните поля и нажмите отправить заявку<br>
+        * поля обязательные для заполнения</p>
+    <form class="js-validate">
+        <div class="input-group required">
+            <label>Ваше имя</label>
+            <input required>
+        </div>
+        <div class="input-group">
+            <label>e-mail</label>
+            <input type="text">
+        </div>
+        <div class="input-group required">
+            <label>Телефон</label>
+            <input required class="js-mask_phone">
+        </div>
+        
+        
+        <div class="input-group required">
+            <label>Количество</label>
+            <input required>
+        </div>
+        
+        <div class="cart-submit__captcha">
+            <img src="img/captcha.png">
+        </div>
+        <div class="cart-submit__agree">
+            <label>
+                <input type="checkbox" checked>
+                Я согласен на обработку персональных данных и ознакомлен
+                с <a href="#">политикой конфиденциальности</a>
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-md"><span>Отправить заявку</span></button>
+        <p>Менеджер свяжется с вами для уточнения всех подробностей заявки, согласует цену и отправит задание для подготовки дизайна.<br>
+            Когда макет будет готов,  Вы можете увидеть и согласовать его в вашем личном кабинете.</p>
+    </form>
+</div>
+                <div class="one-click__ext">
+                    <div class="product-heading">Вы указали следующие параметры</div>
+                    <div class="cart-submit">
+                        <form>
+                            <div class="cart-submit__columns">
+                                <div class="input-group">
+                                    <label>Материал</label>
+                                    <div class="one-click__material">
+                                        <span class="one-click__material__item">
+                                            <span class="one-click__subh">Основной</span>
+                                            <span class="one-click__field">Интерлок 130 г/м²</span>
+                                        </span>
+                                        <span class="one-click__material__item">
+                                            <span class="one-click__subh">Дополнительный</span>
+                                            <span class="one-click__field">Как основной</span>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label>Доплнительный нанесения</label>
+                                    <div class="one-click__print">
+                                        <span class="one-click__print__item">
+                                            <span class="one-click__subh">Левый рукав</span>
+                                            <span class="one-click__field">Шеврон</span>
+                                            <span class="one-click__field">Шеврон</span>
+                                        </span>
+                                        <span class="one-click__print__item">
+                                            <span class="one-click__subh">Спина</span>
+                                            <span class="one-click__field">Шеврон</span>
+                                            <span class="one-click__field">Шеврон</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cart-submit__columns">
+                                <div class="input-group">
+                                    <label>Дизайн вашего макета</label>
+                                    <div class="one-click__design">
+                                        <div class="one-click__design__img">
+                                            <img src="img/product/d1.jpg" alt="alt text">
+                                            <span>Стандартный дизайн #1</span>
+                                        </div>
+                                        <textarea>Героическое готично образует онтологический статус искусства, однако само по себе состояние игры всегда амбивалентно. Прекрасное, согласно традиционным представлениям, готично использует постмодернизм. Эти слова совершенно справедливы, однако теоретическая социология готично диссонирует определенный статус художника.</textarea>
+                                    </div>
+                                </div>
+                                <div class="input-group">
+                                    <label>Загрузка файлов</label>
+                                    <div class="file-list">
+                                        <span class="file-list__item">
+                                            <span class="file-list__item__name">Логотип.cdr</span>
+                                            <span class="file-list__item__remove"><i class="fa fa-times"></i></span>                                            
+                                        </span>
+                                        <span class="file-list__item">
+                                            <span class="file-list__item__name">Логотип.cdr</span>
+                                            <span class="file-list__item__remove"><i class="fa fa-times"></i></span>                                            
+                                        </span>
+                                        <span class="file-list__item">
+                                            <span class="file-list__item__name">Логотип.cdr</span>
+                                            <span class="file-list__item__remove"><i class="fa fa-times"></i></span>                                            
+                                        </span>
+                                    </div>
+                                    <input type="file" data-placeholder="" data-browse="Выберите файл" multiple>
+                                </div>
+                            </div>
+                            <div class="cart-submit__allright">
+                                Все верно!
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-md"><span>Отправить заявку</span></button>
+                            <p>Менеджер свяжется с вами для уточнения всех подробностей заявки, согласует цену и отправит задание для подготовки дизайна.<br>
+                                Когда макет будет готов,  Вы можете увидеть и согласовать его в вашем личном кабинете.</p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="js/libs/jquery.min.js" type="text/javascript"></script>
+<script src="js/libs/materialize.js" type="text/javascript"></script>
+<script src="js/libs/jquery.fancybox.min.js" type="text/javascript"></script>
+<script src="js/libs/slick.min.js" type="text/javascript"></script>
+<script src="js/libs/jquery.formstyler.js" type="text/javascript"></script>
+<script src="js/libs/nouislider.min.js" type="text/javascript"></script>
+<script src="js/libs/jquery.cookie.js" type="text/javascript"></script>
+<script src="js/libs/perfect-scrollbar.jquery.min.js" type="text/javascript"></script>
+<script src="js/libs/jquery.scrollbar.min.js" type="text/javascript"></script>
+<script src="js/libs/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/libs/jquery.inputmask.bundle.js" type="text/javascript"></script>
+<script src="js/libs/jquery.easytabs.min.js" type="text/javascript"></script>
+<script src="js/libs/KeyShotVR.js" type="text/javascript"></script>
+<script src="js/libs/jquery.qtip.min.js" type="text/javascript"></script>
+<script src="js/common.js" type="text/javascript"></script>
+
+    </body>
+</html>
