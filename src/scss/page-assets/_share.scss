@@ -13,6 +13,9 @@
             display: inline;
             margin-left: 5px;
         }
+        &._big {
+            font-size: 31px;
+        }
     }
     .share-h3 {
         text-align: center;
@@ -66,6 +69,36 @@
             width: 278px;
             display: block;
             margin: 20px auto 0;
+        }
+        &.style24 {
+            margin-bottom: 90px;
+            .input-group {
+                display: flex;
+                label {
+                    flex-basis: 50%;
+                    font-weight: 600;
+                }
+                input {
+                    flex-basis: 50%;
+                }
+            }
+        }
+    }
+    .share-attr {
+        width: 800px;
+        margin: 1rem auto 2rem;
+        td {
+            width: 50%;
+            padding: 5px 10px;
+            border: 1px solid $gray-color;
+            &:first-of-type {
+                text-align: right;
+                border-left: none;
+            }
+            &:last-of-type {
+                font-weight: 600;
+                border-right: none;
+            }
         }
     }
     .share-item {
@@ -196,6 +229,69 @@
         }
         .wrapper {
             padding: 25px 0;
+        }
+    }
+    .cart-item.style24 {
+        margin-bottom: 35px;
+        .cart-item__head {
+            .cart-item-info {
+                padding: 30px;
+            }
+            .cart-item-design {
+                width: 530px;
+            }
+            .cart-item-material {
+                width: 190px;
+            }
+            .cart-item-print {
+                width: 170px;
+            }
+        }
+        .cart-item__foot {
+            background: $gray-light-color;
+            padding: 20px;
+            .cart-item-share-size {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            .cart-item-table {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+            .cart-item-share-foot {
+                display: flex;
+                align-items: center;
+                padding: 0 30px 0 20px;
+                margin-bottom: 30px;
+                font-size: 15px;
+                .share-price > *, .share-count > * {
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .share-count {
+                    flex: 1;
+                    .product-data-list-wrapper {
+                        padding-left: 35px;
+                        padding-right: 60px;
+                    }
+                    .bebas {
+                        font-weight: 600;
+                    }
+                }
+                .share-price {
+                    padding-left: 50px;
+                }
+                .share-price-price {
+                    font-family: $font1;
+                    font-weight: 600;
+                    font-size: 37px;
+                    color: $primary-color;
+                    line-height: 30px;
+                }
+            }
+            .cart-item-share-add {
+                text-align: center;
+            }
         }
     }
 }

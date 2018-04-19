@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Макеты в общем доступе"
+    })
+    <body>
+        @@include('./template/header.html')
+        <main>
+
+            <div class="product-heading">
+                <div class="container">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="#">Макеты в общем доступе</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <section class="share">
+
+                <h1 class="page-h1"><span>Макеты в общем доступе<i class="icon icon-middle icon-heading-share"></i></span></h1>
+                <div class="container">
+                    <p class="center-align">Для упрощения повторных заказов на продукцию для спортивных клубов, ФОК, спортивных школ и иных организаций,<br> 
+                        Вы можете найти интересующий товар <strong>в общем доступе</strong>, если первоначальный заказчик или администратор интернет-магазина добавил его в общий доступ </p>
+                    <div class="share-social">
+                        Вы можете поделиться макетами через соц.сети:
+                        <ul class="social">
+                            <li><a href="#"><i class="icon icon-vk"></i></a></li>
+                            <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon icon-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                    <form class="share-search style24">
+                        <div class="share-h3">Поиск макета</div>
+                        <div class="row">
+                            <div class="col s6 offset-s3">
+                                <div class="input-group">
+                                    <label>Введите ID макета</label>
+                                    <input>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn btn-gold btn-lg"><span>Найти</span></button>
+                    </form>
+
+                    <div class="share-h3">Макеты по вашему запросу в общем доступе</div>
+                </div>
+                <div class="product-heading">Аттрибуты</div>
+                <table class="share-attr">
+                    <tr><td>Страна</td><td>Казахстан</td></tr>
+                    <tr><td>Регион</td><td>Нижегородская обл.</td></tr>
+                    <tr><td>Город</td><td>Нижний Новгород</td></tr>
+                    <tr><td>Наименование организации</td><td>ФОК Мещерский</td></tr>
+                    <tr><td>Название команды</td><td>Красные крылья</td></tr>
+                    <tr><td>Тренеры</td><td>Боровков, Меркутов</td></tr>
+                    <tr><td>Возрастная группа</td><td>2010-2011 года рождения</td></tr>
+                </table>
+                <div class="product-heading">Товары</div>
+                <div class="container">
+                    @@include('./template/share-item-new1.html'})
+                    @@include('./template/share-item-new1.html'})
+                    <div class="share-social _big">
+                        Поделиться макетами через соц.сети:
+                        <ul class="social">
+                            <li><a href="#"><i class="icon icon-vk"></i></a></li>
+                            <li><a href="#"><i class="icon icon-instagram"></i></a></li>
+                            <li><a href="#"><i class="icon icon-youtube"></i></a></li>
+                            <li><a href="#"><i class="icon icon-facebook"></i></a></li>
+                            <li><a href="#"><i class="icon icon-odnoklassniki"></i></a></li>
+                            <li><a href="#"><i class="icon icon-twitter"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </section>
+
+        </main>
+
+        <div class="hide">
+            @@include('./template/product-size.html')
+        </div>
+
+        @@include('./template/footer.html')
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

@@ -701,6 +701,7 @@ label {
 // 3d
 .wrapper-3d {
     position: relative;
+    margin: 0 auto;
     &:after {
         content: '';
         position: absolute;
