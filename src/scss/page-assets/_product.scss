@@ -60,13 +60,13 @@
         background: linear-gradient(to bottom, #e2e5eb, transparent);
         margin-bottom: 20px;
     }
-    
+
 }
 .help {
     position: absolute;
     background-color: $blue-color;
-    width: 20px;
-    height: 20px;
+    width: 20px !important;
+    height: 20px !important;
     border-radius: 50%;
     text-align: center;
     font-family: sans-serif;
@@ -573,7 +573,7 @@
                 }
                 &.product-printable-remove {
                     .product-printable-input {
-                        line-height: 31px;
+                        line-height: 29px;
                         display: inline-block;
                         min-width: 168px;
                         background-color: $gray-light-color;
@@ -607,6 +607,101 @@
                         font-size: 15px;
                         color: $blue-color;
                     }
+                }
+            }
+        }
+        .product-print {
+            margin-bottom: 20px;
+            .product-print__h {
+                position: relative;
+                display: flex;
+                > * {
+                    flex-basis: 50%;
+                    width: 50%;
+                }
+                .product-print__h_left {
+                    background: linear-gradient(to top, #3B7D70, #5EC2AE);
+                    color: $white-color;
+                    font-family: $font1;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 30px;                    
+                    padding: 0 25px;
+                    text-align: right;
+                }
+                .help {
+                    left: 15px;
+                }
+            }
+            .jq-selectbox {
+                .jq-selectbox__select {
+                    width: 100%;
+                    background: linear-gradient(to top, #333333, #636363);
+                    border: none;
+                    border-radius: 0;
+                    color: white;
+                    padding: 0 50px 0 25px;
+                }
+                .jq-selectbox__select-text {
+                    font-family: $font1;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 30px;
+                }
+                .jq-selectbox__trigger {
+                    right: 15px;
+                }
+                .jq-selectbox__trigger-arrow {
+                    @include sprite($product-select-trigger-white);
+                }
+                .jq-selectbox__dropdown {
+                    background: white;
+                    border-radius: 0px;
+                    padding: 5px 0;
+                    li {
+                        padding: 0 23px;
+                        &.sel, &:hover {
+                            color: inherit;
+                            font-weight: 600;
+                        }
+                        &:hover {
+                            background: #f2f3f5;
+                        }
+                    }
+                }
+            }
+            .product-printable {
+                border-style: solid;
+                border-color: $gray-color;
+                border-width: 0 1px 1px 1px;
+                display: none;
+                flex-wrap: wrap;
+                li {
+                    margin: 10px;
+                    width: 337px;
+                    text-align: left;
+                    .product-printable-input {
+                        background: white;
+                        width: 300px;
+                    }
+                }
+            }
+            &.active {
+                .product-print__h {
+                    .product-print__h_left {
+                        display: none;
+                    }
+                    .jq-selectbox {
+                        width: 100%;
+                        flex-basis: 100%;
+                        .jq-selectbox__select {
+                            text-align: center;
+                            padding-left: 50px;
+                        }
+                    }
+                }
+                .product-printable {
+                    display: flex;
                 }
             }
         }

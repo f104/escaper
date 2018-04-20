@@ -449,7 +449,7 @@ jQuery(function () {
         $('.product-data-list ul.color li').click(function () {
             $(this).addClass('active').siblings().removeClass('active');
         });
-        $('#data .tooltip, .product-heading .tooltip, .product-material-price .tooltip').each(function (i) {
+        $('#data .tooltip, .product-heading .tooltip, .product-material-price .tooltip, .inner-tooltip').each(function (i) {
             var $parent = $(this).parent();
             var $help = $('<span/>', {
                 text: '?',
@@ -522,6 +522,13 @@ jQuery(function () {
             var $ul = $(this).find('.product-printable');
             $sel.on('change', function () {
                 $ul.show();
+            });
+        });
+        $('.product-print').each(function () {
+            var $sel = $(this).find('select');
+            var $this = this;
+            $sel.on('change', function () {
+                $($this).addClass('active');
             });
         });
         $('.js-popup-print-wrapper').each(function () {
