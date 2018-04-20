@@ -1,0 +1,65 @@
+<div class="ta">
+    @@if (type == 'none') {
+    <div class="ta__h _blue">Сейчас этого товара нет</div>
+    }
+    @@if (type != 'none') {
+    <div class="ta__h _green">В наличии на складе</div>
+    }
+    <div class="ta__section">
+        <div class="ta__row">
+            @@if (type == 'none') {
+            <span>Ориентировочная дата прибатия на склад:</span>
+            <span class="green"><strong>21.12.2018</strong></span>
+            }
+            @@if (type != 'none') {
+            <span>На складе:</span>
+            }
+            @@if (type == 'small') {
+            <span class="primary"><strong>Менее 5 шт.</strong></span>
+            }
+            @@if (type == 'medium') {
+            <span class="gold"><strong>Менее 10 шт.</strong></span>
+            }
+            @@if (type == 'full') {
+            <span class="green"><strong>Много</strong></span>
+            }
+        </div>
+    </div>
+    <div class="ta__section">
+        @@if (type == 'none') {
+        <a href="#" class="ta__btn">Добавить в лист ожидания</a>
+        }
+        @@if (type != 'none') {
+        <div class="ta__row">
+            <span>Более
+                }
+                @@if (type == 'small') {
+                5
+                }
+                @@if (type == 'medium') {
+                10
+                }
+                @@if (type == 'full') {
+                30
+                }
+                @@if (type != 'none') {
+                шт.:</span>
+            <span class="blue"><strong>Под заказ</strong></span>
+        </div>
+        <div class="ta__row">
+            <span>Ориентировочная дата прибатия на склад:</span>
+            <span class="green"><strong>21.12.2018</strong></span>
+        </div>
+        }
+    </div>
+    <div class="ta__section">
+        <div class="ta__row">
+            <span>Российский размер:</span>
+            <span class="bebas">43</span>
+        </div>
+        <div class="ta__row">
+            <span>Длина стопы, в см:</span>
+            <span class="bebas">27,5-28</span>
+        </div>
+    </div>
+</div>

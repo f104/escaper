@@ -416,6 +416,10 @@ button:disabled {
     padding: 5px 10px;
     line-height: normal;
     width: 220px;
+    .qtip-content {
+        padding: 0;
+        overflow: visible;
+    }
 }
 
 .breadcrumb {

@@ -2561,3 +2561,51 @@
         }
     }
 }
+
+.ta {
+    padding: 0;
+    font-family: $font2;
+    font-size: 15px;
+    margin: -5px -10px;
+    .ta__h {
+        text-align: center;
+        font-family: $font1;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 32px;
+        color: $white-color;
+        &._blue {
+            background: linear-gradient(to top, $blue-color, $blue-light-color);
+        }
+        &._green {
+            background: linear-gradient(to top, $green-color, $green-light-color);
+        }
+    }
+    .ta__btn {
+        display: block;
+        font-family: $font1;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 29px;
+        border-radius: 3px;
+        text-align: center;
+        background: $gray-color;
+        color: $white-color;
+        margin: 7px 0;
+    }
+    .bebas {
+        font-weight: 600;
+    }
+    .ta__section {
+        border-bottom: 1px solid $gray-color;
+        padding: 3px 10px;
+        &:last-of-type {
+            border-bottom: 0;
+        }
+    }
+    .ta__row {
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+}
