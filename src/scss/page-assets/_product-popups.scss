@@ -1,0 +1,244 @@
+.design-sel {
+    .cart-h3 {
+        margin-bottom: 10px;
+    }
+    .design-sel__table {
+        font-family: $font2;
+        font-size: 15px;
+        table {
+            td, th {
+                background-color: $white-color;
+                border: 1px solid $gray-color;
+                @include pseudoInnerShadowLeftRight(popup);
+                text-align: center;
+                padding: 5px 15px;
+                &:first-of-type {
+                    border-left: none;
+                }
+                &:last-of-type {
+                    border-right: none;
+                }
+            }
+            th {
+                font-family: $font1;
+                font-weight: 600;
+                font-size: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+        .design-sel__table__price {
+            font-family: $font1;
+            font-weight: 600;
+            font-size: 13px;
+            &._free {
+                font-size: 20px;
+                color: $green-color;
+            }
+        }
+        .design-sel__table__help {
+            text-align: right;
+            margin: 5px 15px;
+        }
+    }
+    .design-sel__custom {
+        margin-bottom: 20px;
+        text-align: center;
+        img {
+            width: 280px;
+            display: block;
+            margin: 0 auto 20px;
+        }
+        .btn {
+            width: 420px;
+        }
+    }
+    .design-sel__standart {
+        .design-sel__standart__head {
+            text-align: center;
+            font-size: 17px;
+            .bebas {
+                font-weight: 600;
+            }
+        }
+        .design-sel__standart__foot {
+            margin: 0 0 20px;
+            a {
+                font-family: $font1;
+                font-size: 23px;
+                font-weight: 600;
+                &:before, &:after {
+                    content: '';
+                    display: inline-block;
+                    @include sprite($chevron-down);
+                }
+                &:before {
+                    margin-right: 20px;
+                }
+                &:after {
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}
+.design-sel__list {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 8px;
+    .design-sel__list__item {
+        flex-basis: 33.33%;
+        padding: 0 8px;
+        margin-bottom: 36px;
+    }
+    .design-sel__list__item__inner {
+        border: 1px solid $gray-color;
+        background-color: $white-color;
+        .design-sel__list__item__h {
+            display: block;
+            font-family: $font1;
+            font-weight: 600;
+            font-size: 16px;
+            margin: 5px 0 0;
+        }
+        .design-sel__list__item__img {
+            position: relative;
+            padding: 10px;
+            height: 440px;
+            img {
+                max-width: 100%;
+                max-height: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+            .design-sel__list__item__img__a {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+            }
+        }
+        .design-sel__list__item__colors {
+            margin: 0 20px 17px;
+            display: flex;
+            flex-wrap: wrap;
+            span {
+                margin: 2px;
+                width: 34px;
+                height: 28px;
+                border-radius: 3px;
+                border: 1px solid $gray-color;
+                cursor: pointer;
+                &.active {
+                    border-color: $primary-color;
+                    border-width: 2px;
+                }
+            }
+        }
+        .design-sel__list__item__f {
+            display: block;
+            margin-bottom: 17px;
+        }
+    }
+}
+
+.product-material {
+    .product-material-print-list {
+        .product-material-print-list__item {
+            .product-material-print-list__item__header {
+                display: flex;
+                height: 50px;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid $gray-color;
+                padding-left: 50px;
+                @include pseudoInnerShadowLeftRight(popup);
+                ._h1 {
+                    flex-basis: 225px;
+                    text-align: left;
+                }
+                ._load {
+                    flex-basis: 360px;
+                    .jq-file {
+                        .jq-file__name {
+                            width: 255px;
+                            border-radius: 3px;
+                        }
+                        .jq-file__browse {
+                            font-size: 16px;
+                            width: 95px;
+                        }
+                    }
+                }
+                ._btn-wrapper {
+                    flex-basis: 230px;
+                    > * {
+                        vertical-align: middle;
+                    }
+                    .btn {
+                        min-width: unset;
+                    }
+                    ._added {
+                        font-size: 20px;
+                        font-family: $font1;
+                        font-weight: 600;
+                        vertical-align: middle;
+                        margin: 0 20px 0 5px;  
+                    }
+                }
+                .jq-file {
+                    display: flex;
+                    justify-content: space-between;
+                    input {
+                        cursor: pointer;
+                    }
+                    .jq-file__name {
+                        width: 283px;
+                        background-color: $white-color;
+                        border: 1px solid $gray-color;
+                        line-height: 28px;
+                        height: 32px;
+                        padding: 0 32px 0 5px;
+                        position: relative;
+                        &:after {
+                            content: '';
+                            position: absolute;
+                            right: 5px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            @include sprite($file-upload);                    
+                        }
+                    }
+                    .jq-file__browse {
+                        font-size: 19px;
+                        font-family: $font1;
+                        font-weight: 600;
+                        line-height: 30px;
+                        border: 1px solid $gray-color;
+                        border-radius: 3px;
+                        width: 188px;
+                    }
+                }
+                .product-material-heading {
+                    display: flex;
+                    height: 50px;
+                    width: 250px;
+                    cursor: pointer;
+                    align-items: center;
+                    justify-content: center;
+                    .wrapper {
+                        display: inline-block;
+                        vertical-align: middle;
+                        &:after {
+                            display: inline-block;
+                            margin-left: 40px;
+                            vertical-align: middle;
+                            position: relative;
+                            right: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    @@include('./template/head.html', {
+    "name": "Product popups"
+    })
+    <body>
+
+        @@include('./template/product-material-6.html')
+        
+        <div class="popup cart cart-popup design-sel">
+            <div class="container">
+                <h3 class="cart-h3">Выбор дизайна</h3>
+                <div class="design-sel__table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th colspan="3">Разработка индивидуального дизайна</th>
+                                <th colspan="3">Разработка дизайна на основе стандартного</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2"><strong>Разработка дизайна</strong></td>
+                                <td>от 8 единиц</td>
+                                <td class="design-sel__table__price _free">Бесплатно</td>
+                                <td rowspan="2"><strong>Разработка дизайна</strong></td>
+                                <td rowspan="2">Любое количество</td>
+                                <td rowspan="2" class="design-sel__table__price _free">Бесплатно</td>
+                            </tr>
+                            <tr>
+                                <td>от 1 до 8 единиц</td>
+                                <td class="design-sel__table__price">от 300* рублей</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2"><strong>Разработка логотипа</strong></td>
+                                <td>от 8 единиц</td>
+                                <td class="design-sel__table__price _free">Бесплатно</td>
+                                <td rowspan="2"><strong>Разработка логотипа</strong></td>
+                                <td>от 8 единиц</td>
+                                <td class="design-sel__table__price _free">Бесплатно</td>
+                            </tr>
+                            <tr>
+                                <td>от 1 до 8 единиц</td>
+                                <td class="design-sel__table__price">от 300* рублей</td>
+                                <td>от 1 до 8 единиц</td>
+                                <td class="design-sel__table__price">от 300* рублей</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <p class="design-sel__table__help">*Стоимость зависит от сложности дизайна и согласовывается индивидуально.</p>
+                </div>
+                <div class="product-heading _popup">
+                    Индивидуальный дизайн
+                </div>
+                <div class="design-sel__custom">
+                    <img src="img/amazing.svg" alt="alt text">
+                    <a class="btn btn-md btn-green"><span>Разработать индивидуальный дизайн</span></a>
+                </div>
+                <div class="product-heading _popup">
+                    Набор стандартных дизайнов
+                </div>
+                <div class="design-sel__standart">
+                    <p class="design-sel__standart__head">
+                        Если Вы выбрали <span class="bebas">стандартный дизайн</span> то при этом, он будет исполнен<br>
+                        <span class="bebas blue">в вашем цветовом решении,  согласно ваших пожеланий, и с вашими логотипами, стилями шрифтов и т.п.</span>
+                    </p>
+                    <div class="design-sel__list">
+                        @@include('./template/design-sel-item.html', {
+                        "num": 1,
+                        "img": 31
+                        })
+                        @@include('./template/design-sel-item.html', {
+                        "num": 2,
+                        "img": 32
+                        })
+                        @@include('./template/design-sel-item.html', {
+                        "num": 3,
+                        "img": 33
+                        })
+                        @@include('./template/design-sel-item.html', {
+                        "num": 1,
+                        "img": 31
+                        })
+                        @@include('./template/design-sel-item.html', {
+                        "num": 2,
+                        "img": 32
+                        })
+                        @@include('./template/design-sel-item.html', {
+                        "num": 3,
+                        "img": 33
+                        })
+                        @@include('./template/design-sel-item.html', {
+                        "num": 1,
+                        "img": 31
+                        })
+                        @@include('./template/design-sel-item.html', {
+                        "num": 2,
+                        "img": 32
+                        })
+                        @@include('./template/design-sel-item.html', {
+                        "num": 3,
+                        "img": 33
+                        })
+                    </div>
+                    <p class="design-sel__standart__foot">
+                        <a href="#">Показать еще</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        @@include('./template/scripts.html')
+
+    </body>
+</html>

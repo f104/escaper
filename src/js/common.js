@@ -41,7 +41,8 @@ jQuery(function () {
                     ? $(this).next().slideUp()
                     : $(this).next().slideDown();
         });
-        $('.js-toggle-next.closed').next().slideUp();
+//        $('.js-toggle-next.closed').next().slideUp();
+        $('.js-toggle-next.closed').next().hide();
 
         $('.js-mask_phone').inputmask('+7(999)999-99-99');
         $('.js-mask_price').inputmask('9{+} рублей');
@@ -522,6 +523,18 @@ jQuery(function () {
             $sel.on('change', function () {
                 $ul.show();
             });
+        });
+        $('.js-popup-print-wrapper').each(function () {
+            var $t = $(this).find('.js-popup-print-toggler');
+            var $c = $(this).find('.js-popup-print-content');
+            $t.click(function (e) {
+                $(this).toggleClass('closed');
+                $(this).hasClass('closed')
+                        ? $c.slideUp()
+                        : $c.slideDown();
+            });
+//            $(this).find('.slick-slider').slick('setPosition');
+//            if ($t.hasClass('closed')) $c.hide();
         });
     }
 

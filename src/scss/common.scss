@@ -177,6 +177,7 @@ label:not([for]) {
     &product-size-hide-all{ @include sprite($product-size-hide-all); }
     &success-rounded{ @include sprite($success-rounded); }
     &success-rounded-cart{ @include sprite($success-rounded-cart); }
+    &success-rounded-popup{ @include sprite($success-rounded-popup); }
     &btn-size{ @include sprite($btn-size); }
     &credit{ @include sprite($credit); }
     &heart-o{ @include sprite($heart-o); }
@@ -203,6 +204,7 @@ label:not([for]) {
     &payment-step4{ @include sprite($payment-step4); }  
     &payment-step5{ @include sprite($payment-step5); }  
     &payment-step6{ @include sprite($payment-step6); }  
+    &remove-rounded-popup{ @include sprite($remove-rounded-popup); }
     &catalog-btn{ @include sprite($catalog-btn); }  
     &warning{ @include sprite($warning); }  
     &warning-red{ @include sprite($warning-red); }  
@@ -758,3 +760,4 @@ img#backbuffer {
 @import "page-assets/coming-soon";
 @import "page-assets/share";
 @import "page-assets/office";
+@import "page-assets/product-popups";

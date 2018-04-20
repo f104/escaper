@@ -56,6 +56,11 @@
             z-index: 1;
         }
     }
+    &._popup {
+        background: linear-gradient(to bottom, #e2e5eb, transparent);
+        margin-bottom: 20px;
+    }
+    
 }
 .help {
     position: absolute;
@@ -2228,6 +2233,12 @@
                         text-align: center;
                         padding: 5px 10px;
                     }
+                    &._top {
+                        border-top: none;
+                    }
+                    &._bottom {
+                        border-bottom: none;
+                    }
                 }
             }
             ._small {
@@ -2237,6 +2248,13 @@
             }
             ._total {
                 font-size: 20px;
+            }
+            &._toggle {
+                margin-bottom: 10px;
+                border-bottom: none;
+                .product-material-print-list__item__content {
+                    border-bottom: 1px solid $gray-color;
+                }
             }
         }
         .product-material-print-slider {
